@@ -19,7 +19,7 @@ export default function SummaryScreen() {
     }))
   ];
   function handlePlayAgain() {
-    navigate("/play");
+    navigate("/citizen-assembly/play");
   }
 
   const total = quality + engagement + uptake;

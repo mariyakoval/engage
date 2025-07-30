@@ -20,7 +20,7 @@ export default function SummaryScreenBudget() {
 ];
 
 function handlePlayAgain() {
-    navigate("/play");
+    navigate("/participatory-budget/play");
   }
 
   const total = quality + engagement + uptake;

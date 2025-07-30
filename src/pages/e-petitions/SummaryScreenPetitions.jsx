@@ -19,7 +19,7 @@ export default function SummaryScreenPetitions() {
     }))
   ];
   function handlePlayAgain() {
-    navigate("/play");
+    navigate("/e-petitions/play");
   }
 
   const total = quality + engagement + uptake;
