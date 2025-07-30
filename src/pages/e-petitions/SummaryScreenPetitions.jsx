@@ -18,9 +18,10 @@ export default function SummaryScreenPetitions() {
       step: i + 1, 
     }))
   ];
-  function handlePlayAgain() {
-    navigate("/e-petitions/play");
-  }
+
+  const handlePlayAgain = () => {
+      navigate("/e-petitions/play"); 
+  };
 
   const total = quality + engagement + uptake;
 
