@@ -2,6 +2,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { AppRoutes } from "./routes";
 import Navbar from "./components/Navbar/Navbar";
 import React, { useState, useRef, useEffect } from "react";
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
         <Navbar theme={theme} setTheme={setTheme}/>
         
       <AppRoutes />
+      <Analytics />
        </div>
     </Router>
   );
