@@ -1,12 +1,14 @@
 import { useState, useContext } from "react";
 import { GameContextBudget } from "../../context/GameProviderBudget";
 import Button from "../../components/Button";
+import { useNavigate } from "react-router-dom";
 import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer
 } from 'recharts';
 
 export default function SummaryScreenBudget() {
   const { scores, scoreHistory, scenarios } = useContext(GameContextBudget);
+  const navigate = useNavigate();
   const { quality, engagement, uptake } = scores;
   const [currentView, setCurrentView] = useState("summary");
   const chartData = [
@@ -16,6 +18,10 @@ export default function SummaryScreenBudget() {
     step: i + 1, 
   }))
 ];
+
+function handlePlayAgain() {
+    navigate("/play");
+  }
 
   const total = quality + engagement + uptake;
 
@@ -156,7 +162,7 @@ export default function SummaryScreenBudget() {
       {/* Action buttons */}
           <div className="flex flex-col sm:flex-row flex gap-3 mt-4">
            {/* Always visible */}
-            <Button onClick={() => window.location.reload()}>
+            <Button onClick={handlePlayAgain}>
               <span className="text">Play Again</span>
             </Button>
 

@@ -1,6 +1,7 @@
 import { useState, useContext } from "react";
 import { GameContext } from "../../context/GameProvider";
 import Button from "../../components/Button";
+import { useNavigate } from "react-router-dom";
 import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer
 } from 'recharts';
@@ -8,6 +9,7 @@ import {
 export default function SummaryScreen() {
   const { scores, scoreHistory, scenarios } = useContext(GameContext);
   const { quality, engagement, uptake } = scores;
+   const navigate = useNavigate();
   const [currentView, setCurrentView] = useState("summary");
   const chartData = [
     { step: 0, quality: 0, engagement: 0, uptake: 0 },
@@ -16,6 +18,9 @@ export default function SummaryScreen() {
       step: i + 1, 
     }))
   ];
+  function handlePlayAgain() {
+    navigate("/play");
+  }
 
   const total = quality + engagement + uptake;
 
@@ -160,7 +165,7 @@ export default function SummaryScreen() {
       {/* Action buttons for navigation and toggling views */}
           <div className="flex flex-col sm:flex-row flex gap-3 mt-4">
              {/* Always visible */}
-            <Button onClick={() => window.location.reload()}>
+            <Button onClick={handlePlayAgain}>
               <span className="text">Play Again</span>
             </Button>
 
