@@ -9,6 +9,7 @@ import {
 export default function SummaryScreenPetitions() {
   const { scores, scoreHistory, scenarios } = useContext(GameContextPetitions);
   const { quality, engagement, uptake } = scores;
+  const { resetGame } = useContext(GameContextPetitions);
    const navigate = useNavigate();
   const [currentView, setCurrentView] = useState("summary");
   const chartData = [
@@ -20,6 +21,7 @@ export default function SummaryScreenPetitions() {
   ];
 
   const handlePlayAgain = () => {
+      resetGame();
       navigate("/e-petitions/play"); 
   };
 

@@ -5,6 +5,11 @@ export const GameContextPetitions = createContext();
 
 export const GameProviderPetitions = ({ children }) => {
 
+  const resetGame = () => {
+  setScores({ quality: 0, engagement: 0, uptake: 0 });
+  setScoreHistory([]);
+};
+
 const phases = useMemo(() => {
     const byPhase = Array.from({ length: 6 }, () => []);
     const crisis   = [];
@@ -84,7 +89,8 @@ const phases = useMemo(() => {
         next,
         scores,
         previousSummaries,
-        scoreHistory
+        scoreHistory,
+        resetGame
       }}
     >
       {children}
