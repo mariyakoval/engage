@@ -1,5 +1,6 @@
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import { GameContextBudget } from "../../context/GameProviderBudget";
+import { useNavigate } from "react-router-dom";
 import Button from "../../components/Button";
 import ProgressDots from "../../components/Dots";
 import SummaryScreenBudget from "./SummaryScreenBudget";
@@ -26,11 +27,24 @@ function Modal({ open, onClose, children }) {
 
 export default function GameScreen() {
 
-  const { scenarios, index, next, scores, previousSummaries } = useContext(GameContextBudget);
-  if (index >= scenarios.length) {
-    return <SummaryScreenBudget />;
-  }
-  const s = scenarios[index];
+  const { scenarios, index, next, previousSummaries } = useContext(GameContextBudget);
+  
+  const [showPrevious, setShowPrevious] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedOption, setSelectedOption] = useState(null);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+      if (index >= scenarios.length) {
+        navigate("/participatory-budget/summary");
+      }
+    }, [index, scenarios.length, navigate]);
+  
+    if (!scenarios || index >= scenarios.length) {
+      return <div className="p-4">Redirecting to summary...</div>;
+    }
+  
+    const s = scenarios[index];
 
   let dotIndex = null;
   const eventIndexes = [2, 5];
@@ -40,9 +54,6 @@ export default function GameScreen() {
       .filter(q => q.type === "phase").length - 1;
     dotIndex = phasesSeen;
   }
-
-  const [showPrevious, setShowPrevious] = useState(false);
-  const [modalOpen, setModalOpen] = useState(false);
 
   return (
     <div className="h-full flex">

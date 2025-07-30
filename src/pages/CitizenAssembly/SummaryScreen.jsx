@@ -9,6 +9,7 @@ import {
 export default function SummaryScreen() {
   const { scores, scoreHistory, scenarios } = useContext(GameContext);
   const { quality, engagement, uptake } = scores;
+  const { resetGame } = useContext(GameContext);
    const navigate = useNavigate();
   const [currentView, setCurrentView] = useState("summary");
   const chartData = [
@@ -18,9 +19,10 @@ export default function SummaryScreen() {
       step: i + 1, 
     }))
   ];
-  function handlePlayAgain() {
-    navigate("/citizen-assembly/play");
-  }
+  const handlePlayAgain = () => {
+      resetGame();
+      navigate("/citizen-assembly/play"); 
+  };
 
   const total = quality + engagement + uptake;
 

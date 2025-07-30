@@ -20,13 +20,13 @@ export const AppRoutes = () => (
     <Route path="/" element={<Home />} />
     <Route path="/about" element={<About />} />
     <Route path="/citizen-assembly/rules" element={<RulesScreen />} />
-    <Route path="/citizen-assembly/summary" element={<SummaryScreen />} />
+    <Route path="/citizen-assembly/summary" element={<GameProvider><SummaryScreen /></GameProvider>} />
     <Route path="/participatory-budget/rules" element={<RulesScreenBudget />} />
-    <Route path="/participatory-budget/summary" element={<SummaryScreenBudget />} />
+    <Route path="/participatory-budget/summary" element={<GameProviderBudget><SummaryScreenBudget /></GameProviderBudget>} />
     <Route path="/participatory-budget/play" element={<GameProviderBudget><GameScreenBudget /></GameProviderBudget>}/>
     <Route path="/e-petitions/play" element={<GameProviderPetitions><GameScreenPetitions /></GameProviderPetitions>}/>
     <Route path="/e-petitions/rules" element={<RulesScreenPetitions />} />
-    <Route path="/e-petitions/summary" element={<SummaryScreenPetitions />} />
+    <Route path="/e-petitions/summary" element={<GameProviderPetitions><SummaryScreenPetitions /></GameProviderPetitions>} />
     <Route path="/citizen-assembly/play" element={<GameProvider><GameScreen /></GameProvider>}/>
   </Routes>
 );

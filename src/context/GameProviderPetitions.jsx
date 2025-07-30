@@ -8,6 +8,8 @@ export const GameProviderPetitions = ({ children }) => {
   const resetGame = () => {
   setScores({ quality: 0, engagement: 0, uptake: 0 });
   setScoreHistory([]);
+  setIndex(0);
+  setSequence(generateSequence(phases));
 };
 
 const phases = useMemo(() => {
@@ -26,7 +28,9 @@ const phases = useMemo(() => {
     return { byPhase, crisis, benefit };
   }, []);
 
-  const sequence = useMemo(() => {
+  const [sequence, setSequence] = useState(() => generateSequence(phases));
+
+function generateSequence(phases) {
     const rand = arr => arr[Math.floor(Math.random() * arr.length)];
 
     const six = phases.byPhase.map(rand);
@@ -44,7 +48,7 @@ const phases = useMemo(() => {
       six[4],
       six[5]
     ];
-  }, [phases]);
+  }
 
   const [index, setIndex] = useState(0);
   const [scores, setScores] = useState({ quality: 0, engagement: 0, uptake: 0 });

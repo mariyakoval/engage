@@ -10,6 +10,7 @@ export default function SummaryScreenBudget() {
   const { scores, scoreHistory, scenarios } = useContext(GameContextBudget);
   const navigate = useNavigate();
   const { quality, engagement, uptake } = scores;
+  const { resetGame } = useContext(GameContextBudget);
   const [currentView, setCurrentView] = useState("summary");
   const chartData = [
   { step: 0, quality: 0, engagement: 0, uptake: 0 },
@@ -19,9 +20,10 @@ export default function SummaryScreenBudget() {
   }))
 ];
 
-function handlePlayAgain() {
-    navigate("/participatory-budget/play");
-  }
+  const handlePlayAgain = () => {
+      resetGame();
+      navigate("/participatory-budget/play"); 
+  };
 
   const total = quality + engagement + uptake;
 

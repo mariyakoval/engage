@@ -1,4 +1,5 @@
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { GameContext } from "../../context/GameProvider";
 import Button from "../../components/Button";
 import ProgressDots from "../..//components/Dots";
@@ -45,29 +46,42 @@ function Modal({ open, onClose, children }) {
 export default function GameScreen() {
 
   const { scenarios, index, next, previousSummaries } = useContext(GameContext);
-  if (index >= scenarios.length) {
-    return <SummaryScreen />;
-  }
+  
+  const [showPrevious, setShowPrevious] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
+  const [newsToShow, setNewsToShow] = useState(null);
+  const [selectedOption, setSelectedOption] = useState(null);
+  const navigate = useNavigate();
 
   const imageMap = {
-  news1,
-  news2,
-  news3,
-  news4,
-  news5,
-  news6,
-  news7,
-  news8,
-  news9,
-  news10,
-  news11,
-  news12,
-  news13
-};
+    news1,
+    news2,
+    news3,
+    news4,
+    news5,
+    news6,
+    news7,
+    news8,
+    news9,
+    news10,
+    news11,
+    news12,
+    news13
+  };
+
+  useEffect(() => {
+    if (index >= scenarios.length) {
+      navigate("/citizen-assembly/summary");
+    }
+  }, [index, scenarios.length, navigate]);
+
+  if (!scenarios || index >= scenarios.length) {
+    return <div className="p-4">Redirecting to summary...</div>;
+  }
 
   const s = scenarios[index];
 
-  { /* Determine the dot index based on the current scenario index */ }
+ // Determine the dot index based on the current scenario index
   // If the current scenario is an event, we don't show a dot index
   // If the current scenario is a phase, we show the index of the last phase seen
   let dotIndex = null;
@@ -78,12 +92,6 @@ export default function GameScreen() {
       .filter(q => q.type === "phase").length - 1;
     dotIndex = phasesSeen;
   }
-
-  // State to manage showing previous answers and modal visibility
-  const [showPrevious, setShowPrevious] = useState(false);
-  const [modalOpen, setModalOpen] = useState(false);
-  const [newsToShow, setNewsToShow] = useState(null);
-  const [selectedOption, setSelectedOption] = useState(null);
 
   return (
     <div className="h-full flex">
