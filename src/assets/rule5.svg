@@ -1,0 +1,50 @@
+<svg width="332" height="269" viewBox="0 0 332 269" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_107_365)">
+<rect x="37" y="37" width="257.851" height="195" rx="8.05785" fill="white"/>
+</g>
+<path d="M80 81.5V190" stroke="white" stroke-opacity="0.72" stroke-width="3"/>
+<path d="M165.5 118.5H102L165.5 82.5V118.5Z" stroke="#C6C6C6"/>
+<path d="M238.5 190V172.5" stroke="#875151" stroke-width="2"/>
+<path d="M59 69C59 64.5817 62.5817 61 67 61H166V208H67C62.5817 208 59 204.418 59 200V69Z" fill="#D7E7FF"/>
+<path d="M79.5 81.5H166" stroke="white" stroke-opacity="0.54" stroke-width="2"/>
+<path d="M80.5 191.5L80.5 80" stroke="white" stroke-opacity="0.54" stroke-width="2"/>
+<path d="M99 191.5L99 80" stroke="white" stroke-opacity="0.54" stroke-width="2"/>
+<path d="M117 191.5L117 80" stroke="white" stroke-opacity="0.54" stroke-width="2"/>
+<path d="M135 191.5L135 80" stroke="white" stroke-opacity="0.54" stroke-width="2"/>
+<path d="M153 191.5L153 80" stroke="white" stroke-opacity="0.54" stroke-width="2"/>
+<path d="M79 100L167 100" stroke="white" stroke-opacity="0.54" stroke-width="2"/>
+<path d="M79 118L167 118" stroke="white" stroke-opacity="0.54" stroke-width="2"/>
+<path d="M79 136L167 136" stroke="white" stroke-opacity="0.54" stroke-width="2"/>
+<path d="M79 154L167 154" stroke="white" stroke-opacity="0.54" stroke-width="2"/>
+<path d="M79 172L167 172" stroke="white" stroke-opacity="0.54" stroke-width="2"/>
+<path d="M79 190L167 190" stroke="white" stroke-opacity="0.54" stroke-width="2"/>
+<path d="M165.5 82V117.5H100L165.5 82Z" stroke="#C6C6C6" stroke-width="2"/>
+<path d="M166.5 80.5V117H231.5L166.5 80.5Z" fill="#854040"/>
+<path d="M165.5 128.5H154.5V150H165.5" stroke="#C6C6C6" stroke-width="2"/>
+<path d="M118.5 118V190H165.5V118H118.5Z" stroke="#C6C6C6" stroke-width="2"/>
+<path d="M166.5 117V191H213.5V117H166.5Z" fill="#FEE4CB"/>
+<rect x="166.5" y="127.5" width="11" height="23.5" fill="#A3C1EF"/>
+<path d="M166 190H253.5" stroke="#6A6A6A" stroke-width="2"/>
+<path d="M238.5 171L252.789 183H224.211L238.5 171Z" fill="#257628"/>
+<path d="M238.5 163L251.057 175H225.943L238.5 163Z" fill="#257628"/>
+<path d="M238.5 156L248.459 166.5H228.541L238.5 156Z" fill="#257628"/>
+<rect x="187" y="154" width="19" height="35" fill="#A26969"/>
+<ellipse cx="214" cy="78.5" rx="11" ry="6.5" fill="#CEE1FF"/>
+<ellipse cx="225" cy="71.5" rx="11" ry="6.5" fill="#CEE1FF"/>
+<ellipse cx="228.963" cy="79.3144" rx="11" ry="6.5" transform="rotate(-10.0176 228.963 79.3144)" fill="#CEE1FF"/>
+<ellipse cx="237.163" cy="72.7678" rx="11" ry="6.5" transform="rotate(12.7526 237.163 72.7678)" fill="#CEE1FF"/>
+<ellipse cx="244.635" cy="80.6445" rx="11" ry="6.5" transform="rotate(-6.169 244.635 80.6445)" fill="#CEE1FF"/>
+<defs>
+<filter id="filter0_d_107_365" x="0.73967" y="0.73967" width="330.372" height="267.521" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feMorphology radius="6.44628" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_107_365"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="14.907"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_107_365"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_107_365" result="shape"/>
+</filter>
+</defs>
+</svg>

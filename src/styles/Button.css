@@ -1,0 +1,82 @@
+.custom-button {
+  --blue-700: #2C5696;
+  --blue-800: #234678;
+  --border-radius: 8px;
+  --transition: 0.3s ease-in-out;
+  --offset: 2px;
+
+  cursor: pointer;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  padding: 14px 20px;
+  background-color: transparent;
+  border: none;
+  border-radius: var(--border-radius);
+
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+
+  transition: transform var(--transition);
+  transform: scale(calc(1 + (var(--active, 0) * 0.05)));
+}
+
+.custom-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+
+  background-image: linear-gradient(90deg, #2C5696 0%, #0040A2 100%);
+
+  border-radius: var(--border-radius);
+  box-shadow:
+   6px 6px 12px rgba(0, 0, 0, 0.2),    
+    -6px -6px 12px rgba(255, 255, 255, 0.15);
+
+  transition: all var(--transition);
+  z-index: 0;
+}
+
+.custom-button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(44, 86, 150, 0.75);
+  opacity: var(--active, 0);
+  border-radius: var(--border-radius);
+  transition: opacity var(--transition);
+  z-index: 2;
+}
+
+.custom-button:is(:hover, :focus-visible) {
+  --active: 1;
+}
+.custom-button:active {
+  transform: scale(1);
+}
+
+.custom-button .text {
+  position: relative;
+  z-index: 10;
+  background-image: linear-gradient(
+    90deg,
+    white 0%,
+    rgba(255, 255, 255, var(--active, 0)) 250%
+  );
+  background-clip: text;
+color: transparent;
+-webkit-background-clip: text;
+}

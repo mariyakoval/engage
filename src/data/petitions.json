@@ -1,0 +1,300 @@
+[
+{
+ "id": "q1",
+ "type": "phase",
+ "phase": 1,
+ "title": "Initiation and Legitimacy",
+ "scenario": "Your civic group is launching a participatory platform inspired by Latvia’s MyVoice. You want to gather proposals from citizens to shape a national reform agenda. However, your team debates whether to allow open submissions from everyone or apply a strict quality filter before proposals go public.",
+ "question": "How will you design the proposal submission process?",
+ "learnMore": "The Latvian MyVoice platform became one of the most successful legislative crowdsourcing tools by ensuring citizen initiatives were specific, constitutional, and feasible. Initially publishing only 20% of submitted proposals, it gradually built public trust by enforcing transparent quality filters. This professional moderation helped increase uptake and legislative follow-up: 27 of 50 submitted initiatives were supported by parliament by 2019.",
+ "options": [
+   {
+     "text": "Allow open submissions and publish all initiatives immediately",
+     "effects": { "quality": 0, "engagement": 2, "uptake": 0 },
+     "summary": "You maximize participation and transparency but risk publishing low-quality or unrealistic proposals that may hurt credibility."
+   },
+   {
+     "text": "Use a moderate quality check based on democratic values and legal feasibility",
+     "effects": { "quality": 2, "engagement": 1, "uptake": 2 },
+     "summary": "You maintain openness while ensuring initiative quality, boosting both trust and policy relevance."
+   },
+   {
+     "text": "Apply strict quality screening, involving legal experts before any publication",
+     "effects": { "quality": 2, "engagement": 0, "uptake": 1 },
+     "summary": "You ensure legal soundness but may discourage civic creativity or exclude underrepresented voices."
+   },
+   {
+     "text": "Limit submissions to NGOs and experts only",
+     "effects": { "quality": 1, "engagement": -1, "uptake": 1 },
+     "summary": "You favor structured input but risk excluding grassroots ideas, reducing inclusivity and legitimacy."
+   }
+ ]
+},
+{
+ "id": "q2",
+ "type": "phase",
+ "phase": 2,
+ "title": "Platform Design and Accessibility",
+ "scenario": "You’re designing the user interface for your national e-petition platform. Your team must decide how to balance simplicity with legal and procedural transparency. You can only prioritize two main features due to budget constraints.",
+ "question": "Which features will you focus on first?",
+ "learnMore": "One reason for MyVoice’s success in Latvia was its simple and intuitive platform combined with clear submission guidelines. Platforms that hide or complicate the path from submission to legislation often lose citizen trust. However, more complex features like visual progress tracking and expert comments can boost user confidence and engagement over time.",
+ "options": [
+   {
+     "text": "Simple submission flow with visual progress tracker (e.g., % of signatures needed)",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 1 },
+     "summary": "You enhance user motivation through transparency and ease of use, even if legal clarity is postponed."
+   },
+   {
+     "text": "Strict legal guideline prompts during submission",
+     "effects": { "quality": 2, "engagement": 0, "uptake": 2 },
+     "summary": "You ensure legal feasibility early on but risk frustrating or discouraging casual users."
+   },
+   {
+     "text": "Expert commentary section where verified lawyers and policy experts can weigh in",
+     "effects": { "quality": 2, "engagement": 1, "uptake": 1 },
+     "summary": "You promote thoughtful submissions and civic learning, but this takes time and may delay publication."
+   },
+   {
+     "text": "Gamify the experience with badges for participation milestones",
+     "effects": { "quality": 0, "engagement": 2, "uptake": 0 },
+     "summary": "You focus on virality and reach, possibly at the expense of policy relevance or depth."
+   }
+ ]
+},
+{
+ "id": "q3",
+ "type": "phase",
+ "phase": 3,
+ "title": "Mobilizing Signatures",
+ "scenario": "Your platform has launched. Now you must help authors promote their petitions to reach the signature threshold. However, your resources for outreach are limited.",
+ "question": "What kind of promotional support do you provide?",
+ "learnMore": "In Latvia’s MyVoice experience, the most successful initiatives often had grassroots or media promotion by the authors themselves. The platform remained neutral and only supported through information assistance. Some authors, like in the 'Life Without Hepatitis C' initiative, prepared thoroughly and used public pressure to gain legislative attention.",
+ "options": [
+   {
+     "text": "Provide training and templates for campaigners",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 1 },
+     "summary": "You empower civil society actors with tools to promote their causes effectively, increasing ownership."
+   },
+   {
+     "text": "Sponsor media ads for the top 5 most-signed initiatives each month",
+     "effects": { "quality": 0, "engagement": 1, "uptake": 2 },
+     "summary": "You focus on popular momentum but risk neglecting smaller or less media-savvy groups."
+   },
+   {
+     "text": "Remain neutral and offer no promotional assistance",
+     "effects": { "quality": 1, "engagement": 0, "uptake": 0 },
+     "summary": "You maintain strict impartiality, but promising ideas may struggle without visibility."
+   },
+   {
+     "text": "Allow users to donate directly to initiative authors for promotion",
+     "effects": { "quality": 0, "engagement": 1, "uptake": 1 },
+     "summary": "You create a flexible funding mechanism, but it may favor better-connected or charismatic individuals."
+   }
+ ]
+},
+
+
+{
+ "id": "q4",
+ "type": "phase",
+ "phase": 4,
+ "title": "Political Response and Institutionalization",
+ "scenario": "Several popular initiatives have now reached your parliament. However, MPs are not legally required to act, and progress has stalled. You must decide how to strengthen the link between citizens’ voices and political uptake.",
+ "question": "What change will you propose to increase parliamentary response?",
+ "learnMore": "In Latvia, some initiatives were blocked despite having tens of thousands of signatures. While MyVoice ensured public visibility, the final legislative success depended on informal relationships with MPs or political will. Currently, there’s no obligation to vote or respond to all proposals.",
+ "options": [
+   {
+     "text": "Introduce a legal requirement for parliament to debate and vote within 3 months of receiving 10,000+ signatures",
+     "effects": { "quality": 2, "engagement": 1, "uptake": 2 },
+     "summary": "You institutionalize responsiveness, raising platform credibility and potential impact."
+   },
+   {
+     "text": "Create a public scorecard of parliamentary responsiveness to petitions",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 1 },
+     "summary": "You use public pressure and transparency to incentivize MPs without legal obligation."
+   },
+   {
+     "text": "Launch a 'champion MPs' program to match popular initiatives with supportive legislators",
+     "effects": { "quality": 1, "engagement": 1, "uptake": 2 },
+     "summary": "You personalize political uptake but risk favoring initiatives aligned with specific parties."
+   },
+   {
+     "text": "Do nothing and maintain current voluntary uptake rules",
+     "effects": { "quality": 0, "engagement": 0, "uptake": 0 },
+     "summary": "You preserve institutional independence but may frustrate citizens and damage legitimacy."
+   }
+ ]
+},
+
+
+{
+ "id": "q5",
+ "type": "phase",
+ "phase": 5,
+ "title": "Monitoring Government Action",
+ "scenario": "Some initiatives submitted through your platform have passed in parliament, but citizens complain they can’t tell if anything has actually changed. Trust in the platform is starting to decline.",
+ "question": "How will you track and report on the implementation of successful initiatives?",
+ "learnMore": "In Latvia, MyVoice initiatives that passed into law were sometimes delayed, stalled, or even forgotten in bureaucratic processes. While the platform staff updated timelines and consulted users, there was no mandatory follow-through tracking mechanism. Sustained citizen trust depends not just on legislative success but also visible implementation.",
+ "options": [
+   {
+     "text": "Create a public dashboard showing real-time updates from ministries and agencies",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+     "summary": "You enhance transparency and accountability, reinforcing institutional trust in your platform."
+   },
+   {
+     "text": "Launch a citizen watchdog program to audit policy implementation with crowdsourced reporting",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 1 },
+     "summary": "You encourage civic engagement beyond signatures, but reliability and consistency may vary."
+   },
+   {
+     "text": "Host quarterly briefings with parliament staff and initiative authors to assess progress",
+     "effects": { "quality": 2, "engagement": 1, "uptake": 1 },
+     "summary": "You institutionalize feedback, but the reach may be limited without public-facing tools."
+   },
+   {
+     "text": "Declare platform success once an initiative passes into law — further tracking is government responsibility",
+     "effects": { "quality": 0, "engagement": 0, "uptake": 0 },
+     "summary": "You distance the platform from messy implementation realities, risking disillusionment and loss of credibility."
+   }
+ ]
+},
+
+
+{
+ "id": "q6",
+ "type": "phase",
+ "phase": 6,
+ "title": "Long-Term Sustainability",
+ "scenario": "Your platform has gained popularity and influence, but your core funding is uncertain. You must decide how to finance operations going forward while preserving trust and independence.",
+ "question": "What funding model will you pursue?",
+ "learnMore": "MyVoice in Latvia sustained itself through micro-donations, project-based grants, and limited paid services for political parties. Financial independence was key to its legitimacy, but staff noted limitations in scaling or modernizing the platform due to underfunding. Transparency in funding is crucial to avoid perceptions of bias or capture.",
+ "options": [
+   {
+     "text": "Develop a micro-donation system where users contribute when signing a petition",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 1 },
+     "summary": "You cultivate grassroots ownership and financial independence, but long-term viability may be limited."
+   },
+   {
+     "text": "Apply for long-term institutional funding from international democracy-support donors",
+     "effects": { "quality": 2, "engagement": 1, "uptake": 2 },
+     "summary": "You stabilize operations and enhance capacity but may be accused of foreign influence if not well-communicated."
+   },
+   {
+     "text": "Offer premium analytics and outreach tools to political parties and NGOs for a fee",
+     "effects": { "quality": 1, "engagement": 0, "uptake": 2 },
+     "summary": "You monetize your value while staying out of direct campaigning, but perceptions of neutrality may suffer."
+   },
+   {
+     "text": "Rely on state funding with annual parliamentary review",
+     "effects": { "quality": 2, "engagement": 0, "uptake": 1 },
+     "summary": "You secure stable resources but risk political pressure, especially if controversial initiatives are posted."
+   }
+ ]
+},
+
+
+{
+ "id": "q7",
+ "type": "crisis",
+ "title": "Crisis",
+ "scenario": "A political party submits multiple petitions through your platform using its members' personal accounts. One initiative — to ban certain minority languages in public schools — quickly gains signatures, sparking backlash and accusations that your platform is enabling discriminatory policy.",
+ "question": "How do you respond to preserve legitimacy?",
+ "learnMore": "MyVoice faced similar tensions when political actors submitted initiatives that pushed the boundaries of neutrality and constitutional values. In response, they introduced rules for official party initiatives.",
+ "options": [
+   {
+     "text": "Introduce a rule requiring paid submission for initiatives affiliated with political parties",
+     "effects": { "quality": 2, "engagement": 0, "uptake": 1 },
+     "summary": "You discourage party misuse but risk alienating politically active users.",
+     "news": {
+       "headline": "Platform Introduces Political Firewall",
+       "content": "Civic Forum reports that new measures are in place to keep party-sponsored petitions transparent. The move is praised by rights groups but slammed by the People's Voice Party as 'elitist censorship'. Twitter debates erupt under #PlatformGate.",
+       "image": "news1"
+     }
+   },
+   {
+     "text": "Suspend the controversial initiative and review moderation rules",
+     "effects": { "quality": 1, "engagement": -2, "uptake": 0 },
+     "summary": "You act decisively, but may be accused of censorship or favoritism.",
+     "news": {
+       "headline": "Controversial Petition Pulled Amid Uproar",
+       "content": "Civil Rights Today reports your platform has removed a petition that critics say promoted discrimination. Supporters call it necessary moderation; opponents cry foul play. Trust in platform neutrality is under scrutiny.",
+       "image": "news14"
+     }
+   },
+   {
+     "text": "Publish a statement defending open participation and leave the petition up",
+     "effects": { "quality": 0, "engagement": 1, "uptake": 1 },
+     "summary": "You uphold free speech but risk long-term reputational damage.",
+     "news": {
+       "headline": "Platform Faces Fire for Hosting Divisive Petition",
+       "content": "The National Courier covers growing criticism of your platform's decision to let a discriminatory petition stay online. Civil society groups threaten to boycott. MPs call for new oversight rules.",
+       "image": "news3"
+     }
+   },
+   {
+     "text": "Launch an expert advisory board to guide moderation decisions going forward",
+     "effects": { "quality": 2, "engagement": 1, "uptake": 2 },
+     "summary": "You use the crisis to build institutional trust and long-term resilience.",
+     "news": {
+       "headline": "Expert Panel Formed to Guide Platform Ethics",
+       "content": "Civic Insight Weekly announces new advisory board of legal scholars, civil society leaders, and tech ethicists. Many praise the move as a mature step toward institutional legitimacy.",
+       "image": "news5"
+     }
+   }
+ ]
+},
+
+
+{
+ "id": "q8",
+ "type": "advantage",
+ "title": "Advantage",
+ "scenario": "A citizen initiative to reduce food waste, promoted via your platform, is unanimously adopted by parliament. Media coverage praises your platform’s role in shaping progressive policy.",
+ "question": "How do you build on this momentum?",
+ "learnMore": "In Latvia, MyVoice has seen moments of strong media recognition, such as when signature-backed initiatives led to legal changes. These breakthrough moments can redefine public trust and open new strategic doors.",
+ "options": [
+   {
+     "text": "Highlight the success in a national media campaign and encourage new submissions",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 2 },
+     "summary": "You ride the wave of legitimacy to grow public involvement and solidify your platform’s value.",
+     "news": {
+       "headline": "Food Waste Law Passed — Petition Platform Credited",
+       "content": "In a landmark move, the parliament passed new waste-reduction laws inspired by grassroots civic input. Public broadcaster LTV featured the petition author and platform staff in a special broadcast on 'Digital Democracy in Action'.",
+       "image": "news6"
+     }
+   },
+   {
+     "text": "Send out a report to international funders and propose platform expansion",
+     "effects": { "quality": 2, "engagement": 1, "uptake": 2 },
+     "summary": "You use policy success to attract strategic investment, enabling technical and institutional upgrades.",
+     "news": {
+       "headline": "Civic Tech Platform Praised as Regional Model",
+       "content": " The Baltic Times reports the platform is seeking EU-level funding to replicate its success in rural regions. 'Democracy is scalable,' says the platform’s director.",
+       "image": "news13"
+     }
+   },
+   {
+     "text": "Introduce badges and leaderboard recognition for active users",
+     "effects": { "quality": 0, "engagement": 2, "uptake": 0 },
+     "summary": "You reward participation and build community, though it may shift focus from impact to popularity.",
+     "news": {
+       "headline": "Petition Champions Rewarded in New Gamification Push",
+       "content": "Civic Trends Magazine covers the platform’s new badge system that recognizes power users. Some critics warn it could favor viral over thoughtful proposals. Platform traffic spikes regardless.",
+       "image": "news4"
+     }
+   },
+   {
+     "text": "Remain silent and focus on internal evaluation",
+     "effects": { "quality": 2, "engagement": 0, "uptake": 0 },
+     "summary": "You keep your focus on long-term strategy but miss a powerful PR opportunity.",
+     "news": {
+       "headline": "Petition Platform Praised — But Stays Quiet",
+       "content": "Op-ed in The Baltic Observer asks: 'Why didn’t they seize the moment?' Experts agree the platform’s cautious silence may reflect maturity — or missed momentum.",
+       "image": "news12"
+     }
+   }
+ ]
+}
+
+
+]

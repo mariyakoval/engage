@@ -1,0 +1,726 @@
+[
+   {
+ "id": "launch1",
+ "type": "phase",
+ "phase": 1,
+ "title": "Process Launch",
+ "scenario": "Your municipality is launching a new participatory budgeting cycle. There is public interest, but limited institutional memory of how to do it well.",
+ "question": "How should you structure the launch to build credibility and clarity?",
+ "learnMore": "In Ukraine, some cities like Chernihiv and Poltava created clear regulations early on, while others struggled with ambiguous frameworks.",
+ "options": [
+   {
+     "text": "Adopt a simple regulation drafted by officials to quickly get started.",
+     "effects": { "quality": 1, "engagement": 1, "uptake": 2 },
+     "summary": "You chose a quick launch using a regulation drafted internally by officials."
+   },
+   {
+     "text": "Form a mixed committee of citizens, NGOs, and officials to draft the rules together.",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 1 },
+     "summary": "You chose to co-create the rules through a committee of citizens, NGOs, and officials."
+   },
+   {
+     "text": "Copy and paste a regulation from another city that succeeded.",
+     "effects": { "quality": 1, "engagement": 0, "uptake": 2 },
+     "summary": "You chose to reuse a regulation from a city with a proven model."
+   },
+   {
+     "text": "Run a public online vote on the core rules of the PB process.",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 0 },
+     "summary": "You chose to let the public vote online on the core rules of the process."
+   }
+ ]
+},
+
+
+{
+ "id": "outreach1",
+ "type": "phase",
+ "phase": 2,
+ "title": "Outreach & Inclusion",
+ "scenario": "You've noticed that previous PB cycles were dominated by well-connected urban residents. This year, you want wider participation.",
+ "question": "How do you ensure more inclusive engagement?",
+ "learnMore": "In Lviv and Vinnytsia, outreach to youth and rural areas was a persistent challenge.",
+ "options": [
+   {
+     "text": "Partner with schools, libraries, and NGOs in underserved areas to promote the PB process.",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 1 },
+     "summary": "You chose to work with local institutions in underserved areas to broaden outreach."
+   },
+   {
+     "text": "Launch a flashy social media campaign with influencers.",
+     "effects": { "quality": 0, "engagement": 2, "uptake": 1 },
+     "summary": "You chose to raise awareness through a social media campaign."
+   },
+   {
+     "text": "Hold workshops only in the city center for efficiency.",
+     "effects": { "quality": 1, "engagement": 0, "uptake": 2 },
+     "summary": "You chose to centralize engagement by hosting events only in the city center."
+   },
+   {
+     "text": "Offer transport stipends to participants from rural areas.",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 1 },
+     "summary": "You chose to support rural participation by providing transport stipends."
+   }
+ ]
+},
+
+
+{
+ "id": "proposal1",
+ "type": "phase",
+ "phase": 3,
+ "title": "Proposal Collection",
+ "scenario": "It's time to gather project ideas from the public. In the past, only a few active citizens submitted proposals.",
+ "question": "What method will you use to boost proposal quality and quantity?",
+ "learnMore": "In Poland, civic incubators helped first-time proposers with templates and mentorship.",
+ "options": [
+   {
+     "text": "Create a digital platform with examples and step-by-step guidance.",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 1 },
+     "summary": "You chose to launch an online platform with templates and detailed guidance."
+   },
+   {
+     "text": "Limit proposals to those submitted through NGOs.",
+     "effects": { "quality": 2, "engagement": 0, "uptake": 2 },
+     "summary": "You chose to accept proposals only through registered NGOs."
+   },
+   {
+     "text": "Allow proposals only at offline events.",
+     "effects": { "quality": 1, "engagement": 1, "uptake": 1 },
+     "summary": "You chose to collect proposals exclusively at in-person events."
+   },
+   {
+     "text": "Ask citizens to vote on proposal ideas before submitting full proposals.",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 0 },
+     "summary": "You chose to have citizens pre-vote on ideas before full proposals are submitted."
+   }
+ ]
+},
+
+
+{
+ "id": "review1",
+ "type": "phase",
+ "phase": 4,
+ "title": "Project Design & Review",
+ "scenario": "You’ve collected 200 proposals. Some are vague or duplicate existing services.",
+ "question": "How should you review and improve proposals?",
+ "learnMore": "In Ukraine, some municipalities had expert panels review proposals while others relied on bureaucratic vetoes.",
+ "options": [
+   {
+     "text": "Set up citizen–expert review panels with clear evaluation criteria.",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 1 },
+     "summary": "You chose to form mixed review panels of citizens and experts using clear criteria."
+   },
+   {
+     "text": "Let city staff quietly filter out the weak proposals.",
+     "effects": { "quality": 1, "engagement": 0, "uptake": 2 },
+     "summary": "You chose to have city staff internally screen and filter proposals."
+   },
+   {
+     "text": "Publish all proposals online and let citizens comment and flag issues.",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 0 },
+     "summary": "You chose to open proposals to public comment and citizen feedback online."
+   },
+   {
+     "text": "Allow only proposals above a certain cost threshold.",
+     "effects": { "quality": 1, "engagement": 0, "uptake": 2 },
+     "summary": "You chose to restrict proposals to those exceeding a set budget minimum."
+   }
+ ]
+},
+
+
+{
+ "id": "voting1",
+ "type": "phase",
+ "phase": 5,
+ "title": "Voting",
+ "scenario": "You’ve finalized the list of eligible projects. Now, it’s time to vote. In previous cycles, participation was low and skewed by digital divides.",
+ "question": "How should you organize voting?",
+ "learnMore": "In Poland, cities like Lodz and Warsaw used hybrid voting models (offline + online), while some towns restricted voting to digital only.",
+ "options": [
+   {
+     "text": "Offer both online and in-person voting at libraries and schools.",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+     "summary": "You chose to run a hybrid vote with both online and in-person options at community locations."
+   },
+   {
+     "text": "Run online-only voting with social media promotion.",
+     "effects": { "quality": 1, "engagement": 1, "uptake": 2 },
+     "summary": "You chose to hold voting online only, supported by a social media campaign."
+   },
+   {
+     "text": "Restrict voting to registered city residents using ID verification.",
+     "effects": { "quality": 2, "engagement": 0, "uptake": 2 },
+     "summary": "You chose to require official ID verification for city residents to vote."
+   },
+   {
+     "text": "Allow voting only through youth council volunteers in schools.",
+     "effects": { "quality": 0, "engagement": 2, "uptake": 0 },
+     "summary": "You chose to conduct voting through youth council volunteers within schools."
+   }
+ ]
+},
+
+
+{
+ "id": "implementation1",
+ "type": "phase",
+ "phase": 6,
+ "title": "Implementation & Monitoring",
+ "scenario": "Some winning PB projects from last year were delayed or poorly implemented. Citizens demand more transparency this time.",
+ "question": "How will you monitor project implementation?",
+ "learnMore": "In Ukraine, only 22% of surveyed cities published updates. In contrast, Gdansk in Poland created a public tracking portal.",
+ "options": [
+   {
+     "text": "Create a public dashboard to track project progress with photos and timelines.",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 1 },
+     "summary": "You created a public dashboard to track project progress"
+   },
+   {
+     "text": "Let departments implement projects quietly and only publish a final report.",
+     "effects": { "quality": 1, "engagement": 0, "uptake": 2 },
+     "summary": "You chose to keep implementation internal, sharing only a final report with the public."
+   },
+   {
+     "text": "Ask local civic groups to monitor progress and report back.",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 0 },
+     "summary": "You chose to involve local civic groups in monitoring and reporting on project progress."
+   },
+   {
+     "text": "Only update the public if projects face major delays.",
+     "effects": { "quality": 1, "engagement": 0, "uptake": 1 },
+     "summary": "You chose to communicate updates only in cases of major project delays."
+   }
+ ]
+},
+
+
+{
+ "id": "crisis1",
+ "type": "crisis",
+ "phase": null,
+ "title": "Budget Cut Crisis",
+ "scenario": "Due to an economic downturn, the city announces that the PB fund will be cut by 40% mid-process.",
+ "question": "How do you respond to maintain legitimacy?",
+ "learnMore": "Unexpected fund reallocations can lead to protests from participants who feel betrayed.",
+ "options": [
+   {
+     "text": "Publicly explain the budget cut and hold a public forum to discuss priorities.",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+     "summary": "You chose to be transparent with the public and convene a forum to reassess priorities together."
+   },
+   {
+     "text": "Silently adjust the number of winning projects to fit the new budget.",
+     "effects": { "quality": 1, "engagement": 0, "uptake": 2 },
+     "summary": "You chose to quietly reduce the number of funded projects to match the new budget."
+   },
+   {
+     "text": "Cancel this year’s PB process and promise to resume next year.",
+     "effects": { "quality": 0, "engagement": 0, "uptake": 1 },
+     "summary": "You chose to cancel this year’s PB cycle and commit to restarting it next year."
+   },
+   {
+     "text": "Ask past winners to voluntarily delay implementation.",
+     "effects": { "quality": 1, "engagement": 1, "uptake": 1 },
+     "summary": "You chose to request voluntary delays from previous project winners to ease funding pressure."
+   }
+ ]
+},
+
+
+{
+ "id": "advantage1",
+ "type": "advantage",
+ "phase": null,
+ "title": "Private Sector Boost",
+ "scenario": "A local tech company offers to co-fund digital infrastructure PB projects as part of a social responsibility initiative.",
+ "question": "How do you integrate this unexpected support?",
+ "learnMore": "In Poland, private–public partnerships helped expand project scale in cities like Wrocław.",
+ "options": [
+   {
+     "text": "Create a separate category for co-funded digital projects and open a new proposal call.",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+     "summary": "You chose to launch a new proposal category specifically for co-funded digital projects."
+   },
+   {
+     "text": "Let the company choose which of the current projects it wants to support.",
+     "effects": { "quality": 2, "engagement": 1, "uptake": 2 },
+     "summary": "You chose to allow the company to select and support existing PB projects directly."
+   },
+   {
+     "text": "Ask the company to fund infrastructure upgrades only, outside PB.",
+     "effects": { "quality": 1, "engagement": 1, "uptake": 1 },
+     "summary": "You chose to direct the company’s funding toward general infrastructure improvements outside the PB process."
+   },
+   {
+     "text": "Reject the offer to preserve full independence of PB.",
+     "effects": { "quality": 2, "engagement": 1, "uptake": 0 },
+     "summary": "You chose to decline the company’s offer in order to maintain the full independence of the PB process."
+   }
+ ]
+},
+
+
+{
+ "id": "voting2",
+ "type": "phase",
+ "phase": 5,
+ "title": "Voting",
+ "scenario": "You're deciding how to structure the voting period. You want to avoid low turnout and confusion while ensuring fairness and accessibility.",
+ "question": "How do you set up the voting process?",
+ "learnMore": "In Lviv, Ukraine, the city extended the voting period and used mobile apps and offline booths to increase turnout.",
+ "options": [
+   {
+     "text": "Allow both online and in-person voting for 2 weeks, with city staff assisting those unfamiliar with tech.",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+     "summary": "You chose to offer a two-week hybrid voting period with staff support for accessibility."
+   },
+   {
+     "text": "Keep voting fully digital but promote it via local influencers and ads.",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 0 },
+     "summary": "Go digital-only with outreach"
+   },
+   {
+     "text": "Limit voting to in-person only to prevent fraud.",
+     "effects": { "quality": 1, "engagement": 0, "uptake": 1 },
+     "summary": "You chose to allow only in-person voting in order to minimize the risk of fraud."
+   },
+   {
+     "text": "Let project applicants campaign freely to mobilize voters.",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 1 },
+     "summary": "You chose to permit open campaigning by project applicants to drive voter turnout."
+   }
+ ]
+},
+
+
+{
+ "id": "voting3",
+ "type": "phase",
+ "phase": 5,
+ "title": "Voting",
+ "scenario": "Some neighborhoods are more mobilized and tech-savvy, while others lack awareness. You fear voting results will be unequal.",
+ "question": "How do you address this imbalance before the vote?",
+ "learnMore": "In Vinnytsia, city officials partnered with libraries and schools to ensure less-connected populations could participate.",
+ "options": [
+   {
+     "text": "Deploy outreach teams to underrepresented areas with printed ballots and instructions.",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 1 },
+     "summary": "You chose to send outreach teams with printed ballots and guidance to underserved neighborhoods."
+   },
+   {
+     "text": "Do nothing; let turnout reflect existing civic engagement levels.",
+     "effects": { "quality": 0, "engagement": 0, "uptake": 2 },
+     "summary": "You chose to allow turnout to reflect current civic engagement without additional intervention."
+   },
+   {
+     "text": "Set district-based quotas for winning projects.",
+     "effects": { "quality": 2, "engagement": 1, "uptake": 0 },
+     "summary": "You chose to implement district quotas to ensure spatial fairness in project selection."
+   },
+   {
+     "text": "Offer voting incentives like discount vouchers for local services.",
+     "effects": { "quality": 0, "engagement": 2, "uptake": 0 },
+     "summary": "You chose to encourage voting by offering small incentives such as discount vouchers."
+   }
+ ]
+},
+
+
+{
+ "id": "implementation2",
+ "type": "phase",
+ "phase": 6,
+ "title": "Implementation & Monitoring",
+ "scenario": "Several winning projects require permits and cross-department coordination. Delays are expected.",
+ "question": "How do you manage stakeholder accountability?",
+ "learnMore": "In some cities, project delays led to public dashboards showing which institutions were responsible for implementation stages.",
+ "options": [
+   {
+     "text": "Create a public online dashboard tracking project timelines and responsible departments.",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 1 },
+     "summary": "You chose to develop a public dashboard displaying project progress and department responsibilities."
+   },
+   {
+     "text": "Privately monitor progress and quietly escalate major delays to the mayor's office.",
+     "effects": { "quality": 1, "engagement": 0, "uptake": 2 },
+     "summary": "You chose to monitor project progress internally and escalate significant delays discreetly."
+   },
+   {
+     "text": "Let civil society coalitions monitor progress and report findings publicly.",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 0 },
+     "summary": "You chose to delegate project monitoring to civil society groups with public reporting."
+   },
+   {
+     "text": "Announce deadlines publicly and apply financial penalties for delays.",
+     "effects": { "quality": 2, "engagement": 1, "uptake": 0 },
+     "summary": "You chose to set public deadlines and enforce them with financial penalties for delays."
+   }
+ ]
+},
+
+
+{
+ "id": "implementation3",
+ "type": "phase",
+ "phase": 6,
+ "title": "Implementation & Monitoring",
+ "scenario": "Some project proponents complain that their ideas are being implemented differently than planned.",
+ "question": "What process do you put in place to manage expectations and track fidelity?",
+ "learnMore": "Discrepancies between original project descriptions and final implementations can lead to public frustration.",
+ "options": [
+   {
+     "text": "Require departments to co-sign implementation plans with project proposers.",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 0 },
+     "summary": "You chose to require departments and proposers to co-sign implementation plans to align expectations."
+   },
+   {
+     "text": "Give departments full discretion to adapt project scope based on feasibility.",
+     "effects": { "quality": 1, "engagement": 0, "uptake": 2 },
+     "summary": "You chose to allow departments full discretion to adapt project scope for administrative efficiency."
+   },
+   {
+     "text": "Hire an external auditor to report deviations from original proposals.",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+     "summary": "You chose to hire an external auditor to oversee and report any deviations from original plans."
+   },
+   {
+     "text": "Hold public hearings every quarter with updates and citizen feedback.",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 1 },
+     "summary": "Use public forums for ongoing feedback"
+   }
+ ]
+},
+
+
+{
+ "id": "crisis2",
+ "type": "crisis",
+ "phase": null,
+ "title": "Political Scandal Erupts",
+ "scenario": "Midway through the process, a media outlet reveals that a city official tried to sway funding toward a relative’s project.",
+ "question": "How do you respond to this crisis?",
+ "learnMore": "In Ukraine, PB processes have been questioned when elite interference was suspected.",
+ "options": [
+   {
+     "text": "Launch an internal ethics review and publish the results.",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 1 },
+     "summary": "You chose to launch an internal ethics review and publicly share the findings."
+   },
+   {
+     "text": "Suspend the project in question and let others proceed.",
+     "effects": { "quality": 1, "engagement": 1, "uptake": 2 },
+     "summary": "You chose to suspend the disputed project while allowing others to continue."
+   },
+   {
+     "text": "Downplay the scandal and continue without acknowledgment.",
+     "effects": { "quality": 0, "engagement": 0, "uptake": 1 },
+     "summary": "You chose to downplay the scandal and proceed without public acknowledgment."
+   },
+   {
+     "text": "Ask citizens to vote again on the disputed project.",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 0 },
+     "summary": "You chose to hold a new public vote to reclaim decision-making."
+   }
+ ]
+},
+
+
+{
+ "id": "advantage2",
+ "type": "advantage",
+ "phase": null,
+ "title": "Private Sector Offers Support",
+ "scenario": "A local company offers free technical support and software to improve PB data analysis and outreach.",
+ "question": "What do you do with the offer?",
+ "learnMore": "In some Polish cities, partnerships with civic tech firms enhanced transparency and trust in PB platforms.",
+ "options": [
+   {
+     "text": "Accept the support and publish the agreement terms openly.",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+     "summary": "You chose to accept the support and openly publish the agreement to ensure transparency."
+   },
+   {
+     "text": "Politely decline to avoid private influence.",
+     "effects": { "quality": 1, "engagement": 0, "uptake": 1 },
+     "summary": "You chose to politely decline the offer to avoid potential private sector influence."
+   },
+   {
+     "text": "Accept but restrict access to only technical operations.",
+     "effects": { "quality": 2, "engagement": 1, "uptake": 1 },
+     "summary": "You chose to accept the support with restrictions limited to technical operations."
+   },
+   {
+     "text": "Let citizens vote on whether to accept the help.",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 0 },
+     "summary": "You chose to put the decision to accept help to a public vote."
+   }
+ ]
+},
+
+
+{
+ "id": "launch2",
+ "type": "phase",
+ "phase": 1,
+ "title": "Process Launch",
+ "scenario": "Your city is launching PB for the first time. You’re deciding who should be part of the committee to design the rules.",
+ "question": "Who should join the PB steering committee?",
+ "learnMore": "In Poland, many cities created rulemaking committees composed of city officials and NGOs, but sometimes lacked diversity.",
+ "options": [
+   {
+     "text": "Include city officials, community activists, and residents chosen by lottery.",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+     "summary": "You chose a balanced committee of officials, activists, and lottery-selected residents to blend expertise and representation."
+   },
+   {
+     "text": "Appoint city department heads only.",
+     "effects": { "quality": 1, "engagement": 0, "uptake": 2 },
+     "summary": "You chose to appoint only city department heads to prioritize administrative control."
+   },
+   {
+     "text": "Let the mayor’s office draft the rules unilaterally for efficiency.",
+     "effects": { "quality": 1, "engagement": 0, "uptake": 1 },
+     "summary": "You chose to have the mayor’s office draft rules unilaterally to streamline the process."
+   },
+   {
+     "text": "Recruit only civil society organizations to decide.",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 0 },
+     "summary": "You chose to empower civil society organizations exclusively to lead rulemaking."
+   }
+ ]
+},
+
+
+{
+ "id": "launch3",
+ "type": "phase",
+ "phase": 1,
+ "title": "Process Launch",
+ "scenario": "You need to decide how much of the city’s budget to allocate to PB.",
+ "question": "What size of budget will you allocate?",
+ "learnMore": "In Ivano-Frankivsk and Vinnytsia, city PB budgets ranged from 0.2% to 2% of the municipal budget.",
+ "options": [
+   {
+     "text": "Allocate 2% of the budget to signal strong commitment.",
+     "effects": { "quality": 2, "engagement": 1, "uptake": 1 },
+     "summary": "You chose to allocate 2% of the budget, signaling strong commitment to participatory budgeting."
+   },
+   {
+     "text": "Start with a small pilot of 0.3% to test logistics.",
+     "effects": { "quality": 1, "engagement": 1, "uptake": 2 },
+     "summary": "You chose to start with a small pilot of 0.3% to learn and adapt the process."
+   },
+   {
+     "text": "Let each district decide how much to allocate from their budget.",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 0 },
+     "summary": "You chose decentralized control, letting districts allocate budgets flexibly."
+   },
+   {
+     "text": "Make the PB budget variable based on annual tax income.",
+     "effects": { "quality": 1, "engagement": 1, "uptake": 1 },
+     "summary": "You chose to tie the PB budget to annual tax income for fiscal responsiveness."
+   }
+ ]
+},
+{
+ "id": "outreach2",
+ "type": "phase",
+ "phase": 2,
+ "title": "Outreach & Inclusion",
+ "scenario": "You've noticed that few young people or migrants are participating in PB information events.",
+ "question": "How will you boost inclusion?",
+ "learnMore": "In Poland, schools and NGOs were instrumental in engaging underrepresented groups in PB.",
+ "options": [
+   {
+     "text": "Partner with youth centers and migrant associations for co-led outreach.",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 1 },
+     "summary": "You chose to work through trusted community groups for effective outreach."
+   },
+   {
+     "text": "Launch a social media campaign targeting youth and migrant audiences.",
+     "effects": { "quality": 0, "engagement": 2, "uptake": 1 },
+     "summary": "You chose to use digital tools to connect with youth and migrants."
+   },
+   {
+     "text": "Translate all materials into multiple languages and distribute them through public libraries.",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 0 },
+     "summary": "You chose to lower barriers by making materials multilingual and accessible."
+   },
+   {
+     "text": "Host town hall meetings and hope word-of-mouth spreads.",
+     "effects": { "quality": 1, "engagement": 1, "uptake": 1 },
+     "summary": "You chose traditional outreach relying on town halls and word-of-mouth."
+   }
+ ]
+},
+
+
+{
+ "id": "outreach3",
+ "type": "phase",
+ "phase": 2,
+ "title": "Outreach & Inclusion",
+ "scenario": "Some residents distrust city initiatives due to past exclusion and think PB is just a PR.",
+ "question": "How do you build trust?",
+ "learnMore": "In Ukraine, co-facilitated workshops and public co-design helped rebuild trust in new democratic processes.",
+ "options": [
+   {
+     "text": "Host co-design sessions where residents create outreach plans with the city.",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 1 },
+     "summary": "You chose to build ownership through collaborative co-design."
+   },
+   {
+     "text": "Give community leaders small stipends to act as PB ambassadors.",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 0 },
+     "summary": "You chose to empower local connectors as PB ambassadors."
+   },
+   {
+     "text": "Send an official newsletter explaining PB in detail.",
+     "effects": { "quality": 1, "engagement": 0, "uptake": 1 },
+     "summary": "You chose an informational approach via official newsletters."
+   },
+   {
+     "text": "Publicly endorse PB with a mayoral press conference.",
+     "effects": { "quality": 0, "engagement": 1, "uptake": 2 },
+     "summary": "You chose to leverage top-down support through mayoral endorsement."
+   }
+ ]
+},
+
+
+{
+ "id": "collection2",
+ "type": "phase",
+ "phase": 3,
+ "title": "Proposal Collection",
+ "scenario": "You're receiving a flood of similar proposals from wealthier districts, while poorer neighborhoods are silent.",
+ "question": "How do you ensure proposal diversity?",
+ "learnMore": "In some Ukrainian cities, marginalized areas had few submissions without targeted support.",
+ "options": [
+   {
+     "text": "Deploy proposal-writing coaches to underserved areas.",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 1 },
+     "summary": "You chose to equalize access by collaborating with proposal-writing coaches."
+   },
+   {
+     "text": "Cap proposals per district to encourage balance.",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 1 },
+     "summary": "You chose to use proposal caps per district to ensure equity."
+   },
+   {
+     "text": "Accept all proposals but prioritize them later based on area need.",
+     "effects": { "quality": 2, "engagement": 1, "uptake": 1 },
+     "summary": "Defer filtering to later stage"
+   },
+   {
+     "text": "Take no action and let natural dynamics play out.",
+     "effects": { "quality": 0, "engagement": 0, "uptake": 2 },
+     "summary": "You chose a hands-off approach letting dynamics play out."
+   }
+ ]
+},
+
+
+{
+ "id": "collection3",
+ "type": "phase",
+ "phase": 3,
+ "title": "Proposal Collection",
+ "scenario": "Many residents are unsure what kinds of projects they can propose. You receive vague or ineligible submissions.",
+ "question": "How do you clarify the proposal process?",
+ "learnMore": "Cities like Warsaw offered proposal templates and examples to help residents understand expectations.",
+ "options": [
+   {
+     "text": "Create a proposal guidebook with templates and previous project examples.",
+     "effects": { "quality": 2, "engagement": 1, "uptake": 1 },
+     "summary": "Support proposers with guidance"
+   },
+   {
+     "text": "Host mandatory proposal-writing workshops.",
+     "effects": { "quality": 2, "engagement": 1, "uptake": 0 },
+     "summary": "Train citizens before they submit"
+   },
+   {
+     "text": "Auto-reject unclear proposals and request clarification later.",
+     "effects": { "quality": 1, "engagement": 0, "uptake": 2 },
+     "summary": "Filter before investing effort"
+   },
+   {
+     "text": "Provide a chatbot assistant on the PB portal.",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 0 },
+     "summary": "Use tech to answer questions"
+   }
+ ]
+},
+
+
+{
+ "id": "design2",
+ "type": "phase",
+ "phase": 4,
+ "title": "Project Design & Review",
+ "scenario": "Some proposals exceed the allowed budget or are legally infeasible.",
+ "question": "How should you handle these during review?",
+ "learnMore": "In some cities, many popular PB ideas were disqualified late in the process, leading to disappointment.",
+ "options": [
+   {
+     "text": "Pair proposers with city staff to revise and resubmit proposals.",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 1 },
+     "summary": "You chose to pair proposers with city staff to revise and resubmit proposals."
+   },
+   {
+     "text": "Silently disqualify invalid proposals.",
+     "effects": { "quality": 1, "engagement": 0, "uptake": 2 },
+     "summary": "You chose to disqualify invalid proposals."
+   },
+   {
+     "text": "Publish all proposals and mark which were disqualified and why.",
+     "effects": { "quality": 1, "engagement": 1, "uptake": 1 },
+     "summary": "You chose to publish all proposals and mark which were disqualified and why."
+   },
+   {
+     "text": "Let a citizen jury decide which flawed proposals should be revised.",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 0 },
+     "summary": "Empower deliberative problem-solving"
+   }
+ ]
+},
+
+
+{
+ "id": "design3",
+ "type": "phase",
+ "phase": 4,
+ "title": "Project Design & Review",
+ "scenario": "Several project ideas conflict with each other or serve overlapping goals.",
+ "question": "What should your review committee do?",
+ "learnMore": "In Poland, some cities grouped proposals into clusters to avoid competition between similar ideas.",
+ "options": [
+   {
+     "text": "Merge similar projects and consult authors for consent.",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+     "summary": "You chose to merge similar projects."
+   },
+   {
+     "text": "Let all projects go to the vote as-is.",
+     "effects": { "quality": 1, "engagement": 1, "uptake": 1 },
+     "summary": "Leave choice to the public"
+   },
+   {
+     "text": "Prioritize those that serve the most disadvantaged groups.",
+     "effects": { "quality": 2, "engagement": 1, "uptake": 0 },
+     "summary": "You chose equity-based prioritization"
+   },
+   {
+     "text": "Split the budget to fund parts of all overlapping proposals.",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 1 },
+     "summary": "You chose to compromise through partial funding"
+   }
+ ]
+}
+]
+
+

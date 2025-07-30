@@ -1,0 +1,568 @@
+[
+{
+   "id": "q1",
+   "type": "phase",
+   "phase": 1,
+   "title": "Initiation and legitimacy",
+   "scenario": "You are preparing the agenda for the Citizens’ Assembly. You can only choose 2 out of 5 potential topics due to time and budget limitations. The topics include: - Electoral reform - Climate action - Digital rights and privacy - Pension reform - Anti-corruption measures",
+   "question": "Which topics will you select?",
+   "learnMore": "Citizen assemblies work best when they are focused on complex, value-driven issues where public input is crucial. For example, Ireland's Citizens' Assembly addressed topics like abortion, climate change, and electoral reform, leading to referendums and legislative change. Similarly, France’s Citizens’ Convention on Climate developed ambitious proposals that shaped national policy. Successful assemblies ensure legitimacy by selecting topics that matter to the public, align with political priorities, and allow for informed deliberation within time limits.",
+   "options": [
+     {
+       "text": "Choose the two topics with the highest public support in online polls",
+       "effects": { "quality": 1, "engagement": 2, "uptake": 0 },
+       "summary": "You selected the most popular topics, ensuring public interest but potentially sacrificing depth on less popular issues."
+     },
+     {
+       "text": "Choose one high-profile issue and one expert-recommended issue with lower public awareness",
+       "effects": { "quality": 2, "engagement": 1, "uptake": 2 },
+       "summary": "You balanced public interest with expert recommendations, enhancing the quality of the process and ensuring parliamentary follow-up."
+     },
+     {
+       "text": "Choose topics based on party leaders' informal preferences to ensure parliamentary follow-up",
+       "effects": { "quality": 0, "engagement": 0, "uptake": 2 },
+       "summary": "You prioritized political expediency over public interest, which may lead to lower engagement and quality."
+     },
+     {
+       "text": "Choose the most controversial topics to maximize media coverage and public interest",
+       "effects": { "quality": 0, "engagement": 1, "uptake":  0},
+       "summary": "You aimed for media attention but risked alienating participants and reducing the quality of discussions."
+     }
+   ]
+ },
+
+
+ {
+   "id": "q2",
+   "type": "phase",
+   "phase": 1,
+   "title": "Initiation and legitimacy",
+   "scenario": "A recent public scandal about lobbying and lack of transparency causes public outcry.",
+   "question": "What’s your framing to initiate the Citizens’ Assembly?",
+   "learnMore": "Citizen assemblies can restore trust after scandals by showing transparency and independence. For example, in Belgium and Ireland, assemblies were launched in response to political gridlock and gained legitimacy by involving citizens in shaping reforms.",
+   "options": [
+     {
+       "text": "Frame it as a civic crisis-response tool",
+       "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+       "summary": "You positioned the Assembly as a response to public concerns, enhancing its legitimacy and engagement."
+     },
+     {
+       "text": "Covertly coordinate with reform-minded MPs",
+       "effects": { "quality": 1, "engagement": 0, "uptake": 2 },
+       "summary": "You focused on political alignment, which may ensure uptake but risks public disengagement."
+     },
+     {
+       "text": "Launch it as an academic experiment",
+       "effects": { "quality": 2, "engagement": 0, "uptake": 0 },
+       "summary": "You emphasized the process's academic nature, which may enhance quality but risks low public engagement and uptake."
+     }
+   ]
+ },
+
+
+ {
+   "id": "q3",
+   "type": "phase",
+   "phase": 2,
+   "title": "Design and engagement",
+   "scenario": "You have to design a credible process. The government is willing to cooperate but under conditions. You need to decide how to compose the process team. ",
+   "question": "Who should be included in the expert team?",
+   "learnMore": "Successful citizens’ assemblies often rely on multi-stakeholder teams to boost credibility. In Ireland, the process was designed by a mix of government officials, academic experts, and independent facilitators. Similarly, in France’s Climate Convention, oversight involved civil society groups and randomly selected citizens.",
+   "options": [
+     {
+       "text": "Civic tech experts, civil society organizations, legal scholars, randomly selected citizens",
+       "effects": { "quality": 2, "engagement": 2, "uptake": 1 },
+       "summary": "You ensured a diverse and expert-driven team, enhancing process quality and public engagement."
+     },
+     {
+       "text": "Senior civil servants, MPs, and international donors",
+       "effects": { "quality": 0, "engagement": 0, "uptake":  2},
+       "summary": "You prioritized political and donor interests, which may ensure uptake but risks low quality and engagement."
+     },
+     {
+       "text": "Media figures, civil society activists, and social influencers",
+       "effects": { "quality": 0, "engagement": 2, "uptake": 0 },
+       "summary": "You focused on media and activism, which may enhance engagement but risks low quality and uptake."
+     },
+     {
+       "text": "Civic activists, government representatives, scholars, and experts from marginalized communities",
+       "effects": { "quality": 2, "engagement": 2, "uptake": 2},
+       "summary": "You created a balanced team that includes diverse perspectives, enhancing quality, engagement, and uptake."
+     }
+   ]
+ },
+
+
+ {
+   "id": "q4",
+   "type": "phase",
+   "phase": 3,
+   "title": "Participation and Outreach",
+   "scenario": "You want to increase public trust in the Citizens’ Assembly and encourage mass participation while collecting ideas.",
+   "question": "Which actions will you take?",
+   "learnMore": "Effective outreach is critical for legitimacy. In Gdańsk, Poland, officials partnered with schools, local media, and NGOs to reach underrepresented groups. Ireland’s assemblies used social media campaigns and community meetings to broaden participation and trust.",
+   "options": [
+     {
+       "text": "Launch a media campaign explaining the process, publish expert opinions, and livestream the Assembly sessions",
+       "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+       "summary": "You built transparency and trust through media engagement, enhancing quality, engagement, and uptake."
+     },
+     {
+       "text": "Focus on short emotional stories from citizens about how policy issues impact them",
+       "effects": { "quality": 1, "engagement": 2, "uptake":  1},
+       "summary": "You used personal narratives to engage the public, which may enhance emotional connection."
+     },
+     {
+       "text": "Let the Assembly work covertly to avoid political interference, then announce results",
+       "effects": { "quality": 0, "engagement": 0, "uptake":  1},
+       "summary": "You prioritized process integrity over public engagement, which may lead to lower trust and uptake."
+     },
+     {
+       "text": "Ask the Assembly members to sign confidentiality agreements until proposals are finalized",
+       "effects": { "quality": 0, "engagement": 0, "uptake": 0 },
+       "summary": "You prioritized confidentiality, which may protect the process but risks public disengagement and low trust."
+     }
+   ]
+ },
+
+
+ {
+   "id": "q5",
+   "type": "phase",
+   "phase": 3,
+   "title": "Participation and Outreach",
+   "scenario": "You have a month to gather proposals from the public. Your resources are limited but your goal is to achieve scale and inclusivity.",
+   "question": "How do you design the outreach strategy?",
+   "learnMore": "Inclusive outreach combines online and offline methods. In Ukraine’s Open Government Plan, proposals were collected through regional workshops, libraries, and digital forms. Lithuania used public media and local events to reach rural and urban populations alike.",
+   "options": [
+     {
+       "text": "Use only an online platform and target social media ads to reach youth and urban areas",
+       "effects": { "quality": 1, "engagement": 1, "uptake": 0},
+       "summary": "You focused on digital outreach, which may engage younger audiences but risks excluding less tech-savvy populations."
+     },
+     {
+       "text": "Organize regional offline workshops, use public libraries and national TV/radio, and supplement with an online form",
+       "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+       "summary": "You ensured broad outreach through diverse channels."
+     },
+     {
+       "text": "Reach out to NGOs and ask them to gather ideas from their communities",
+       "effects": { "quality": 1, "engagement": 2, "uptake": 1},
+       "summary": "You leveraged existing networks to gather ideas."
+     },
+     {
+       "text": "Focus on large cities where civic awareness is higher, ignoring rural areas",
+       "effects": { "quality": 0, "engagement": 1, "uptake": 0 },
+       "summary": "You prioritized urban engagement, which may enhance participation in cities but risks excluding rural voices."
+     }
+   ]
+ },
+
+
+ {
+   "id": "q6",
+   "type": "phase",
+   "phase": 4,
+   "title": "Deliberation and drafting",
+   "scenario": "You are selecting a digital tool to collect and deliberate on public ideas. You have limited funds and need to ensure both inclusivity and productivity.",
+   "question": "Which digital tools will you choose?",
+   "learnMore": "In Poland, online platforms enabled idea submissions and voting, while in Ukraine, Facebook groups with moderators facilitated debate. Tools must balance accessibility, security, and transparency for all users.",
+   "options": [
+     {
+       "text": "Use a free, open-source platform with threaded discussions and upvoting",
+       "effects": { "quality": 2, "engagement": 2, "uptake": 1},
+       "summary": "You chose a cost-effective solution that promotes inclusivity and engagement, enhancing the quality of deliberation."
+     },
+     {
+       "text": "Use a Facebook group with active moderation",
+       "effects": { "quality": 0, "engagement": 1, "uptake": 0 },
+       "summary": "You opted for a familiar social media platform."
+     },
+     {
+       "text": "Use a closed survey tool that limits who can comment, to avoid trolling",
+       "effects": { "quality": 1, "engagement": 0, "uptake": 0},
+       "summary": "You prioritized control over the discussion."
+     },
+     {
+       "text": "Create a mobile-only app targeting younger audiences",
+       "effects": { "quality": 1, "engagement": 1, "uptake": 0 },
+       "summary": "You focused on mobile engagement, which may enhance participation among younger users but risks excluding others."
+     }
+   ]
+ },
+
+
+ {
+   "id": "q7",
+   "type": "phase",
+   "phase": 4,
+   "title": "Deliberation and drafting",
+   "scenario": "You gathered participants and now need to decide on the ways to write policy recommendations.",
+   "question": "How are recommendations written?",
+   "learnMore": "In Ireland’s Citizens’ Assembly, small-group discussions led by neutral facilitators helped participants shape clear, consensus-based recommendations. In France, expert drafters supported citizens in refining proposals during climate assemblies, balancing citizen input with legal precision.",
+   "options": [
+     {
+       "text": "Citizens write proposals directly with facilitation.",
+       "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+       "summary": "You empowered citizens to directly draft proposals, enhancing quality, engagement, and uptake."
+     },
+     {
+       "text": "A secretariat drafts policy and citizens vote",
+       "effects": { "quality": 1, "engagement": 0, "uptake": 2 },
+       "summary": "You ensured professional drafting but it may reduce citizen engagement and ownership of the proposals."
+     },
+     {
+       "text": "Parliament aides write it “to ensure realism.”",
+       "effects": { "quality": 0, "engagement": 0, "uptake": 2 },
+       "summary": "You prioritized political feasibility, which may ensure uptake but risks low quality and citizen engagement."
+     }
+   ]
+ },
+
+
+ {
+   "id": "q8",
+   "type": "phase",
+   "phase": 5,
+   "title": "Communication and advocacy",
+   "scenario": "Deliberation is done. 15 proposals are ready. Now you must ensure media and public support to pressure parliament.",
+   "question": "How do you promote the Assembly’s outcome?",
+   "learnMore": "In Poland and Ireland, Citizens’ Assemblies gained traction by launching public-facing campaigns after deliberations. Poland’s Lublin assembly used local media, while Ireland’s Assembly relied on clear visuals and summaries to mobilize public and political attention.",
+   "options": [
+     {
+       "text": "Organize a national media event where citizens present results to MPs live",
+       "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+       "summary": "You created a high-profile event that enhances visibility and public engagement."
+     },
+     {
+       "text": "Publish a report online and email it to key decision-makers",
+       "effects": { "quality": 1, "engagement": 0, "uptake":  1},
+       "summary": "You ensured formal communication but may lack the public engagement."
+     },
+     {
+       "text": "Use social media to share infographics but avoid politicizing the results",
+       "effects": { "quality": 1, "engagement": 2, "uptake": 1},
+       "summary": "You aimed for broad engagement through social media."
+     },
+     {
+       "text": "Ask NGOs to campaign quietly to avoid media misrepresentation",
+       "effects": { "quality": 0, "engagement": 0, "uptake": 1 },
+       "summary": "You asked NGOs to campaign quietly."
+
+
+     }
+   ]
+ },
+
+
+ {
+   "id": "q9",
+   "type": "phase",
+   "phase": 6,
+   "title": "Getting to the Parliament",
+   "scenario": "You now face political resistance. Some MPs oppose proposals. What do you do?",
+   "question": "How do you navigate legislative adoption?",
+   "learnMore": "In Ireland, Assembly outcomes were supported by publishing clear recommendations and building cross-party support early. In France, the Climate Convention involved MPs during the process to ease adoption. Strategic alliances and media pressure help translate proposals into law.",
+   "options": [
+     {
+       "text": "Propose a parliamentary working group with Assembly observers and legal drafters",
+       "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+       "summary": "You created a collaborative space that enhances quality, engagement, and uptake by involving both Assembly members and MPs."
+     },
+     {
+       "text": "Threaten protests and petition campaigns to push adoption",
+       "effects": { "quality": 0, "engagement": 2, "uptake":  1},
+       "summary": "You resorted to pressure tactics."
+     },
+     {
+       "text": "Accept compromises to get partial adoption",
+       "effects": { "quality": 1, "engagement": 1, "uptake": 2 },
+       "summary": "You prioritized political feasibility over strict adherence to Assembly proposals."
+     },
+     {
+       "text": "Organize a referendum on all proposals",
+       "effects": { "quality": 1, "engagement": 2, "uptake": 0 },
+       "summary": "You sought direct public validation, which may enhance engagement but risks politicizing the process and delaying adoption."
+     }
+   ]
+ },
+
+
+ {
+   "id": "q10",
+   "type": "phase",
+   "phase": 6,
+   "title": "Getting to the Parliament",
+   "scenario": "Parliamentarians express skepticism about the legitimacy of citizen input. They claim the process is not representative enough.",
+   "question": "What will you do to deal with parliamentary skepticism?",
+   "learnMore": "In Ireland’s Citizens’ Assembly on abortion reform, broad representation and transparent processes helped overcome initial political doubts. The assembly included randomly selected citizens reflecting the population’s diversity and was supported by legal experts and facilitators. This mix improved legitimacy and convinced parliamentarians to take its recommendations seriously, ultimately leading to constitutional change.",
+   "options": [
+     {
+       "text": "Organize a public debate where MPs meet Assembly members to discuss their proposals",
+       "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+       "summary": "You created a platform for direct dialogue, enhancing transparency and trust between MPs and Assembly members."
+     },
+     {
+       "text": "Emphasize the random selection process and expert moderation in media channels",
+       "effects": { "quality": 2, "engagement": 2, "uptake": 1 },
+       "summary": "You reinforced the legitimacy of the process through media engagement."
+     },
+     {
+       "text": "Add a few MPs as non-voting observers to the Assembly sessions",
+       "effects": { "quality": 1, "engagement": 1, "uptake": 2 },
+       "summary": "You included MPs to enhance legitimacy and ensure their concerns are addressed, which may improve uptake."
+     },
+     {
+       "text": "Ignore the critique and move on, hoping public support will outweigh MPs’ opposition",
+       "effects": { "quality": 0, "engagement": 0, "uptake":  0},
+       "summary": "You chose to disregard parliamentary skepticism."
+     }
+   ]
+ },
+
+
+ {
+ "id": "q11",
+ "type": "crisis",
+ "title": "Crisis",
+ "scenario": "Mid-process, a political scandal shifts public attention and polarizes public opinion.",
+ "question": "How will you continue the process of policy drafting?",
+ "learnMore": "During the 2019 French Citizens’ Convention on Climate, public controversies challenged the process. The assembly maintained its legitimacy by staying transparent, communicating regularly with the public, and emphasizing its independence from political factions.",
+ "options": [
+   {
+     "text": "Suspend the Assembly temporarily to avoid politicization",
+     "effects": { "quality": 0, "engagement": 0, "uptake": 0 },
+     "summary": "You chose to pause the process, which may protect its integrity but risks losing public momentum.",
+     "news": {
+       "headline": "Assembly Temporarily Suspended Amid Political Scandal",
+       "content": "Civic Times reports that the Citizens’ Assembly has been put on hold following mounting political tensions caused by a recent corruption scandal. While government officials applaud the decision as 'prudent', critics on social media argue that democracy is being sidelined at a crucial moment. #FrozenVoices trends nationwide, with civic groups demanding a swift return to deliberation.",
+       "image": "news4"
+     }
+   },
+   {
+     "text": "Use the moment to highlight the Assembly’s independence and transparency",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+     "summary": "You turned the crisis into an opportunity to reinforce the Assembly's legitimacy and transparency.",
+     "news": {
+       "headline": "Citizens’ Assembly Praised for Transparency During Crisis",
+       "content": "The Civic Herald praised the Assembly’s decision to double down on transparency amidst a polarizing scandal. A special segment highlighted the livestreamed sessions, public comment tools, and real-time updates as examples of democratic resilience. Public support surged, with over 50,000 new participants joining the Assembly’s online forum within 48 hours.",
+       "image": "news5"
+     }
+   },
+   {
+     "text": "Allow political parties to make statements within the Assembly sessions",
+     "effects": { "quality": 0, "engagement": 0, "uptake": 1 },
+     "summary": "You opened the process to political discourse, which may enhance uptake but risks politicizing the Assembly and reducing its perceived independence.",
+     "news": {
+       "headline": "Assembly Opens to Party Voices, Sparks Mixed Reactions",
+       "content": "On Public Square Radio, several opposition leaders welcomed the decision to speak at the Citizens’ Assembly, calling it a ‘step toward integration’. However, watchdog groups like Democracy First warned that blending party politics with citizen deliberation could erode neutrality. Social media users split sharply — some calling it bold, others calling it a takeover.",
+       "image": "news6"
+     }
+   },
+   {
+     "text": "Change the Assembly topics to address the scandal directly",
+     "effects": { "quality": 1, "engagement": 1, "uptake": 0 },
+     "summary": "You adapted the Assembly's focus to current events, which may enhance relevance but risks diluting the original purpose of the process.",
+     "news": {
+       "headline": "Assembly Shifts Agenda to Address National Scandal",
+       "content": "Voice of the People reports that the Citizens’ Assembly has redirected its agenda to deliberate on institutional reforms in response to the recent scandal. While many citizens welcomed the pivot as timely, some policy experts warned that such an abrupt change may derail long-term planning efforts. A poll on DemocracyNow.ua showed 61% support for the change.",
+       "image": "news7"
+     }
+   }
+   ]
+ },
+
+
+{
+ "id": "q12",
+ "type": "crisis",
+ "title": "Crisis",
+ "scenario": "Political Backlash. A senior MP calls the Assembly a “populist stunt”.",
+ "question": "How will you respond to this statement?",
+ "learnMore": "In the UK’s Citizens’ Assembly on Climate Change, some politicians initially dismissed the process as political theater. Organizers responded by highlighting the assembly’s rigorous selection methods, expert facilitation, and evidence-based recommendations.",
+ "options": [
+   {
+     "text": "Publicly challenge them and rally activists",
+     "effects": { "quality": 0, "engagement": 1, "uptake": 0 },
+     "summary": "You chose a confrontational approach, which may enhance engagement among supporters but risks further politicizing the Assembly and reducing its perceived legitimacy.",
+     "news": {
+       "headline": "Activists Flood Streets in Defense of Assembly",
+       "content": "In response to a senior MP's remark calling the Citizens’ Assembly a 'populist stunt', a wave of public demonstrations erupted across major cities. Organizers claim over 15,000 people gathered in front of Parliament Square alone. The movement gained momentum online, with the hashtag #OurAssembly trending nationwide. Influencers, local leaders, and civic groups joined in, demanding respect for democratic innovation.\n\nCommentators on CivicNet Daily note that while the mobilization showcases strong civic engagement, it may deepen political divisions if not paired with constructive dialogue.",
+       "image": "news1"
+     }
+   },
+   {
+     "text": "Invite them to observe Assembly sessions",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+     "summary": "You offered transparency and inclusivity, enhancing the Assembly's legitimacy and potentially winning over critics.",
+     "news": {
+       "headline": "MP Attends Assembly, Calls It 'Promising Effort'",
+       "content": "After receiving an official invitation from the Citizens’ Assembly coordination team, the senior MP who earlier criticized the initiative attended a full day of deliberations. In a press conference later that week, the MP admitted to being 'pleasantly surprised' by the quality of discussions and the diversity of participants. 'I still have concerns, but this is clearly more than a PR exercise,' they said.\n\nAccording to The Federal Tribune, the gesture has led to softening in partisan tensions, with other lawmakers expressing interest in engaging more constructively with the Assembly.",
+       "image": "news2"
+     }
+   },
+   {
+     "text": "Ignore the attack",
+     "effects": { "quality": 0, "engagement": 0, "uptake": 0 },
+     "summary": "You chose to disregard the criticism, which may protect the Assembly's integrity but risks losing public trust and engagement.",
+     "news": {
+       "headline": "Assembly Faces Credibility Crisis",
+       "content": "The Citizens’ Assembly remained silent after a senior MP dismissed the process as a 'populist stunt,' sparking unease among the public and media. The lack of response was interpreted by some as evasiveness, fueling speculation about the Assembly’s intentions. Several opinion pieces on PublicSphere.org questioned the leadership’s communication strategy, suggesting it may erode public confidence.\n\n'In times of political tension, silence speaks volumes,' wrote one columnist, urging the Assembly to clarify its role and reinforce its legitimacy.",
+       "image": "news3"
+     }
+   }
+ ]
+},
+
+
+   {
+ "id": "q13",
+ "type": "advantage",
+ "title": "Good news!",
+ "scenario": "A leading news outlet publishes a positive investigative feature praising the Assembly's integrity and innovation.",
+ "question": "How will you respond to this statement?",
+ "learnMore": "Positive media coverage played a key role in boosting public trust during Canada’s Citizens’ Assembly on Electoral Reform. Celebrating such recognition helps reinforce transparency and legitimacy, encourages wider public engagement, and strengthens political support.",
+ "options": [
+   {
+     "text": "Share the article across all government and civic networks to increase visibility.",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+     "summary": "You leveraged positive media coverage to enhance the Assembly's visibility and credibility, boosting public engagement and uptake.",
+     "news": {
+       "headline": "Assembly Praised as ‘Model of Democratic Renewal’",
+       "content": "In a major feature by National Observer, the Citizens’ Assembly was described as 'one of the most promising innovations in participatory governance seen in decades.' The article praised the diversity of participants, the deliberative format, and the transparent methodology. Government ministries and civic networks quickly amplified the story across social media, resulting in a surge of public interest.\n\nPolicy analysts quoted in the piece emphasized the Assembly’s potential to set new standards for democratic consultation.",
+       "image": "news8"
+     }
+   },
+   {
+     "text": "Do nothing — the article speaks for itself.",
+     "effects": { "quality": 1, "engagement": 1, "uptake": 1 },
+     "summary": "You relied on the article's impact, which may maintain quality and engagement but risks missing proactive outreach opportunities.",
+     "news": {
+       "headline": "Positive Coverage Sparks Organic Buzz",
+       "content": "A recent investigative article in National Observer has brought the Citizens’ Assembly into the spotlight, highlighting its integrity and citizen-led process. While the coordination team made no official statement, public forums and independent blogs began picking up the story, generating moderate momentum.\n\nAccording to MediaPulse Analytics, the article received over 50,000 views in two days, but lacked amplification from official channels that could have broadened its reach.",
+       "image": "news9"
+     }
+   },
+   {
+     "text": "Contact the outlet and ask them to tone down their praise to avoid backlash.",
+     "effects": { "quality": 0, "engagement": 0, "uptake": 0 },
+     "summary": "You chose to downplay the positive coverage, which may protect against backlash but risks undermining the Assembly's perceived legitimacy and public support.",
+     "news": {
+       "headline": "Confusion as Assembly Downplays Positive Press",
+       "content": "National Observer confirmed that representatives of the Citizens’ Assembly requested edits to an article praising the process, citing concerns over potential political backlash. The request sparked confusion among journalists and raised eyebrows in public discourse.\n\nCommentators on the Civic Affairs Radio Hour noted the missed opportunity for the Assembly to solidify trust and gain allies. Some civic activists expressed disappointment, saying the team’s reluctance signaled a lack of confidence in their own achievements.",
+       "image": "news10"
+     }
+   }
+ ]
+},
+
+
+
+
+   {
+ "id": "q14",
+ "type": "advantage",
+ "title": "Good news!",
+ "scenario": "A former Prime Minister publicly expresses support for the Assembly and offers to host a panel discussion.",
+ "question": "How will you respond to this statement?",
+ "learnMore": "High-profile endorsements can significantly boost an assembly’s legitimacy and visibility. Hosting panel discussions with respected leaders helps engage wider audiences, fosters cross-sector collaboration, and increases political influence.",
+ "options": [
+   {
+     "text": "Accept the offer and use the opportunity to present the Assembly’s process to high-level decision-makers.",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+     "summary": "You leveraged the former PM's influence to enhance the Assembly's visibility and credibility, boosting public engagement and uptake.",
+     "news": {
+       "headline": "Former PM Hosts Assembly Forum, Drawing Elite Attention",
+       "content": "In a rare bipartisan event, the former Prime Minister convened a high-level panel featuring members of the Citizens’ Assembly, academic experts, and lawmakers. Broadcast live by Civic Broadcast Network, the event drew widespread attention for its depth and transparency.\n\nThey praised the Assembly as 'a democratic mechanism that gives voice to those often unheard.' Analysts say the endorsement lent significant credibility to the process and opened doors to formal political uptake of its recommendations.",
+       "image": "news11"
+     }
+   },
+   {
+     "text": "Politely decline to avoid accusations of political bias.",
+     "effects": { "quality": 1, "engagement": 1, "uptake": 1 },
+     "summary": "You prioritized perceived neutrality, which may maintain quality and engagement but risks missing a valuable opportunity for visibility.",
+     "news": {
+       "headline": "Assembly Declines PM Invitation, Citing Neutrality",
+       "content": "The Citizens’ Assembly has declined an offer from the former Prime Minister to host a panel discussion, citing the need to maintain political neutrality. The decision has sparked a mix of respect and regret across the political spectrum.\n\nIn an editorial for The Civic Times, political analyst noted: 'While caution is understandable, the Assembly may have missed a rare opportunity to engage influential decision-makers in a nonpartisan setting.'",
+       "image": "news12"
+     }
+   },
+   {
+     "text": "Ask the former PM to share their support only privately.",
+     "effects": { "quality": 0, "engagement": 0, "uptake": 1 },
+     "summary": "You chose to limit public visibility, which may protect against political backlash but risks reducing the Assembly's perceived legitimacy and public support.",
+     "news": {
+       "headline": "Private Endorsement by Former PM Raises Questions",
+       "content": "According to internal sources, the Citizens’ Assembly coordination team requested that the former Prime Minister keep her endorsement private, in order to avoid fueling perceptions of political alignment. While the move was meant to preserve neutrality, several commentators on NewsTalk Now questioned whether the Assembly is missing key opportunities to legitimize its work.\n\nCivic leaders called for greater openness, saying public endorsements could strengthen trust and momentum.",
+       "image": "news13"
+     }
+   }
+ ]
+},
+
+
+ {
+   "id": "q15",
+   "type": "phase",
+   "phase": 3,
+   "title": "Design and engagement",
+   "scenario": "You have to design a participatory and credible process. The government is willing to cooperate but under conditions. You need to decide how to compose the process team.",
+   "question": "Who should be included in the multi-stakeholder design team?",
+   "learnMore": "Successful citizen assemblies, like the 2018 French Citizens’ Convention on Climate, include multi-stakeholder design teams combining civic tech experts, civil society organizations (CSOs), legal scholars, and randomly selected citizens. ",
+   "options": [
+     {
+       "text": "Civic tech experts, CSOs, legal scholars, randomly selected citizens",
+       "effects": { "quality": 2, "engagement": -1, "uptake": 1 },
+       "summary": "You ensured a diverse and expert-driven team, enhancing process quality and public engagement, but may have limited direct citizen involvement."
+     },
+     {
+       "text": "Senior civil servants, MPs, and international donors",
+       "effects": { "quality": 1, "engagement": 2, "uptake": 0 },
+       "summary": "You prioritized political and donor interests, which may ensure uptake but risks low quality and engagement."
+     },
+     {
+       "text": "Media figures, civil society activists, and social influencers",
+       "effects": { "quality": 1, "engagement": 2, "uptake": 0 },
+       "summary": "You focused on media and activism, which may enhance engagement but risks low quality and uptake."
+     },
+     {
+       "text": "Senior civil servants, MPs, and international donors",
+       "effects": { "quality": 1, "engagement": 2, "uptake": 0 },
+       "summary": "You prioritized political and donor interests, which may ensure uptake but risks low quality and engagement."
+     }
+   ]
+ },
+
+
+   {
+   "id": "q16",
+   "type": "phase",
+   "phase": 1,
+   "title": "Initiation and legitimacy",
+   "scenario": "You are preparing the agenda for the Citizens’ Assembly. You can only choose 2 out of 5 potential topics due to time and budget limitations. The topics include: - Electoral reform - Climate action - Digital rights and privacy - Pension reform - Anti-corruption measures",
+   "question": "Which topics will you select?",
+   "learnMore": "Topic selection shapes a citizens’ assembly’s relevance and legitimacy. For example, Ireland’s Citizens’ Assembly initially focused on constitutional and social issues like abortion and climate change—topics with broad public impact and political urgency.",
+   "options": [
+     {
+       "text": "Choose the two topics with the highest public support in online polls",
+       "effects": { "quality": 1, "engagement": 2, "uptake": 0},
+       "summary": "You selected the most popular topics, ensuring public interest but potentially sacrificing depth on less popular issues."
+     },
+     {
+       "text": "Choose one high-profile issue and one expert-recommended issue with lower public awareness",
+       "effects": { "quality": 2, "engagement": 1, "uptake": 2},
+       "summary": "You balanced public interest with expert recommendations, enhancing the quality of the process and ensuring parliamentary follow-up."
+     },
+     {
+       "text": "Choose topics based on party leaders' informal preferences to ensure parliamentary follow-up",
+       "effects": { "quality": 0, "engagement": 0, "uptake": 2},
+       "summary": "You prioritized political expediency over public interest, which may lead to lower engagement and quality."
+     },
+     {
+       "text": "Choose the most controversial topics to maximize media coverage and public interest",
+       "effects": { "quality": 0, "engagement": 1, "uptake": 0},
+       "summary": "You aimed for media attention but risked alienating participants and reducing the quality of deliberation."
+     }
+   ]
+ }
+]
