@@ -3,6 +3,7 @@ import { AppRoutes } from "./routes";
 import Navbar from "./components/Navbar/Navbar";
 import React, { useState, useRef, useEffect } from "react";
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         
       <AppRoutes />
       <Analytics />
+       <SpeedInsights />
        </div>
     </Router>
   );
