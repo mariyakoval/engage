@@ -6,7 +6,7 @@ import ProgressDots from "../..//components/Dots";
 import SummaryScreen from "./SummaryScreen";
 import NewsModal from "../../components/NewsModal";
 
-import news1 from "../../assets/news/news1.jpg";
+import news1 from "../../assets/news/news1.png";
 import news2 from "../../assets/news/news2.jpg";
 import news3 from "../../assets/news/news3.jpg";
 import news4 from "../../assets/news/news4.jpg";
