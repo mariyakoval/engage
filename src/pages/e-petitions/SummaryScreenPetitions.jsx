@@ -36,13 +36,13 @@ export default function SummaryScreenPetitions() {
   const stageLabels = [
     "Start",
     "Initiation and legitimacy",
-    "Design and engagement",
+    "Platform Design and Accessibility",
     "Crisis",
-    "Participation and Outreach",
-    "Deliberation and drafting",
+    "Mobilizing Signatures",
+    "Political Response and Institutionalization",
     "Good news",
-    "Communication and advocacy",
-    "Getting to the Parliament"
+    "Monitoring Government Action",
+    "Long-Term Sustainability"
   ];
 
   return (
