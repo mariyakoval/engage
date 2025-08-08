@@ -132,68 +132,108 @@
 
 
 {
- "id": "voting1",
- "type": "phase",
- "phase": 5,
- "title": "Voting",
- "scenario": "You’ve finalized the list of eligible projects. Now, it’s time to vote. In previous cycles, participation was low and skewed by digital divides.",
- "question": "How should you organize voting?",
- "learnMore": "In Poland, cities like Lodz and Warsaw used hybrid voting models (offline + online), while some towns restricted voting to digital only.",
- "options": [
-   {
-     "text": "Offer both online and in-person voting at libraries and schools.",
-     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
-     "summary": "You chose to run a hybrid vote with both online and in-person options at community locations."
-   },
-   {
-     "text": "Run online-only voting with social media promotion.",
-     "effects": { "quality": 1, "engagement": 1, "uptake": 2 },
-     "summary": "You chose to hold voting online only, supported by a social media campaign."
-   },
-   {
-     "text": "Restrict voting to registered city residents using ID verification.",
-     "effects": { "quality": 2, "engagement": 0, "uptake": 2 },
-     "summary": "You chose to require official ID verification for city residents to vote."
-   },
-   {
-     "text": "Allow voting only through youth council volunteers in schools.",
-     "effects": { "quality": 0, "engagement": 2, "uptake": 0 },
-     "summary": "You chose to conduct voting through youth council volunteers within schools."
-   }
- ]
+  "id": "voting1",
+  "type": "phase",
+  "phase": 5,
+  "title": "Voting",
+  "scenario": "You’ve finalized the list of eligible projects. Now, it’s time to vote. In previous cycles, participation was low and skewed by digital divides.",
+  "question": "How should you organize voting?",
+  "learnMore": "In Poland, cities like Lodz and Warsaw used hybrid voting models (offline + online), while some towns restricted voting to digital only.",
+  "options": [
+    {
+      "text": "Offer both online and in-person voting at libraries and schools.",
+      "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+      "summary": "You chose to run a hybrid vote with both online and in-person options at community locations.",
+      "news": {
+        "headline": "Hybrid Voting Boosts Turnout Across All Age Groups",
+        "content": "The Civic Times reports that offering both digital and physical voting stations at local libraries and schools significantly increased voter participation in the Citizens’ Assembly. Elderly residents praised the return of paper ballots, while younger citizens appreciated the online convenience. An official from the Election Bureau called the model “a blueprint for inclusive democracy.” Social media lit up with stories of multi-generational families voting together. Turnout rose by 43% compared to the previous cycle.",
+        "image": "news8"
+      }
+    },
+    {
+      "text": "Run online-only voting with social media promotion.",
+      "effects": { "quality": 1, "engagement": 1, "uptake": 2 },
+      "summary": "You chose to hold voting online only, supported by a social media campaign.",
+      "news": {
+        "headline": "Online-Only Vote Sees Uptick in Youth Participation, But Access Gaps Remain",
+        "content": "According to The Civic Herald, the decision to run the Citizens’ Assembly vote exclusively online, promoted heavily on TikTok, Instagram, and X, led to a surge in younger voters. The campaign hashtag #YourVoiceCounts trended nationally for two days. However, digital rights organizations cautioned that elderly and rural populations may have been left behind. A new voter portal was praised for its sleek design, but some public libraries reported frustrated residents seeking offline alternatives.",
+        "image": "news9"
+      }
+    },
+    {
+      "text": "Restrict voting to registered city residents using ID verification.",
+      "effects": { "quality": 2, "engagement": 0, "uptake": 2 },
+      "summary": "You chose to require official ID verification for city residents to vote.",
+      "news": {
+        "headline": "Secure Voting System Draws Praise — and Questions of Access",
+        "content": "Public Square Radio reported that the Assembly’s new ID-verification system successfully prevented duplicate votes and external interference. Officials praised the rollout as “a secure and trusted model for local democracy.” Yet some activists criticized the process for excluding undocumented residents and those without updated IDs. Debates sparked across talk shows and message boards, with one commentator writing: “Trust in the vote is vital — but not at the cost of inclusion.”",
+        "image": "news10"
+      }
+    },
+    {
+      "text": "Allow voting only through youth council volunteers in schools.",
+      "effects": { "quality": 0, "engagement": 2, "uptake": 0 },
+      "summary": "You chose to conduct voting through youth council volunteers within schools.",
+      "news": {
+        "headline": "Student-Led Voting Sparks Engagement — But Leaves Out Many",
+        "content": "Voice of the People reports that this year’s vote, facilitated solely by youth council volunteers in schools, energized student communities and made headlines for its creativity. Several schools hosted “Democracy Days” with music, debates, and ballot booths. However, adults without school affiliations were left out of the process entirely. Critics called the move “symbolic but exclusionary,” while youth leaders said it gave them “a real sense of impact.” A poll showed high engagement among teens but confusion among the broader public.",
+        "image": "news11"
+      }
+    }
+  ]
 },
 
 
 {
- "id": "implementation1",
- "type": "phase",
- "phase": 6,
- "title": "Implementation & Monitoring",
- "scenario": "Some winning PB projects from last year were delayed or poorly implemented. Citizens demand more transparency this time.",
- "question": "How will you monitor project implementation?",
- "learnMore": "In Ukraine, only 22% of surveyed cities published updates. In contrast, Gdansk in Poland created a public tracking portal.",
- "options": [
-   {
-     "text": "Create a public dashboard to track project progress with photos and timelines.",
-     "effects": { "quality": 2, "engagement": 2, "uptake": 1 },
-     "summary": "You created a public dashboard to track project progress"
-   },
-   {
-     "text": "Let departments implement projects quietly and only publish a final report.",
-     "effects": { "quality": 1, "engagement": 0, "uptake": 2 },
-     "summary": "You chose to keep implementation internal, sharing only a final report with the public."
-   },
-   {
-     "text": "Ask local civic groups to monitor progress and report back.",
-     "effects": { "quality": 2, "engagement": 2, "uptake": 0 },
-     "summary": "You chose to involve local civic groups in monitoring and reporting on project progress."
-   },
-   {
-     "text": "Only update the public if projects face major delays.",
-     "effects": { "quality": 1, "engagement": 0, "uptake": 1 },
-     "summary": "You chose to communicate updates only in cases of major project delays."
-   }
- ]
+  "id": "implementation1",
+  "type": "phase",
+  "phase": 6,
+  "title": "Implementation & Monitoring",
+  "scenario": "Some winning PB projects from last year were delayed or poorly implemented. Citizens demand more transparency this time.",
+  "question": "How will you monitor project implementation?",
+  "learnMore": "In Ukraine, only 22% of surveyed cities published updates. In contrast, Gdansk in Poland created a public tracking portal.",
+  "options": [
+    {
+      "text": "Create a public dashboard to track project progress with photos and timelines.",
+      "effects": { "quality": 2, "engagement": 2, "uptake": 1 },
+      "summary": "You created a public dashboard to track project progress",
+      "news": {
+        "headline": "New Public Dashboard Brings Transparency to Project Implementation",
+        "content": "The Civic Times highlights the launch of a comprehensive public dashboard displaying real-time updates, photos, and timelines for all winning PB projects. Residents praised the initiative as 'a leap forward in accountability,' with many following progress closely on social media. City officials report increased trust and fewer complaints compared to previous years.",
+        "image": "news4"
+      }
+    },
+    {
+      "text": "Let departments implement projects quietly and only publish a final report.",
+      "effects": { "quality": 1, "engagement": 0, "uptake": 2 },
+      "summary": "You chose to keep implementation internal, sharing only a final report with the public.",
+      "news": {
+        "headline": "Final Reports Released After Quiet Project Implementation",
+        "content": "Voice of the People reports that this year’s project updates came only through final reports, with little public communication during implementation. While officials cite efficiency and fewer distractions, some citizens expressed frustration over the lack of ongoing transparency. Critics argue this approach risks repeating past delays and misunderstandings.",
+        "image": "news5"
+      }
+    },
+    {
+      "text": "Ask local civic groups to monitor progress and report back.",
+      "effects": { "quality": 2, "engagement": 2, "uptake": 0 },
+      "summary": "You chose to involve local civic groups in monitoring and reporting on project progress.",
+      "news": {
+        "headline": "Civic Groups Take Lead in Monitoring Public Projects",
+        "content": "Public Square Radio reports a surge in civic engagement as local volunteer groups were enlisted to track PB project progress and share updates with the community. Residents appreciated the grassroots oversight, calling it 'democracy in action.' Some departments welcomed the collaboration, though a few expressed concerns about consistency in reporting.",
+        "image": "news3"
+      }
+    },
+    {
+      "text": "Only update the public if projects face major delays.",
+      "effects": { "quality": 1, "engagement": 0, "uptake": 1 },
+      "summary": "You chose to communicate updates only in cases of major project delays.",
+      "news": {
+        "headline": "Selective Updates Keep Public Informed Only on Delays",
+        "content": "The Civic Herald notes that project updates were shared only when significant delays occurred, leading to mixed public reactions. While some appreciated the focus on problems, others felt left out of the process and requested more regular information. City officials defended the approach as a way to avoid information overload.",
+        "image": "news2"
+      }
+    }
+  ]
 },
 
 
@@ -264,200 +304,320 @@
 
 
 {
- "id": "voting2",
- "type": "phase",
- "phase": 5,
- "title": "Voting",
- "scenario": "You're deciding how to structure the voting period. You want to avoid low turnout and confusion while ensuring fairness and accessibility.",
- "question": "How do you set up the voting process?",
- "learnMore": "In Lviv, Ukraine, the city extended the voting period and used mobile apps and offline booths to increase turnout.",
- "options": [
-   {
-     "text": "Allow both online and in-person voting for 2 weeks, with city staff assisting those unfamiliar with tech.",
-     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
-     "summary": "You chose to offer a two-week hybrid voting period with staff support for accessibility."
-   },
-   {
-     "text": "Keep voting fully digital but promote it via local influencers and ads.",
-     "effects": { "quality": 1, "engagement": 2, "uptake": 0 },
-     "summary": "Go digital-only with outreach"
-   },
-   {
-     "text": "Limit voting to in-person only to prevent fraud.",
-     "effects": { "quality": 1, "engagement": 0, "uptake": 1 },
-     "summary": "You chose to allow only in-person voting in order to minimize the risk of fraud."
-   },
-   {
-     "text": "Let project applicants campaign freely to mobilize voters.",
-     "effects": { "quality": 1, "engagement": 2, "uptake": 1 },
-     "summary": "You chose to permit open campaigning by project applicants to drive voter turnout."
-   }
- ]
+  "id": "voting2",
+  "type": "phase",
+  "phase": 5,
+  "title": "Voting",
+  "scenario": "You're deciding how to structure the voting period. You want to avoid low turnout and confusion while ensuring fairness and accessibility.",
+  "question": "How do you set up the voting process?",
+  "learnMore": "In Lviv, Ukraine, the city extended the voting period and used mobile apps and offline booths to increase turnout.",
+  "options": [
+    {
+      "text": "Allow both online and in-person voting for 2 weeks, with city staff assisting those unfamiliar with tech.",
+      "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+      "summary": "You chose to offer a two-week hybrid voting period with staff support for accessibility.",
+      "news": {
+        "headline": "Extended Voting Period Sees Record Participation Across Demographics",
+        "content": "The Civic Times reports an unprecedented turnout after the city introduced a two-week hybrid voting window. City staff stationed at community centers and libraries assisted first-time voters and those unfamiliar with technology. Voter testimonials highlighted the ease of access and supportive environment. An independent review called the process 'one of the most inclusive civic events in recent memory.'",
+        "image": "news6"
+      }
+    },
+    {
+      "text": "Keep voting fully digital but promote it via local influencers and ads.",
+      "effects": { "quality": 1, "engagement": 2, "uptake": 0 },
+      "summary": "Go digital-only with outreach",
+      "news": {
+        "headline": "Digital Vote Campaigns Trend Online, but Some Feel Left Out",
+        "content": "According to The Civic Herald, influencer-driven campaigns helped the Citizens’ Assembly reach younger voters, with viral videos and challenges boosting visibility. However, watchdog groups flagged accessibility concerns for seniors and residents without internet access. A city official acknowledged the outreach gap, saying, 'We gained momentum online, but missed an offline audience we can’t ignore.'",
+        "image": "news9"
+      }
+    },
+    {
+      "text": "Limit voting to in-person only to prevent fraud.",
+      "effects": { "quality": 1, "engagement": 0, "uptake": 1 },
+      "summary": "You chose to allow only in-person voting in order to minimize the risk of fraud.",
+      "news": {
+        "headline": "Strict In-Person Voting Raises Integrity — and Barriers",
+        "content": "Voice of the People reports that the Assembly’s fraud-prevention strategy drew mixed reviews. While officials cited strong safeguards and transparent ballot boxes, turnout dropped sharply among residents with mobility issues or demanding work schedules. Long lines at polling sites were reported in several neighborhoods. A retired teacher told reporters, 'I respect the process — but I wish it respected my time too.'",
+        "image": "news11"
+      }
+    },
+    {
+      "text": "Let project applicants campaign freely to mobilize voters.",
+      "effects": { "quality": 1, "engagement": 2, "uptake": 1 },
+      "summary": "You chose to permit open campaigning by project applicants to drive voter turnout.",
+      "news": {
+        "headline": "Campaigning Heats Up as Project Backers Hit the Streets",
+        "content": "Public Square Radio highlighted the energy across neighborhoods as project applicants campaigned to mobilize support. Posters, pamphlets, and pop-up events were seen citywide. While some applauded the grassroots energy, others raised concerns about resource imbalances and misinformation. One resident noted, 'It feels exciting, but I wonder if the loudest voices are drowning out the best ideas.'",
+        "image": "news13"
+      }
+    }
+  ]
 },
 
 
 {
- "id": "voting3",
- "type": "phase",
- "phase": 5,
- "title": "Voting",
- "scenario": "Some neighborhoods are more mobilized and tech-savvy, while others lack awareness. You fear voting results will be unequal.",
- "question": "How do you address this imbalance before the vote?",
- "learnMore": "In Vinnytsia, city officials partnered with libraries and schools to ensure less-connected populations could participate.",
- "options": [
-   {
-     "text": "Deploy outreach teams to underrepresented areas with printed ballots and instructions.",
-     "effects": { "quality": 1, "engagement": 2, "uptake": 1 },
-     "summary": "You chose to send outreach teams with printed ballots and guidance to underserved neighborhoods."
-   },
-   {
-     "text": "Do nothing; let turnout reflect existing civic engagement levels.",
-     "effects": { "quality": 0, "engagement": 0, "uptake": 2 },
-     "summary": "You chose to allow turnout to reflect current civic engagement without additional intervention."
-   },
-   {
-     "text": "Set district-based quotas for winning projects.",
-     "effects": { "quality": 2, "engagement": 1, "uptake": 0 },
-     "summary": "You chose to implement district quotas to ensure spatial fairness in project selection."
-   },
-   {
-     "text": "Offer voting incentives like discount vouchers for local services.",
-     "effects": { "quality": 0, "engagement": 2, "uptake": 0 },
-     "summary": "You chose to encourage voting by offering small incentives such as discount vouchers."
-   }
- ]
+  "id": "voting3",
+  "type": "phase",
+  "phase": 5,
+  "title": "Voting",
+  "scenario": "Some neighborhoods are more mobilized and tech-savvy, while others lack awareness. You fear voting results will be unequal.",
+  "question": "How do you address this imbalance before the vote?",
+  "learnMore": "In Vinnytsia, city officials partnered with libraries and schools to ensure less-connected populations could participate.",
+  "options": [
+    {
+      "text": "Deploy outreach teams to underrepresented areas with printed ballots and instructions.",
+      "effects": { "quality": 1, "engagement": 2, "uptake": 1 },
+      "summary": "You chose to send outreach teams with printed ballots and guidance to underserved neighborhoods.",
+      "news": {
+        "headline": "Outreach Teams Bring Voting to Underserved Neighborhoods",
+        "content": "The Civic Herald reports that mobile outreach teams equipped with printed ballots and clear instructions visited underrepresented areas ahead of the vote. Residents praised the effort as “a bridge over the digital divide,” enabling many first-time voters to participate. Community leaders called it a “step toward inclusive democracy,” noting a sharp increase in early turnout within these neighborhoods.",
+        "image": "news12"
+      }
+    },
+    {
+      "text": "Do nothing; let turnout reflect existing civic engagement levels.",
+      "effects": { "quality": 0, "engagement": 0, "uptake": 2 },
+      "summary": "You chose to allow turnout to reflect current civic engagement without additional intervention.",
+      "news": {
+        "headline": "Unequal Voting Patterns Highlight Civic Divide",
+        "content": "Voice of the People reports that the latest vote saw turnout disparities deepen between well-connected neighborhoods and those less engaged. Experts warn that letting existing participation gaps persist risks skewing results toward more privileged areas. Some activists argue the approach “maintains the status quo,” calling for future reforms to address inequality.",
+        "image": "news5"
+      }
+    },
+    {
+      "text": "Set district-based quotas for winning projects.",
+      "effects": { "quality": 2, "engagement": 1, "uptake": 0 },
+      "summary": "You chose to implement district quotas to ensure spatial fairness in project selection.",
+      "news": {
+        "headline": "District Quotas Introduced to Balance Voting Outcomes",
+        "content": "Public Square Radio reports that the Assembly adopted district-based quotas to guarantee fair representation of projects from all neighborhoods. While many praised the move as “necessary to level the playing field,” some critics questioned its impact on project quality and voter autonomy. Early data shows a more geographically balanced project selection, though debates continue.",
+        "image": "news3"
+      }
+    },
+    {
+      "text": "Offer voting incentives like discount vouchers for local services.",
+      "effects": { "quality": 0, "engagement": 2, "uptake": 0 },
+      "summary": "You chose to encourage voting by offering small incentives such as discount vouchers.",
+      "news": {
+        "headline": "Voting Incentives Drive Engagement but Raise Ethical Questions",
+        "content": "The Civic Times reports that offering discount vouchers for local shops and services as voting incentives boosted participation in some areas. While many voters welcomed the rewards, ethics experts cautioned that incentives risk commercializing democratic participation. Social media was abuzz with mixed reactions, with some users applauding the initiative and others calling for stricter guidelines.",
+        "image": "news1"
+      }
+    }
+  ]
 },
 
 
 {
- "id": "implementation2",
- "type": "phase",
- "phase": 6,
- "title": "Implementation & Monitoring",
- "scenario": "Several winning projects require permits and cross-department coordination. Delays are expected.",
- "question": "How do you manage stakeholder accountability?",
- "learnMore": "In some cities, project delays led to public dashboards showing which institutions were responsible for implementation stages.",
- "options": [
-   {
-     "text": "Create a public online dashboard tracking project timelines and responsible departments.",
-     "effects": { "quality": 2, "engagement": 2, "uptake": 1 },
-     "summary": "You chose to develop a public dashboard displaying project progress and department responsibilities."
-   },
-   {
-     "text": "Privately monitor progress and quietly escalate major delays to the mayor's office.",
-     "effects": { "quality": 1, "engagement": 0, "uptake": 2 },
-     "summary": "You chose to monitor project progress internally and escalate significant delays discreetly."
-   },
-   {
-     "text": "Let civil society coalitions monitor progress and report findings publicly.",
-     "effects": { "quality": 1, "engagement": 2, "uptake": 0 },
-     "summary": "You chose to delegate project monitoring to civil society groups with public reporting."
-   },
-   {
-     "text": "Announce deadlines publicly and apply financial penalties for delays.",
-     "effects": { "quality": 2, "engagement": 1, "uptake": 0 },
-     "summary": "You chose to set public deadlines and enforce them with financial penalties for delays."
-   }
- ]
+  "id": "implementation2",
+  "type": "phase",
+  "phase": 6,
+  "title": "Implementation & Monitoring",
+  "scenario": "Several winning projects require permits and cross-department coordination. Delays are expected.",
+  "question": "How do you manage stakeholder accountability?",
+  "learnMore": "In some cities, project delays led to public dashboards showing which institutions were responsible for implementation stages.",
+  "options": [
+    {
+      "text": "Create a public online dashboard tracking project timelines and responsible departments.",
+      "effects": { "quality": 2, "engagement": 2, "uptake": 1 },
+      "summary": "You chose to develop a public dashboard displaying project progress and department responsibilities.",
+      "news": {
+        "headline": "Public Dashboard Boosts Accountability for Project Delays",
+        "content": "The Civic Times reports on the launch of a new online dashboard tracking project timelines and highlighting department responsibilities. Citizens praised the transparency, noting that the tool helps clarify who is accountable for each implementation stage. City officials hope this will reduce delays and build public trust.",
+        "image": "news1"
+      }
+    },
+    {
+      "text": "Privately monitor progress and quietly escalate major delays to the mayor's office.",
+      "effects": { "quality": 1, "engagement": 0, "uptake": 2 },
+      "summary": "You chose to monitor project progress internally and escalate significant delays discreetly.",
+      "news": {
+        "headline": "Behind-the-Scenes Monitoring Keeps Project Delays Under Control",
+        "content": "Voice of the People reports that project delays were managed internally, with major issues escalated directly to the mayor's office. While this approach avoided public alarm, some citizens expressed concerns about the lack of transparency and called for more visible accountability mechanisms.",
+        "image": "news2"
+      }
+    },
+    {
+      "text": "Let civil society coalitions monitor progress and report findings publicly.",
+      "effects": { "quality": 1, "engagement": 2, "uptake": 0 },
+      "summary": "You chose to delegate project monitoring to civil society groups with public reporting.",
+      "news": {
+        "headline": "Civil Society Coalitions Lead Transparent Project Monitoring",
+        "content": "Public Square Radio highlights the active role of civil society coalitions in monitoring PB projects and publishing regular progress reports. Residents praised this grassroots oversight as empowering and fostering democratic engagement. Some departments welcomed the collaboration, though questions remain about standardizing reporting.",
+        "image": "news3"
+      }
+    },
+    {
+      "text": "Announce deadlines publicly and apply financial penalties for delays.",
+      "effects": { "quality": 2, "engagement": 1, "uptake": 0 },
+      "summary": "You chose to set public deadlines and enforce them with financial penalties for delays.",
+      "news": {
+        "headline": "Public Deadlines and Penalties Aim to Accelerate Project Delivery",
+        "content": "The Civic Herald reports that setting clear public deadlines coupled with financial penalties for delays has motivated departments to speed up project implementation. While many applaud the firm stance, some warn that penalties could strain interdepartmental cooperation. Early results suggest improved timelines for current projects.",
+        "image": "news4"
+      }
+    }
+  ]
 },
 
 
 {
- "id": "implementation3",
- "type": "phase",
- "phase": 6,
- "title": "Implementation & Monitoring",
- "scenario": "Some project proponents complain that their ideas are being implemented differently than planned.",
- "question": "What process do you put in place to manage expectations and track fidelity?",
- "learnMore": "Discrepancies between original project descriptions and final implementations can lead to public frustration.",
- "options": [
-   {
-     "text": "Require departments to co-sign implementation plans with project proposers.",
-     "effects": { "quality": 2, "engagement": 2, "uptake": 0 },
-     "summary": "You chose to require departments and proposers to co-sign implementation plans to align expectations."
-   },
-   {
-     "text": "Give departments full discretion to adapt project scope based on feasibility.",
-     "effects": { "quality": 1, "engagement": 0, "uptake": 2 },
-     "summary": "You chose to allow departments full discretion to adapt project scope for administrative efficiency."
-   },
-   {
-     "text": "Hire an external auditor to report deviations from original proposals.",
-     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
-     "summary": "You chose to hire an external auditor to oversee and report any deviations from original plans."
-   },
-   {
-     "text": "Hold public hearings every quarter with updates and citizen feedback.",
-     "effects": { "quality": 1, "engagement": 2, "uptake": 1 },
-     "summary": "Use public forums for ongoing feedback"
-   }
- ]
+  "id": "implementation3",
+  "type": "phase",
+  "phase": 6,
+  "title": "Implementation & Monitoring",
+  "scenario": "Some project proponents complain that their ideas are being implemented differently than planned.",
+  "question": "What process do you put in place to manage expectations and track fidelity?",
+  "learnMore": "Discrepancies between original project descriptions and final implementations can lead to public frustration.",
+  "options": [
+    {
+      "text": "Require departments to co-sign implementation plans with project proposers.",
+      "effects": { "quality": 2, "engagement": 2, "uptake": 0 },
+      "summary": "You chose to require departments and proposers to co-sign implementation plans to align expectations.",
+      "news": {
+        "headline": "New Co-Signature Requirement Aligns Project Implementation",
+        "content": "Civic Times reports that requiring departments and project proposers to co-sign implementation plans has improved communication and reduced conflicts. Project proponents feel more involved and confident that their ideas are faithfully realized, while departments benefit from clearer guidelines.",
+        "image": "news5"
+      }
+    },
+    {
+      "text": "Give departments full discretion to adapt project scope based on feasibility.",
+      "effects": { "quality": 1, "engagement": 0, "uptake": 2 },
+      "summary": "You chose to allow departments full discretion to adapt project scope for administrative efficiency.",
+      "news": {
+        "headline": "Departments Gain Flexibility in Project Adaptation",
+        "content": "Voice of the People reports that giving departments discretion to adjust project scopes has streamlined implementation but caused some dissatisfaction among project proponents. Critics warn this could dilute original community intentions, while officials argue flexibility is necessary for feasibility.",
+        "image": "news6"
+      }
+    },
+    {
+      "text": "Hire an external auditor to report deviations from original proposals.",
+      "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+      "summary": "You chose to hire an external auditor to oversee and report any deviations from original plans.",
+      "news": {
+        "headline": "External Auditor Enhances Transparency on Project Fidelity",
+        "content": "Public Square Radio highlights the appointment of an independent auditor to track deviations between project proposals and actual implementation. Citizens praised this measure as enhancing accountability and trust, with early audit reports identifying key areas for improvement.",
+        "image": "news7"
+      }
+    },
+    {
+      "text": "Hold public hearings every quarter with updates and citizen feedback.",
+      "effects": { "quality": 1, "engagement": 2, "uptake": 1 },
+      "summary": "Use public forums for ongoing feedback",
+      "news": {
+        "headline": "Quarterly Public Hearings Boost Citizen Engagement in Project Oversight",
+        "content": "The Civic Herald reports that quarterly public hearings have become a popular venue for updates and citizen feedback on PB projects. While some officials find the process time-consuming, many citizens appreciate the opportunity to voice concerns and track progress firsthand.",
+        "image": "news8"
+      }
+    }
+  ]
 },
 
 
 {
- "id": "crisis2",
- "type": "crisis",
- "phase": null,
- "title": "Political Scandal Erupts",
- "scenario": "Midway through the process, a media outlet reveals that a city official tried to sway funding toward a relative’s project.",
- "question": "How do you respond to this crisis?",
- "learnMore": "In Ukraine, PB processes have been questioned when elite interference was suspected.",
- "options": [
-   {
-     "text": "Launch an internal ethics review and publish the results.",
-     "effects": { "quality": 2, "engagement": 2, "uptake": 1 },
-     "summary": "You chose to launch an internal ethics review and publicly share the findings."
-   },
-   {
-     "text": "Suspend the project in question and let others proceed.",
-     "effects": { "quality": 1, "engagement": 1, "uptake": 2 },
-     "summary": "You chose to suspend the disputed project while allowing others to continue."
-   },
-   {
-     "text": "Downplay the scandal and continue without acknowledgment.",
-     "effects": { "quality": 0, "engagement": 0, "uptake": 1 },
-     "summary": "You chose to downplay the scandal and proceed without public acknowledgment."
-   },
-   {
-     "text": "Ask citizens to vote again on the disputed project.",
-     "effects": { "quality": 1, "engagement": 2, "uptake": 0 },
-     "summary": "You chose to hold a new public vote to reclaim decision-making."
-   }
- ]
+  "id": "crisis2",
+  "type": "crisis",
+  "phase": null,
+  "title": "Political Scandal Erupts",
+  "scenario": "Midway through the process, a media outlet reveals that a city official tried to sway funding toward a relative’s project.",
+  "question": "How do you respond to this crisis?",
+  "learnMore": "In Ukraine, PB processes have been questioned when elite interference was suspected.",
+  "options": [
+    {
+      "text": "Launch an internal ethics review and publish the results.",
+      "effects": { "quality": 2, "engagement": 2, "uptake": 1 },
+      "summary": "You chose to launch an internal ethics review and publicly share the findings.",
+      "news": {
+        "headline": "City Launches Ethics Review Amid Funding Scandal",
+        "content": "Civic Times reports that following allegations of favoritism, the city initiated an internal ethics review and committed to full transparency by publishing the results. Citizens cautiously welcomed the move, hoping it restores trust in the participatory budgeting process.",
+        "image": "news9"
+      }
+    },
+    {
+      "text": "Suspend the project in question and let others proceed.",
+      "effects": { "quality": 1, "engagement": 1, "uptake": 2 },
+      "summary": "You chose to suspend the disputed project while allowing others to continue.",
+      "news": {
+        "headline": "Disputed Project Suspended, Others Move Forward",
+        "content": "Voice of the People reports that the contested project was temporarily suspended amid the scandal, while other community projects continue unhindered. Some residents support the cautious approach, while others call for stronger measures against corruption.",
+        "image": "news10"
+      }
+    },
+    {
+      "text": "Downplay the scandal and continue without acknowledgment.",
+      "effects": { "quality": 0, "engagement": 0, "uptake": 1 },
+      "summary": "You chose to downplay the scandal and proceed without public acknowledgment.",
+      "news": {
+        "headline": "City Officials Downplay Funding Scandal",
+        "content": "Public Square Radio reports city officials have downplayed recent scandal allegations and pressed ahead with the funding decisions. The move drew criticism from watchdog groups and sparked social media backlash, with calls for greater accountability.",
+        "image": "news11"
+      }
+    },
+    {
+      "text": "Ask citizens to vote again on the disputed project.",
+      "effects": { "quality": 1, "engagement": 2, "uptake": 0 },
+      "summary": "You chose to hold a new public vote to reclaim decision-making.",
+      "news": {
+        "headline": "New Vote Called on Controversial Project",
+        "content": "The Civic Herald announces a fresh public vote on the disputed project as a way to reaffirm citizen control and legitimacy. While the move is praised by transparency advocates, some question the costs and timing amid the ongoing scandal.",
+        "image": "news12"
+      }
+    }
+  ]
 },
 
 
 {
- "id": "advantage2",
- "type": "advantage",
- "phase": null,
- "title": "Private Sector Offers Support",
- "scenario": "A local company offers free technical support and software to improve PB data analysis and outreach.",
- "question": "What do you do with the offer?",
- "learnMore": "In some Polish cities, partnerships with civic tech firms enhanced transparency and trust in PB platforms.",
- "options": [
-   {
-     "text": "Accept the support and publish the agreement terms openly.",
-     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
-     "summary": "You chose to accept the support and openly publish the agreement to ensure transparency."
-   },
-   {
-     "text": "Politely decline to avoid private influence.",
-     "effects": { "quality": 1, "engagement": 0, "uptake": 1 },
-     "summary": "You chose to politely decline the offer to avoid potential private sector influence."
-   },
-   {
-     "text": "Accept but restrict access to only technical operations.",
-     "effects": { "quality": 2, "engagement": 1, "uptake": 1 },
-     "summary": "You chose to accept the support with restrictions limited to technical operations."
-   },
-   {
-     "text": "Let citizens vote on whether to accept the help.",
-     "effects": { "quality": 1, "engagement": 2, "uptake": 0 },
-     "summary": "You chose to put the decision to accept help to a public vote."
-   }
- ]
+  "id": "advantage2",
+  "type": "advantage",
+  "phase": null,
+  "title": "Private Sector Offers Support",
+  "scenario": "A local company offers free technical support and software to improve PB data analysis and outreach.",
+  "question": "What do you do with the offer?",
+  "learnMore": "In some Polish cities, partnerships with civic tech firms enhanced transparency and trust in PB platforms.",
+  "options": [
+    {
+      "text": "Accept the support and publish the agreement terms openly.",
+      "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+      "summary": "You chose to accept the support and openly publish the agreement to ensure transparency.",
+      "news": {
+        "headline": "City Embraces Tech Partnership, Commits to Transparency",
+        "content": "The Civic Herald reports that the city has accepted a local company's offer for free technical support and software, with all agreement terms published online. Experts commend the move as a model for transparency and public trust in participatory budgeting.",
+        "image": "news13"
+      }
+    },
+    {
+      "text": "Politely decline to avoid private influence.",
+      "effects": { "quality": 1, "engagement": 0, "uptake": 1 },
+      "summary": "You chose to politely decline the offer to avoid potential private sector influence.",
+      "news": {
+        "headline": "City Declines Private Sector Help to Maintain Independence",
+        "content": "Local Times reports the city administration declined a private company’s offer of technical support, citing concerns about maintaining independence in the participatory budgeting process. Some civic groups praised the decision, while others expressed concern about missed opportunities.",
+        "image": "news14"
+      }
+    },
+    {
+      "text": "Accept but restrict access to only technical operations.",
+      "effects": { "quality": 2, "engagement": 1, "uptake": 1 },
+      "summary": "You chose to accept the support with restrictions limited to technical operations.",
+      "news": {
+        "headline": "City Partners with Tech Firm Under Strict Terms",
+        "content": "Public Square Radio reports that the city accepted a private company’s offer for technical support but restricted its access to operational roles only, ensuring no influence on decision-making. This balanced approach received mixed reactions from civic activists.",
+        "image": "news14"
+      }
+    },
+    {
+      "text": "Let citizens vote on whether to accept the help.",
+      "effects": { "quality": 1, "engagement": 2, "uptake": 0 },
+      "summary": "You chose to put the decision to accept help to a public vote.",
+      "news": {
+        "headline": "Public Vote Called on Private Sector Support",
+        "content": "Civic Times reports the city decided to hold a public vote on accepting technical assistance from a local company. Voter turnout surged as the community engaged in a lively debate over balancing support and independence.",
+        "image": "news14"
+      }
+    }
+  ]
 },
 
 

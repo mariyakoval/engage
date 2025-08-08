@@ -4,6 +4,22 @@ import { useNavigate } from "react-router-dom";
 import Button from "../../components/Button";
 import ProgressDots from "../../components/Dots";
 import SummaryScreenBudget from "./SummaryScreenBudget";
+import NewsModal from "../../components/NewsModal";
+
+import news1 from "../../assets/news/news1.png";
+import news2 from "../../assets/news/news2.jpg";
+import news3 from "../../assets/news/news3.jpg";
+import news4 from "../../assets/news/news4.jpg";
+import news5 from "../../assets/news/news5.jpg";
+import news6 from "../../assets/news/news6.jpg";
+import news7 from "../../assets/news/news7.jpg";
+import news8 from "../../assets/news/news8.jpg";
+import news9 from "../../assets/news/news9.jpg";
+import news10 from "../../assets/news/news10.jpg";
+import news11 from "../../assets/news/news11.jpg";
+import news12 from "../../assets/news/news12.jpg"; 
+import news13 from "../../assets/news/news13.jpg"; 
+import news14 from "../../assets/news/news14.jpg"; 
 
 function Modal({ open, onClose, children }) {
   if (!open) return null;
@@ -31,8 +47,26 @@ export default function GameScreen() {
   
   const [showPrevious, setShowPrevious] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
+  const [newsToShow, setNewsToShow] = useState(null);
   const [selectedOption, setSelectedOption] = useState(null);
   const navigate = useNavigate();
+
+  const imageMap = {
+  news1,
+  news2,
+  news3,
+  news4,
+  news5,
+  news6,
+  news7,
+  news8,
+  news9,
+  news10,
+  news11,
+  news12,
+  news13,
+  news14
+};
 
   useEffect(() => {
       if (index >= scenarios.length) {
@@ -128,14 +162,27 @@ export default function GameScreen() {
         <div className="space-y-3 max-w-2xl text-base pb-10">
           {s.options.map((opt, i) => (
             <Button
-              key={i}
-              className="w-full !justify-start !text-left !font-normal"
-              onClick={() => next(opt.effects, opt.summary, s.question, opt.text)}
-            >
-              <span className="text !text-white">{opt.text}</span>
-              
-            </Button>
-          ))}
+            key={i}
+            className="w-full !justify-start !text-left !font-normal"
+            onClick={() => {
+              // If the option has news, show the news modal
+              if (opt.news) {
+                const selectedNews = {
+                ...opt.news,
+                image: imageMap[opt.news.image] 
+              };
+
+              setNewsToShow(selectedNews);
+              setSelectedOption(opt);
+              } else { 
+                // Otherwise, just proceed to the next scenario
+                next(opt.effects, opt.summary, s.question, opt.text);
+              }
+            }}
+          >
+            <span className="text !text-white">{opt.text}</span>
+          </Button>
+         ))}
         </div>
         
         {/* Learn more modal */}
@@ -143,6 +190,25 @@ export default function GameScreen() {
           <h2 className="text-2xl font-semibold mb-4">Learn More</h2>
           <p>{s.learnMore}</p>
         </Modal>
+
+        {/* News modal to show news related to the selected option */}
+                {newsToShow && selectedOption && (
+                  <NewsModal
+                    news={newsToShow}
+                   breakingNews= {"Participatory Budgeting platform launched • Citizens’ voices shaping the budget • City officials to act on community priorities soon!"}
+                    onClose={() => {
+                      next(
+                        selectedOption.effects,
+                        selectedOption.summary,
+                        s.question,
+                        selectedOption.text
+                      );
+                      setNewsToShow(null);
+                      setSelectedOption(null);
+                    }}
+                  />
+                )}
+
       </main>
     </div>
   );
