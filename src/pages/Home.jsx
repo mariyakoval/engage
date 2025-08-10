@@ -24,10 +24,13 @@ export default function Home() {
 
         <div className="flex flex-col sm:flex-row gap-3 mt-4 justify-center md:justify-start">
           <Button onClick={() => navigate("/citizen-assembly/rules")}>
-            <span className="text !text-white">Start Citizen Assembly</span>
+            <span className="text !text-white">Citizen Assembly</span>
           </Button>
           <Button onClick={() => navigate("/participatory-budget/rules")}>
-            <span className="text !text-white">Start Participatory Budget</span>
+            <span className="text !text-white">Participatory Budget</span>
+          </Button>
+          <Button onClick={() => navigate("/e-petitions/rules")}>
+            <span className="text !text-white">E-Petitions</span>
           </Button>
         </div>
       </div>
