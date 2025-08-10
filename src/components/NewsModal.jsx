@@ -19,8 +19,19 @@ export default function NewsModal({ news, breakingNews, onClose }) {
         <img
           src={news.image}
           alt="News"
-          className="w-full h-56 object-cover rounded-md mb-4"
+          className="w-full h-56 object-cover rounded-md mb-2"
         />
+        <p className="text-gray-700 mb-4 text-xs">
+  Image Courtesy of{" "}
+  <a
+    href="https://www.pexels.com/ru-ru/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="underline hover:text-gray-900 text-xs"
+  >
+    Pexels
+  </a>
+</p>
 
         <h2 className="text-xl font-bold mb-2">{news.headline}</h2>
         <p className="text-gray-700 mb-4">{news.content}</p>
