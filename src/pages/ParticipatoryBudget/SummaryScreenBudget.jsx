@@ -28,7 +28,7 @@ export default function SummaryScreenBudget() {
   const total = quality + engagement + uptake;
 
   const getHeadline = () => {
-    if (total >= 35) return "🏆 Excellent Budget Planning!";
+    if (total >= 35) return "🏆 Excellent Participatory Budget Planning!";
     if (total >= 25) return "✅ Solid Result with Room to Grow";
     return "⚠️ Your Project Faced Challenges";
   };
