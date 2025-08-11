@@ -30,6 +30,35 @@
    }
  ]
 },
+
+{
+  "id": "q1b",
+  "type": "phase",
+  "phase": 1,
+  "title": "Initiation and Legitimacy",
+  "scenario": "Your platform is attracting a mix of serious policy proposals and spam submissions. The team debates how to handle initial submissions to build a credible reputation.",
+  "question": "How will you manage initial proposal submissions to build legitimacy?",
+  "learnMore": "Early quality control builds trust, but overly restrictive rules may deter early users. Latvia’s MyVoice struck a balance by gradually increasing filtering while communicating clearly with submitters.",
+  "options": [
+    {
+      "text": "Implement a community voting step before proposals go public",
+      "effects": { "quality": 1, "engagement": 2, "uptake": 1 },
+      "summary": "You leverage community moderation to improve quality and engagement but risk popular bias."
+    },
+    {
+      "text": "Require submitters to register with verified identities before posting",
+      "effects": { "quality": 2, "engagement": 1, "uptake": 2 },
+      "summary": "You reduce spam and improve proposal seriousness but may lower participation."
+    },
+    {
+      "text": "Publish all proposals but tag questionable ones with disclaimers",
+      "effects": { "quality": 0, "engagement": 2, "uptake": 0 },
+      "summary": "You maximize transparency and openness but risk confusing users and policymakers."
+    }
+  ]
+},
+
+
 {
  "id": "q2",
  "type": "phase",
@@ -61,12 +90,74 @@
    }
  ]
 },
+
+{
+  "id": "q2b",
+  "type": "phase",
+  "phase": 2,
+  "title": "Platform Design and Accessibility",
+  "scenario": "Users report confusion over how proposals translate into legislative outcomes, decreasing their trust and motivation.",
+  "question": "What platform feature will you prioritize to improve user understanding and trust?",
+  "learnMore": "MyVoice benefited from clear explanations of the legislative process and status updates to keep users informed and engaged.",
+  "options": [
+    {
+      "text": "Add clear, simple explanations of each legislative step alongside proposals",
+      "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+      "summary": "You clarify the process and boost user confidence and engagement."
+    },
+    {
+      "text": "Provide an FAQ section focusing on users’ most common questions",
+      "effects": { "quality": 1, "engagement": 1, "uptake": 0 },
+      "summary": "You improve user experience but don’t directly affect legislative outcomes."
+    },
+    {
+      "text": "Integrate an interactive chatbot to guide users through submission and follow-up",
+      "effects": { "quality": 2, "engagement": 2, "uptake": 1 },
+      "summary": "You make the platform approachable and informative, encouraging repeated use."
+    }
+  ]
+},
+
+{
+"id": "q1b",
+"type": "phase",
+"phase": 1,
+"title": "Platform Design and Accessibility",
+"scenario": "Your platform is finalizing the submission guidelines for citizen initiatives. To ensure proposals meet essential standards, you want to incorporate clear quality criteria inspired by Latvia’s approach, balancing legal soundness, democratic values, and presentation clarity.",
+"question": "How will you integrate and enforce quality criteria for citizen initiatives?",
+"learnMore": "Latvia’s MyVoice platform requires initiatives to be legally feasible, aligned with democratic values, factually accurate, and clearly presented in Latvian with proper grammar and illustrations. These criteria help maintain credibility, inclusivity, and clarity, ensuring initiatives are constructive and actionable.",
+"options": [
+{
+"text": "Require all proposals to meet every criterion before publication, with automated checks and manual review",
+"effects": { "quality": 3, "engagement": 0, "uptake": 2 },
+"summary": "You maximize quality and legal compliance but may slow down submissions and reduce initial participation."
+},
+
+{
+"text": "Publish proposals immediately but flag those that do not meet all criteria for revision",
+"effects": { "quality": 1, "engagement": 2, "uptake": 1 },
+"summary": "You encourage participation and transparency while nudging authors to improve quality over time."
+},
+
+{
+"text": "Let users vote on whether proposals meet quality criteria before platform staff review",
+"effects": { "quality": 2, "engagement": 2, "uptake": 1 },
+"summary": "You foster community moderation and engagement but risk inconsistent quality enforcement."
+},
+
+{
+"text": "Only apply the quality criteria to initiatives submitted by first-time users",
+"effects": { "quality": 2, "engagement": 1, "uptake": 1 },
+"summary": "You support experienced users with more freedom while guiding newcomers, balancing quality and openness."
+} ] },
+
+
 {
  "id": "q3",
  "type": "phase",
  "phase": 3,
  "title": "Mobilizing Signatures",
- "scenario": "Your platform has launched. Now you must help authors promote their petitions to reach the signature threshold. However, your resources for outreach are limited.",
+ "scenario": "Your platform has launched. Now authors must promote their petitions to reach the signature threshold.",
  "question": "What kind of promotional support do you provide?",
  "learnMore": "In Latvia’s MyVoice experience, the most successful initiatives often had grassroots or media promotion by the authors themselves. The platform remained neutral and only supported through information assistance. Some authors, like in the 'Life Without Hepatitis C' initiative, prepared thoroughly and used public pressure to gain legislative attention.",
  "options": [
@@ -77,20 +168,47 @@
    },
    {
      "text": "Sponsor media ads for the top 5 most-signed initiatives each month",
-     "effects": { "quality": 0, "engagement": 1, "uptake": 2 },
+     "effects": { "quality": 0, "engagement": 1, "uptake": 0 },
      "summary": "You focus on popular momentum but risk neglecting smaller or less media-savvy groups."
    },
    {
      "text": "Remain neutral and offer no promotional assistance",
-     "effects": { "quality": 1, "engagement": 0, "uptake": 0 },
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
      "summary": "You maintain strict impartiality, but promising ideas may struggle without visibility."
    },
    {
      "text": "Allow users to donate directly to initiative authors for promotion",
-     "effects": { "quality": 0, "engagement": 1, "uptake": 1 },
+     "effects": { "quality": 1, "engagement": 2, "uptake": 1 },
      "summary": "You create a flexible funding mechanism, but it may favor better-connected or charismatic individuals."
    }
  ]
+},
+
+{
+  "id": "q3b",
+  "type": "phase",
+  "phase": 3,
+  "title": "Mobilizing Signatures",
+  "scenario": "Petition authors struggle to mobilize diverse communities, resulting in limited signature diversity and regional bias.",
+  "question": "How will you help broaden outreach to ensure inclusive signature gathering?",
+  "learnMore": "Broad demographic participation helps ensure proposals represent diverse interests, increasing legitimacy and political weight.",
+  "options": [
+    {
+      "text": "Partner with local community organizations to co-promote petitions",
+      "effects": { "quality": 1, "engagement": 2, "uptake": 2 },
+      "summary": "You foster grassroots support and increase inclusivity."
+    },
+    {
+      "text": "Create multilingual promotional materials and platform interfaces",
+      "effects": { "quality": 2, "engagement": 2, "uptake": 1 },
+      "summary": "You remove language barriers and broaden participation."
+    },
+    {
+      "text": "Organize online webinars and live events to coach authors on outreach",
+      "effects": { "quality": 1, "engagement": 2, "uptake": 1 },
+      "summary": "You build author capacity and community excitement."
+    }
+  ]
 },
 
 
@@ -126,6 +244,33 @@
  ]
 },
 
+{
+  "id": "q4b",
+  "type": "phase",
+  "phase": 4,
+  "title": "Political Response and Institutionalization",
+  "scenario": "MPs often delay or avoid addressing initiatives despite public support. The platform seeks ways to enhance accountability without straining relations with parliament.",
+  "question": "What strategy will you pursue to encourage timely parliamentary response?",
+  "learnMore": "Increasing parliamentary accountability can build platform legitimacy, but overly aggressive tactics may alienate political allies.",
+  "options": [
+    {
+      "text": "Introduce deadlines for parliamentary committees to issue public statements on initiatives",
+      "effects": { "quality": 2, "engagement": 1, "uptake": 2 },
+      "summary": "You create formal expectations that increase transparency and response."
+    },
+    {
+      "text": "Publish MP voting records on initiatives to inform voters",
+      "effects": { "quality": 1, "engagement": 2, "uptake": 1 },
+      "summary": "You use public accountability to motivate MPs."
+    },
+    {
+      "text": "Facilitate regular meetings between initiative authors and relevant MPs",
+      "effects": { "quality": 1, "engagement": 1, "uptake": 2 },
+      "summary": "You build direct dialogue and political support."
+    }
+  ]
+},
+
 
 {
  "id": "q5",
@@ -157,6 +302,33 @@
      "summary": "You distance the platform from messy implementation realities, risking disillusionment and loss of credibility."
    }
  ]
+},
+
+{
+  "id": "q5b",
+  "type": "phase",
+  "phase": 5,
+  "title": "Monitoring Government Action",
+  "scenario": "Citizens want clearer, more frequent updates on implementation progress, but ministries are slow to cooperate.",
+  "question": "How will you enhance monitoring of government action despite limited official cooperation?",
+  "learnMore": "Active citizen engagement in monitoring can compensate for bureaucratic opacity but requires strong coordination and data verification.",
+  "options": [
+    {
+      "text": "Enable user-submitted reports on policy impact with verification protocols",
+      "effects": { "quality": 1, "engagement": 2, "uptake": 1 },
+      "summary": "You crowdsource monitoring, increasing engagement and transparency."
+    },
+    {
+      "text": "Build partnerships with independent research organizations for periodic impact assessments",
+      "effects": { "quality": 2, "engagement": 1, "uptake": 2 },
+      "summary": "You provide credible, external validation of progress."
+    },
+    {
+      "text": "Send official progress questionnaires to ministries with public results",
+      "effects": { "quality": 2, "engagement": 0, "uptake": 2 },
+      "summary": "You institutionalize data collection but may face non-responsiveness."
+    }
+  ]
 },
 
 
@@ -192,6 +364,33 @@
  ]
 },
 
+{
+  "id": "q6b",
+  "type": "phase",
+  "phase": 6,
+  "title": "Long-Term Sustainability",
+  "scenario": "With uncertain funding, you must balance expansion ambitions with keeping user trust and independence intact.",
+  "question": "Which approach will best ensure financial sustainability without compromising values?",
+  "learnMore": "Sustainable funding models often blend multiple sources to reduce risk and avoid undue influence, supporting long-term platform growth.",
+  "options": [
+    {
+      "text": "Launch a transparent membership program with small annual fees for users wanting extra features",
+      "effects": { "quality": 1, "engagement": 2, "uptake": 1 },
+      "summary": "You build community ownership while generating predictable income."
+    },
+    {
+      "text": "Diversify funding through grants, donations, and ethical sponsorships with full disclosure",
+      "effects": { "quality": 2, "engagement": 1, "uptake": 2 },
+      "summary": "You balance income streams while maintaining transparency."
+    },
+    {
+      "text": "Implement a small transaction fee for third-party services offered on the platform",
+      "effects": { "quality": 1, "engagement": 0, "uptake": 1 },
+      "summary": "You monetize value-added services with limited impact on core users."
+    }
+  ]
+},
+
 
 {
  "id": "q7",
@@ -203,7 +402,7 @@
  "options": [
    {
      "text": "Introduce a rule requiring paid submission for initiatives affiliated with political parties",
-     "effects": { "quality": 2, "engagement": 0, "uptake": 1 },
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
      "summary": "You discourage party misuse but risk alienating politically active users.",
      "news": {
        "headline": "Platform Introduces Political Firewall",
@@ -295,6 +494,4 @@
    }
  ]
 }
-
-
 ]
