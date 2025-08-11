@@ -20,7 +20,7 @@ const Navbar = ({ theme, setTheme }) => {
         <li><Link to="/">Home</Link></li>
         <li><Link to="/citizen-assembly/rules">Citizens' Assembly</Link></li>
         <li><Link to="/participatory-budget/rules">Participatory Budget</Link></li>
-        <li><Link to="/e-petitions/rules">E-Petitions</Link></li>
+        <li><Link to="/e-petitions/rules">E-Petition</Link></li>
         <li><Link to="/about">About</Link></li>
       </ul>
 
@@ -38,7 +38,7 @@ const Navbar = ({ theme, setTheme }) => {
           <li onClick={toggleNavbar}><Link to="/">Home</Link></li>
           <li onClick={toggleNavbar}><Link to="/citizen-assembly/rules">Citizens' Assembly</Link></li>
           <li onClick={toggleNavbar}><Link to="/participatory-budget/rules">Participatory Budget</Link></li>
-          <li onClick={toggleNavbar}><Link to="/e-petitions/rules">E-Petitions</Link></li>
+          <li onClick={toggleNavbar}><Link to="/e-petitions/rules">E-Petition</Link></li>
           <li onClick={toggleNavbar}><Link to="/about">About</Link></li>
         </div>
       )}

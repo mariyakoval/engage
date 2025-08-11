@@ -30,7 +30,7 @@ export default function Home() {
             <span className="text !text-white">Participatory Budget</span>
           </Button>
           <Button onClick={() => navigate("/e-petitions/rules")}>
-            <span className="text !text-white">E-Petitions</span>
+            <span className="text !text-white">E-Petition</span>
           </Button>
         </div>
       </div>
