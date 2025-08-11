@@ -98,7 +98,7 @@ export default function GameScreen() {
           <h2 className="font-semibold text-2xl mb-2 mt-16">Your mission</h2>
           <p className="text-base">
             Create an E-Petitions platform that results in high‑quality proposals
-            adopted by Parliament, while keeping the process inclusive,
+            adopted by the Parliament, while keeping the process inclusive,
             legitimate, and engaging.
           </p>
         </div>

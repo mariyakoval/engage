@@ -121,7 +121,7 @@ export default function SummaryScreenBudget() {
       {currentView === "trajectory" && (
         <div className="bg-white rounded-xl shadow-lg px-4 py-6 w-full max-w-4xl sm:px-6">
           <h2 className="text-2xl font-semibold mb-4">Score Trajectory</h2>
-          <p className="text-m text-gray-600">This graph shows how your scores evolved over the course of the Assembly. <br></br>Click on any point to see details about that step.</p>
+          <p className="text-m text-gray-600">This graph shows how your scores evolved over the course of the Participatory Budgeting process. <br></br>Click on any point to see details about that step.</p>
 
           <div className="overflow-x-auto">
   <div style={{ width: Math.max(chartData.length * 60, 600), minWidth: '100%' }}>

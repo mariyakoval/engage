@@ -28,9 +28,9 @@ export default function SummaryScreenPetitions() {
   const total = quality + engagement + uptake;
 
   const getHeadline = () => {
-    if (total >= 35) return "🏆 Excellent Assembly Leadership!";
+    if (total >= 35) return "🏆 Excellent E-Petition Leadership!";
     if (total >= 25) return "✅ Solid Result with Room to Grow";
-    return "⚠️ Your Assembly Faced Challenges";
+    return "⚠️ Your E-Petition Planning Faced Challenges";
   };
 
   const stageLabels = [
@@ -125,7 +125,7 @@ export default function SummaryScreenPetitions() {
       {currentView === "trajectory" && (
         <div className="bg-white rounded-xl shadow-lg px-4 py-6 w-full max-w-4xl sm:px-6">
           <h2 className="text-2xl font-semibold mb-4">Score Trajectory</h2>
-          <p className="text-m text-gray-600">This graph shows how your scores evolved over the course of the Assembly. <br></br>Click on any point to see details about that step.</p>
+          <p className="text-m text-gray-600">This graph shows how your scores evolved over the course of the E-Petition process. <br></br>Click on any point to see details about that step.</p>
 
           <div className="overflow-x-auto">
             <div style={{ width: Math.max(chartData.length * 60, 600), minWidth: '100%' }}>

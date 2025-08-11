@@ -16,7 +16,7 @@ export default function About() {
 </p>
 <h1 className="text-3xl font-bold mb-4 mt-6">About the author</h1>
 <p className="text-lg mb-4 max-w-2xl mx-auto xl:mx-0">
-    Engage was created by Mariia Koval, a student at Amherst College, Massachusetts, USA, during her internship with the University of Tartu. The project was developed under the supervision of Dr. Dmytro Khutkyy, with a focus on improving student engagement through interactive learning tools.
+    Engage was created by Mariia Koval, a student at Amherst College, Massachusetts, USA, during her internship at the University of Tartu Ukraine Centre, Estonia. The project was developed under the supervision of Dr. Dmytro Khutkyy, with a focus on improving student engagement through interactive learning tools.
 </p>
 </div>
 <div className="hidden md:flex w-full md:w-1/3 justify-center relative z-0 overflow-visible">
