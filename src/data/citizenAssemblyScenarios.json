@@ -564,5 +564,390 @@
        "summary": "You aimed for media attention but risked alienating participants and reducing the quality of deliberation."
      }
    ]
- }
+ },
+
+ {
+ "id": "ca_q1_1",
+ "type": "phase",
+ "phase": 1,
+ "title": "Initiation and Legitimacy",
+ "scenario": "Following a major corruption scandal, public trust in parliament collapses. Civil society activists propose creating a citizen assembly to draft reforms, but government officials worry about undermining representative institutions.",
+ "question": "Who should initiate the citizen assembly?",
+ "learnMore": "In Estonia, the Rahvakogu assembly was triggered by civic movements after mass protests, gaining legitimacy from its bottom-up origins. However, government support was crucial for connecting outputs to parliament.",
+ "options": [
+   {
+     "text": "Let civil society groups initiate and run the assembly",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 1 },
+     "summary": "You maximize grassroots legitimacy, but risk weak institutional follow-up."
+   },
+   {
+     "text": "Have parliament officially launch the assembly",
+     "effects": { "quality": 2, "engagement": 0, "uptake": 2 },
+     "summary": "You guarantee formal recognition, but risk being seen as government-controlled."
+   },
+   {
+     "text": "Launch jointly with NGOs and political leaders",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+     "summary": "You combine legitimacy and institutional access, though coordination is complex."
+   },
+   {
+     "text": "Outsource initiation to international organizations",
+     "effects": { "quality": 1, "engagement": 0, "uptake": 1 },
+     "summary": "You gain neutrality, but citizens may see it as externally imposed."
+   }
+ ]
+},
+
+{
+ "id": "ca_q1_2",
+ "type": "phase",
+ "phase": 1,
+ "title": "Initiation and Legitimacy",
+ "scenario": "Your country is debating whether to make the citizen assembly a one-time emergency response or to institutionalize it as a recurring body. Estonia’s Rahvakogu was a one-off, while Ireland’s Citizens’ Assembly was institutionalized for multiple issues.",
+ "question": "How should you structure the assembly’s mandate?",
+ "learnMore": "Temporary assemblies can react quickly to crises and gain momentum, but risk being forgotten. Permanent assemblies may build long-term legitimacy but require stable funding and political will.",
+ "options": [
+   {
+     "text": "Run it as a one-time response to the crisis",
+     "effects": { "quality": 1, "engagement": 1, "uptake": 0 },
+     "summary": "You respond rapidly, but risk losing continuity once the assembly ends."
+   },
+   {
+     "text": "Institutionalize a permanent assembly with a broad mandate",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+     "summary": "You ensure sustainability, but require ongoing resources and political support."
+   },
+   {
+     "text": "Mandate it only for a limited number of issues (e.g. constitutional reforms)",
+     "effects": { "quality": 2, "engagement": 1, "uptake": 1 },
+     "summary": "You ensure focus and depth, but limit the assembly’s relevance over time."
+   },
+   {
+     "text": "Leave the mandate vague and evolve it over time",
+     "effects": { "quality": 0, "engagement": 2, "uptake": 1 },
+     "summary": "You encourage flexibility, but risk confusion and lack of credibility."
+   }
+ ]
+},
+
+{
+ "id": "ca_q2_1",
+ "type": "phase",
+ "phase": 2,
+ "title": "Design and Engagement",
+ "scenario": "Your team is deciding how participants will be selected for the assembly. In Ireland, members were chosen randomly to reflect society, while in Estonia’s Rahvakogu, activists and volunteers could submit proposals online, leading to self-selection.",
+ "question": "How should participants be recruited?",
+ "learnMore": "Random selection ensures representativeness and legitimacy, while self-selection maximizes enthusiasm but risks bias toward active citizens. Hybrid models try to combine both strengths.",
+ "options": [
+   {
+     "text": "Recruit volunteers through an open call",
+     "effects": { "quality": 0, "engagement": 2, "uptake": 0 },
+     "summary": "You maximize motivation and openness, but risk over-representing active elites."
+   },
+   {
+     "text": "Use random selection to mirror the population",
+     "effects": { "quality": 2, "engagement": 1, "uptake": 2 },
+     "summary": "You guarantee representativeness, but some participants may lack motivation."
+   },
+   {
+     "text": "Combine random selection with voluntary applications",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+     "summary": "You balance inclusivity and legitimacy, but require careful coordination."
+   },
+   {
+     "text": "Invite NGOs and experts to nominate representatives",
+     "effects": { "quality": 1, "engagement": 0, "uptake": 1 },
+     "summary": "You ensure expertise, but risk reducing grassroots legitimacy."
+   }
+ ]
+},
+
+{
+ "id": "ca_q2_2",
+ "type": "phase",
+ "phase": 2,
+ "title": "Design and Engagement",
+ "scenario": "In Estonia’s Rahvakogu, proposals were filtered through constitutional and feasibility checks before deliberation. Other assemblies allow broad, unfiltered input to encourage creativity. Your team must decide how to handle the design of entry rules.",
+ "question": "How will you filter and prepare proposals before deliberation?",
+ "learnMore": "Strict filtering increases policy relevance but can frustrate citizens if too many ideas are excluded. Minimal filtering maximizes inclusivity but risks overwhelming the process with unrealistic proposals.",
+ "options": [
+   {
+     "text": "Allow all proposals to enter deliberation without checks",
+     "effects": { "quality": 0, "engagement": 2, "uptake": 0 },
+     "summary": "You encourage creativity and openness, but risk flooding the process with unfeasible ideas."
+   },
+   {
+     "text": "Apply strict expert vetting for legal and financial feasibility",
+     "effects": { "quality": 2, "engagement": 0, "uptake": 1 },
+     "summary": "You ensure policy relevance, but risk excluding many citizen contributions."
+   },
+   {
+     "text": "Use a moderate filter with transparent criteria (constitutionality, clarity, feasibility)",
+     "effects": { "quality": 2, "engagement": 1, "uptake": 2 },
+     "summary": "You balance inclusivity with quality, strengthening trust and legitimacy."
+   },
+   {
+     "text": "Let citizens themselves vote on which proposals advance to deliberation",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 1 },
+     "summary": "You maximize ownership, but risk popularity contests over substance."
+   }
+ ]
+},
+
+{
+ "id": "ca_q3_1",
+ "type": "phase",
+ "phase": 3,
+ "title": "Participation and Outreach",
+ "scenario": "In Estonia’s Rahvakogu, many citizens submitted proposals online, but participation was limited mainly to digitally active groups. In France’s Citizens’ Convention for Climate, organizers used a broad outreach campaign and visible public events to raise awareness. Your assembly must decide how to engage the wider public.",
+ "question": "How will you maximize citizen outreach?",
+ "learnMore": "Citizen assemblies risk becoming elite-driven if outreach is too narrow. Combining digital tools with broad campaigns, partnerships, and visible events increases both participation and legitimacy.",
+ "options": [
+   {
+     "text": "Rely mainly on an official government website for participation",
+     "effects": { "quality": 0, "engagement": 0, "uptake": 0 },
+     "summary": "You keep costs low, but only the most engaged citizens are likely to participate."
+   },
+   {
+     "text": "Partner with NGOs and civic groups to promote participation",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+     "summary": "You strengthen grassroots legitimacy, but depend heavily on civil society networks."
+   },
+   {
+     "text": "Run a large-scale media campaign across TV, radio, and social media",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 1 },
+     "summary": "You reach broader audiences, but this requires substantial financial investment."
+   },
+   {
+     "text": "Target schools and universities to bring in younger citizens",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 1 },
+     "summary": "You boost youth participation, but risk excluding older or less digitally connected groups."
+   }
+ ]
+},
+
+{
+ "id": "ca_q3_2",
+ "type": "phase",
+ "phase": 3,
+ "title": "Participation and Outreach",
+ "scenario": "In Ireland’s Citizens’ Assembly, random selection ensured demographic diversity, while France’s Convention for Climate also provided support for lower-income participants to attend. Your assembly needs to decide how to guarantee inclusivity.",
+ "question": "How will you ensure diversity of participation?",
+ "learnMore": "Assemblies can reproduce social inequalities if left unchecked. Random selection, quotas, and targeted outreach help ensure balanced representation across gender, class, and regions.",
+ "options": [
+   {
+     "text": "Accept whoever signs up, with no corrective measures",
+     "effects": { "quality": 0, "engagement": 0, "uptake": 0 },
+     "summary": "You maximize openness, but participation will likely skew toward privileged groups."
+   },
+   {
+     "text": "Use demographic quotas in the random selection process",
+     "effects": { "quality": 2, "engagement": 1, "uptake": 2 },
+     "summary": "You improve fairness and legitimacy, but some may criticize it as engineered representation."
+   },
+   {
+     "text": "Provide financial and logistical support for underrepresented participants",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 2 },
+     "summary": "You lower barriers for marginalized groups, but need extra resources to sustain it."
+   },
+   {
+     "text": "Invite community organizations to nominate participants",
+     "effects": { "quality": 1, "engagement": 1, "uptake": 1 },
+     "summary": "You leverage grassroots legitimacy, but risk excluding individuals outside organizations."
+   }
+ ]
+},
+
+{
+ "id": "ca_q4_1",
+ "type": "phase",
+ "phase": 4,
+ "title": "Deliberation and Drafting",
+ "scenario": "In Ireland’s Citizens’ Assembly, participants worked in small groups with facilitators to deliberate before drafting recommendations. In Estonia’s Rahvakogu, expert input helped clarify proposals, but some citizens worried experts had too much influence.",
+ "question": "How should expert input be integrated into deliberation?",
+ "learnMore": "Experts can provide crucial context on legal and policy feasibility, but too much reliance risks overshadowing citizen voices. Balanced models give citizens both knowledge and ownership.",
+ "options": [
+   {
+     "text": "Allow citizens to deliberate without any expert input",
+     "effects": { "quality": 0, "engagement": 2, "uptake": 0 },
+     "summary": "You maximize citizen ownership, but risk unrealistic or uninformed proposals."
+   },
+   {
+     "text": "Bring in experts to review and amend proposals directly",
+     "effects": { "quality": 2, "engagement": 0, "uptake": 1 },
+     "summary": "You ensure technical feasibility, but risk sidelining citizen voices."
+   },
+   {
+     "text": "Use experts only to answer questions and fact-check during deliberation",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+     "summary": "You balance expertise and participation, strengthening both quality and legitimacy."
+   },
+   {
+     "text": "Let citizens choose which experts to invite",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 1 },
+     "summary": "You give citizens control, but expertise may be uneven or contested."
+   }
+ ]
+},
+
+{
+ "id": "ca_q4_2",
+ "type": "phase",
+ "phase": 4,
+ "title": "Deliberation and Drafting",
+ "scenario": "The French Citizens’ Convention for Climate spent months drafting detailed proposals, while Rahvakogu in Estonia produced a shorter set of reforms after only a few weeks. Your assembly must decide how ambitious to be in its drafting process.",
+ "question": "What should the scope of recommendations be?",
+ "learnMore": "A longer process allows deeper proposals and higher legitimacy, but risks fatigue and political resistance. Shorter, focused outputs are more manageable but may miss opportunities for systemic change.",
+ "options": [
+   {
+     "text": "Produce a short list of broad principles",
+     "effects": { "quality": 1, "engagement": 1, "uptake": 1 },
+     "summary": "You simplify the process, but risk vague recommendations with little impact."
+   },
+   {
+     "text": "Draft detailed, comprehensive policy proposals",
+     "effects": { "quality": 2, "engagement": 1, "uptake": 2 },
+     "summary": "You provide actionable reforms, but risk overwhelming parliament with complexity."
+   },
+   {
+     "text": "Focus only on one or two urgent issues",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 1 },
+     "summary": "You ensure focus and feasibility, but limit broader reform potential."
+   },
+   {
+     "text": "Allow each working group to draft its own proposals independently",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 1 },
+     "summary": "You maximize inclusivity, but may end up with fragmented or inconsistent outputs."
+   }
+ ]
+},
+
+{
+ "id": "ca_q5_1",
+ "type": "phase",
+ "phase": 5,
+ "title": "Communication and advocacy",
+ "scenario": "In France’s Citizens’ Convention for Climate, recommendations gained visibility through media coverage and presidential speeches. In Estonia’s Rahvakogu, many citizens felt the process faded from public attention after initial momentum. Your assembly must decide how to publicize its outputs.",
+ "question": "How will you communicate the assembly’s results?",
+ "learnMore": "Strong communication sustains legitimacy and pressure on politicians. Without visibility, recommendations risk being forgotten or dismissed.",
+ "options": [
+   {
+     "text": "Publish the final report quietly on a government website",
+     "effects": { "quality": 1, "engagement": 0, "uptake": 0 },
+     "summary": "You fulfill transparency requirements but generate little public interest."
+   },
+   {
+     "text": "Hold a national press conference with assembly members",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 1 },
+     "summary": "You highlight citizen voices, but media attention may fade quickly."
+   },
+   {
+     "text": "Launch a multimedia campaign across TV, radio, and social platforms",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+     "summary": "You maximize visibility and legitimacy, though campaigns require significant resources."
+   },
+   {
+     "text": "Rely on NGOs and activists to advocate for the outcomes",
+     "effects": { "quality": 1, "engagement": 1, "uptake": 1 },
+     "summary": "You gain grassroots support, but outcomes depend on external networks."
+   }
+ ]
+},
+
+{
+ "id": "ca_q5_2",
+ "type": "phase",
+ "phase": 5,
+ "title": "Communication and Advocacy",
+ "scenario": "Ireland’s Citizens’ Assembly invited members of parliament and media to observe its sessions, strengthening transparency. Other assemblies kept discussions closed until final recommendations were ready, to avoid politicization. Your assembly must choose its communication approach during deliberation.",
+ "question": "How transparent should the assembly’s work be to the public?",
+ "learnMore": "Opening the process builds trust but risks external pressure. Keeping it closed protects deliberation but may undermine legitimacy if secrecy is perceived.",
+ "options": [
+   {
+     "text": "Keep deliberations closed until the final report is published",
+     "effects": { "quality": 2, "engagement": 0, "uptake": 0 },
+     "summary": "You protect open debate inside, but risk public skepticism about secrecy."
+   },
+   {
+     "text": "Livestream all sessions for maximum transparency",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 1 },
+     "summary": "You build public trust, but participants may feel pressured by constant visibility."
+   },
+   {
+     "text": "Allow media and MPs to attend as observers without speaking rights",
+     "effects": { "quality": 2, "engagement": 1, "uptake": 2 },
+     "summary": "You balance openness and independence, strengthening credibility."
+   },
+   {
+     "text": "Publish weekly summaries and video highlights instead of full access",
+     "effects": { "quality": 1, "engagement": 1, "uptake": 1 },
+     "summary": "You keep the public informed, though less intensively than full transparency."
+   }
+ ]
+},
+
+{
+ "id": "ca_q6_1",
+ "type": "phase",
+ "phase": 6,
+ "title": "Getting to the Parliament",
+ "scenario": "Ireland’s Citizens’ Assembly recommendations on same-sex marriage and abortion went directly to referendums, giving them high legitimacy. Estonia’s Rahvakogu proposals were forwarded to parliament, but only some were debated. Your assembly must decide how outputs will enter the political system.",
+ "question": "What formal pathway should recommendations take?",
+ "learnMore": "Clear rules on follow-up are crucial for credibility. Referendums maximize legitimacy but are costly and divisive. Parliamentary debates give visibility but not guarantees. Advisory-only outputs risk being ignored.",
+ "options": [
+   {
+     "text": "Submit recommendations as advisory reports only",
+     "effects": { "quality": 0, "engagement": 0, "uptake": 0 },
+     "summary": "You preserve flexibility, but risk being dismissed as symbolic."
+   },
+   {
+     "text": "Require parliament to hold a debate and official response",
+     "effects": { "quality": 2, "engagement": 1, "uptake": 2 },
+     "summary": "You ensure visibility and accountability, though not guaranteed adoption."
+   },
+   {
+     "text": "Send selected proposals directly to referendum",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 2 },
+     "summary": "You maximize citizen legitimacy, but risk polarization and high costs."
+   },
+   {
+     "text": "Mandate committees to integrate proposals into draft laws",
+     "effects": { "quality": 2, "engagement": 1, "uptake": 1 },
+     "summary": "You give proposals stronger institutional weight, but depend on parliamentary will."
+   }
+ ]
+},
+
+{
+ "id": "ca_q6_2",
+ "type": "phase",
+ "phase": 6,
+ "title": "Getting to the Parliament",
+ "scenario": "In France’s Citizens’ Convention for Climate, President Macron promised to pass proposals ‘without filter,’ but later modified or rejected many, leading to citizen frustration. Your assembly must decide how binding commitments should be for political leaders.",
+ "question": "How binding should the assembly’s outcomes be?",
+ "learnMore": "Binding outcomes enhance trust but may clash with representative democracy. Advisory outcomes maintain flexibility but risk disappointing participants and the public.",
+ "options": [
+   {
+     "text": "Make outcomes purely advisory, leaving decisions to politicians",
+     "effects": { "quality": 0, "engagement": 0, "uptake": 0 },
+     "summary": "You maintain parliamentary sovereignty, but risk undermining citizen trust."
+   },
+   {
+     "text": "Require government to justify in detail any rejection",
+     "effects": { "quality": 2, "engagement": 1, "uptake": 2 },
+     "summary": "You strengthen accountability while preserving parliamentary discretion."
+   },
+   {
+     "text": "Make all recommendations legally binding",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 2 },
+     "summary": "You maximize citizen power, but risk constitutional tensions and political pushback."
+   },
+   {
+     "text": "Adopt a mixed model: some binding, others advisory",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 1 },
+     "summary": "You balance legitimacy and flexibility, but complexity may confuse citizens."
+   }
+ ]
+}
+
 ]
