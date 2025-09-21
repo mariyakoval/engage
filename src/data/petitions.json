@@ -493,5 +493,389 @@
      }
    }
  ]
+},
+
+{
+ "id": "q1_1",
+ "type": "phase",
+ "phase": 1,
+ "title": "Initiation and Legitimacy",
+ "scenario": "Your team is deciding how to set the signature threshold for petitions. In Canada, just 500 signatures are needed for parliament to table a petition, while in Latvia’s MyVoice, 10,000 signatures are required before parliament must review an initiative.",
+ "question": "What threshold will you set for initiating parliamentary review?",
+ "learnMore": "Lower thresholds like Canada’s encourage inclusivity and fast responses, while higher thresholds like Latvia’s aim to demonstrate stronger public backing before institutional consideration. Both choices impact legitimacy and feasibility.",
+ "options": [
+   {
+     "text": "Set a very low threshold (e.g. 500 signatures)",
+     "effects": { "quality": 0, "engagement": 2, "uptake": 1 },
+     "summary": "You maximize participation and responsiveness, but risk overwhelming parliament with less-supported petitions."
+   },
+   {
+     "text": "Set a moderate threshold (2,000–5,000 signatures)",
+     "effects": { "quality": 1, "engagement": 1, "uptake": 2 },
+     "summary": "You balance inclusivity with seriousness, increasing the chance of sustained attention and adoption."
+   },
+   {
+     "text": "Set a high threshold (10,000+ signatures)",
+     "effects": { "quality": 2, "engagement": 0, "uptake": 1 },
+     "summary": "You ensure only strongly supported issues reach parliament, but risk excluding grassroots causes with fewer mobilization resources."
+   },
+   {
+     "text": "Require MP sponsorship in addition to signatures",
+     "effects": { "quality": 2, "engagement": -1, "uptake": 1 },
+     "summary": "You guarantee parliamentary relevance but risk undermining the grassroots and citizen-driven nature of petitions."
+   }
+ ]
+},
+
+{
+ "id": "q1_2",
+ "type": "phase",
+ "phase": 1,
+ "title": "Initiation and Legitimacy",
+ "scenario": "In Queensland, Australia, petitioners must download a form and email it to parliament staff, while in Germany, anyone regardless of age or nationality can easily submit petitions online. Your government must decide on entry barriers for petitioners.",
+ "question": "How open should the petition initiation process be?",
+ "learnMore": "Minimalist systems like Queensland’s restrict access, while maximalist systems like Germany’s emphasize inclusivity by allowing anyone capable of articulating their concern to start a petition.",
+ "options": [
+   {
+     "text": "Require formal paperwork and MP review before petitions are published",
+     "effects": { "quality": 2, "engagement": 0, "uptake": 0 },
+     "summary": "You ensure formality and legal vetting, but deter many citizens from starting petitions."
+   },
+   {
+     "text": "Allow any citizen or resident to launch petitions online",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 1 },
+     "summary": "You lower barriers and maximize inclusion, but may face more low-quality or unrealistic proposals."
+   },
+   {
+     "text": "Open submissions to anyone worldwide, including non-citizens",
+     "effects": { "quality": 0, "engagement": 2, "uptake": 1 },
+     "summary": "You expand global participation, but risk diluting national focus and raising questions of legitimacy."
+   },
+   {
+     "text": "Restrict petitions to organizations or CSOs with proven capacity",
+     "effects": { "quality": 2, "engagement": -1, "uptake": 1 },
+     "summary": "You prioritize structured and feasible petitions, but exclude ordinary individuals from initiating change."
+   }
+ ]
+},
+
+{
+ "id": "q2_1",
+ "type": "phase",
+ "phase": 2,
+ "title": "Platform Design and Accessibility",
+ "scenario": "Your government is launching its petition website. In Estonia’s Osale.ee, poor usability and limited interaction features led to declining participation, while non-government platforms like Change.org thrive because they are simple, mobile-friendly, and shareable.",
+ "question": "How will you prioritize platform design?",
+ "learnMore": "Research shows that citizens are more likely to use platforms that are easy to access, mobile-compatible, and integrated with social media. Government portals often fail when they are clunky, slow, or lack sharing options.",
+ "options": [
+   {
+     "text": "Invest in mobile-first design and social media integration",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 2 },
+     "summary": "You maximize accessibility and virality, boosting participation and political pressure."
+   },
+   {
+     "text": "Focus on a secure but minimalistic portal with few features",
+     "effects": { "quality": 2, "engagement": 0, "uptake": 0 },
+     "summary": "You prioritize safety and reliability, but citizens may see the platform as outdated or uninviting."
+   },
+   {
+     "text": "Offer multiple access points (desktop, app, local kiosks)",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 1 },
+     "summary": "You reduce digital exclusion and expand reach, though implementation costs increase."
+   },
+   {
+     "text": "Replicate parliamentary processes online without usability upgrades",
+     "effects": { "quality": 0, "engagement": 0, "uptake": 0 },
+     "summary": "You stick to tradition, but risk low use and alienating digital-savvy citizens."
+   }
+ ]
+},
+
+{
+ "id": "q2_2",
+ "type": "phase",
+ "phase": 2,
+ "title": "Platform Design and Accessibility",
+ "scenario": "Latvia’s MyVoice succeeded partly because it made e-participation accessible to young citizens aged 16+ and to the diaspora abroad. Other systems limit access only to voting-age nationals within the country.",
+ "question": "Who should be able to use the petition platform?",
+ "learnMore": "Inclusive access rules can empower groups excluded from voting, such as youth and citizens abroad. However, broader access raises debates about legitimacy and representativeness.",
+ "options": [
+   {
+     "text": "Restrict access to voting-age citizens only",
+     "effects": { "quality": 2, "engagement": 0, "uptake": 1 },
+     "summary": "You ensure formal legitimacy but exclude youth and diaspora voices."
+   },
+   {
+     "text": "Allow citizens aged 16+ and diaspora abroad",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 2 },
+     "summary": "You broaden inclusion and participation, strengthening engagement and visibility."
+   },
+   {
+     "text": "Open signing to all residents regardless of nationality",
+     "effects": { "quality": 0, "engagement": 2, "uptake": 1 },
+     "summary": "You foster inclusivity but risk disputes over the legitimacy of non-citizen participation."
+   },
+   {
+     "text": "Partner with NGOs to create separate youth and diaspora platforms",
+     "effects": { "quality": 1, "engagement": 1, "uptake": 1 },
+     "summary": "You target specific groups but fragment the petitioning process and reduce central visibility."
+   }
+ ]
+},
+
+{
+ "id": "q3_1",
+ "type": "phase",
+ "phase": 3,
+ "title": "Mobilizing Signatures",
+ "scenario": "Petitions often rely on momentum to succeed. In the UK, most petitions that reach high thresholds do so within the first few days, often because they go viral on social media. Your platform is considering whether to provide real-time counters and progress bars to encourage collective action.",
+ "question": "How should you display petition progress?",
+ "learnMore": "Studies show that visible progress (e.g. ‘90% of goal reached’) can create a bandwagon effect, motivating more people to sign. However, it may also discourage participation in petitions that start slowly and appear unpopular.",
+ "options": [
+   {
+     "text": "Show real-time signature counts and percentage progress",
+     "effects": { "quality": 0, "engagement": 2, "uptake": 2 },
+     "summary": "You maximize momentum and virality, but petitions without early traction may be abandoned."
+   },
+   {
+     "text": "Show only milestone achievements (e.g. 1k, 5k, 10k signatures)",
+     "effects": { "quality": 1, "engagement": 1, "uptake": 1 },
+     "summary": "You create excitement around milestones while avoiding discouragement from slow starts."
+   },
+   {
+     "text": "Hide signature counts until the threshold is reached",
+     "effects": { "quality": 2, "engagement": 0, "uptake": 0 },
+     "summary": "You reduce bandwagon bias and focus on arguments, but limit motivational effects that drive rapid growth."
+   },
+   {
+     "text": "Display regional or demographic breakdowns of signatures",
+     "effects": { "quality": 2, "engagement": 1, "uptake": 1 },
+     "summary": "You add credibility and representativeness, but may complicate mobilization and slow viral spread."
+   }
+ ]
+},
+
+{
+ "id": "q3_2",
+ "type": "phase",
+ "phase": 3,
+ "title": "Mobilizing Signatures",
+ "scenario": "Latvia’s MyVoice gained momentum partly by cooperating with civil society groups who promoted initiatives to their members. In contrast, Estonia’s Osale.ee failed partly because it lacked active promotion and citizen awareness.",
+ "question": "How will you support citizens in mobilizing signatures?",
+ "learnMore": "Partnerships with NGOs, media, and grassroots campaigns often determine whether a petition reaches critical mass. Government platforms that fail to actively promote risk low visibility and disengagement.",
+ "options": [
+   {
+     "text": "Rely entirely on citizens to promote their petitions",
+     "effects": { "quality": 0, "engagement": 0, "uptake": 0 },
+     "summary": "You minimize state involvement, but petitions risk fading without organizational backing."
+   },
+   {
+     "text": "Offer promotion toolkits (templates, share buttons, media guides)",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 2 },
+     "summary": "You empower citizens to run campaigns, increasing engagement and chances of success."
+   },
+   {
+     "text": "Partner with NGOs and CSOs to highlight selected petitions",
+     "effects": { "quality": 2, "engagement": 1, "uptake": 2 },
+     "summary": "You ensure professionalized campaigns and visibility, but may favor well-connected groups."
+   },
+   {
+     "text": "Run official government promotion campaigns for all petitions equally",
+     "effects": { "quality": 1, "engagement": 1, "uptake": 1 },
+     "summary": "You guarantee neutrality and visibility, but limited resources may dilute impact."
+   }
+ ]
+},
+
+{
+ "id": "q4_1",
+ "type": "phase",
+ "phase": 4,
+ "title": "Political Response and Institutionalization",
+ "scenario": "In the UK, petitions with 100,000+ signatures are considered for parliamentary debate, while in Germany, petitions with 50,000 signatures within four weeks are automatically scheduled for a public hearing. Your parliament must decide how to respond to successful petitions.",
+ "question": "What kind of institutional response should petitions trigger?",
+ "learnMore": "Strong institutional commitments increase trust and visibility, but high thresholds can exclude many petitions. A clear response mechanism is critical for legitimacy and sustainability.",
+ "options": [
+   {
+     "text": "Require a ministerial written response once a petition passes the threshold",
+     "effects": { "quality": 1, "engagement": 1, "uptake": 1 },
+     "summary": "You guarantee acknowledgment but risk being seen as symbolic if responses lack substance."
+   },
+   {
+     "text": "Automatically schedule committee hearings with citizen input",
+     "effects": { "quality": 2, "engagement": 1, "uptake": 2 },
+     "summary": "You strengthen deliberation and accountability, but it demands parliamentary time and resources."
+   },
+   {
+     "text": "Hold a plenary debate in parliament for high-signature petitions",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+     "summary": "You maximize visibility and responsiveness, but risk over-politicizing petitions or crowding legislative agendas."
+   },
+   {
+     "text": "Leave responses at parliament’s discretion, without binding rules",
+     "effects": { "quality": 0, "engagement": 0, "uptake": 0 },
+     "summary": "You preserve flexibility but risk public distrust if many petitions are ignored."
+   }
+ ]
+},
+
+{
+ "id": "q4_2",
+ "type": "phase",
+ "phase": 4,
+ "title": "Political Response and Institutionalization",
+ "scenario": "Estonia’s Osale.ee collapsed partly because contributions were rarely integrated into policymaking, while Latvia’s MyVoice succeeded when parliamentary committees seriously debated and adopted proposals. Your platform must decide how binding petitions should be.",
+ "question": "How binding should petition outcomes be for policymakers?",
+ "learnMore": "Clear follow-up rules improve legitimacy. However, too much binding force may clash with representative democracy, while weak follow-up discourages citizen trust.",
+ "options": [
+   {
+     "text": "Make petitions purely advisory with no binding effect",
+     "effects": { "quality": 0, "engagement": 0, "uptake": 0 },
+     "summary": "You maintain parliamentary sovereignty, but risk petitions being dismissed as irrelevant."
+   },
+   {
+     "text": "Require parliament to debate but not necessarily adopt outcomes",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 1 },
+     "summary": "You ensure visibility and deliberation, but final authority rests with MPs."
+   },
+   {
+     "text": "Require committees to publish detailed responses and justifications",
+     "effects": { "quality": 2, "engagement": 1, "uptake": 2 },
+     "summary": "You strengthen accountability and transparency without fully binding parliament."
+   },
+   {
+     "text": "Make petitions binding law if they reach a very high threshold",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 2 },
+     "summary": "You maximize citizen power, but risk bypassing parliamentary checks and destabilizing policymaking."
+   }
+ ]
+},
+
+{
+ "id": "q5_1",
+ "type": "phase",
+ "phase": 5,
+ "title": "Monitoring Government Action",
+ "scenario": "One common criticism of petition platforms is that even when governments respond, citizens rarely know what happens afterward. For example, Estonia’s Osale.ee failed to provide feedback loops, undermining trust. Your platform must decide how to keep citizens updated.",
+ "question": "How will you ensure transparency after petitions are reviewed?",
+ "learnMore": "Successful platforms like MyVoice strengthen legitimacy by publishing updates on parliamentary debates and government follow-up, while weak systems collapse when citizens feel ignored.",
+ "options": [
+   {
+     "text": "Publish official government progress reports on each petition",
+     "effects": { "quality": 2, "engagement": 1, "uptake": 2 },
+     "summary": "You maximize accountability and transparency, though reporting demands resources."
+   },
+   {
+     "text": "Send automated email/SMS updates to all signatories",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 1 },
+     "summary": "You maintain engagement and communication, but updates may remain superficial."
+   },
+   {
+     "text": "Rely on media and NGOs to monitor government action",
+     "effects": { "quality": 1, "engagement": 0, "uptake": 0 },
+     "summary": "You save government effort, but risk inconsistency and reduced credibility."
+   },
+   {
+     "text": "Provide no systematic follow-up once the petition is closed",
+     "effects": { "quality": 0, "engagement": -1, "uptake": 0 },
+     "summary": "You avoid extra costs, but undermine trust and discourage future participation."
+   }
+ ]
+},
+
+{
+ "id": "q5_2",
+ "type": "phase",
+ "phase": 5,
+ "title": "Monitoring Government Action",
+ "scenario": "In some systems, petition outcomes are published as vague summaries, while in others, governments provide detailed responses including timelines and responsible agencies. Your government must decide the depth of follow-up communication.",
+ "question": "What kind of follow-up information will you require from government agencies?",
+ "learnMore": "Detailed and specific responses build credibility and show citizens that their voices matter. However, agencies may resist binding reporting obligations.",
+ "options": [
+   {
+     "text": "Require ministries to publish detailed action plans with deadlines",
+     "effects": { "quality": 2, "engagement": 1, "uptake": 2 },
+     "summary": "You maximize accountability and uptake, but risk bureaucratic resistance."
+   },
+   {
+     "text": "Publish general statements of consideration without concrete plans",
+     "effects": { "quality": 0, "engagement": 0, "uptake": 0 },
+     "summary": "You minimize administrative burden, but citizens may see it as tokenistic."
+   },
+   {
+     "text": "Provide comparative dashboards showing progress across petitions",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 1 },
+     "summary": "You increase transparency and visibility, though requiring technical and financial investment."
+   },
+   {
+     "text": "Allow agencies to decide their own style of reporting",
+     "effects": { "quality": 1, "engagement": 0, "uptake": 1 },
+     "summary": "You maintain flexibility, but create inconsistent follow-up and lower trust."
+   }
+ ]
+},
+
+{
+ "id": "q6_1",
+ "type": "phase",
+ "phase": 6,
+ "title": "Long-Term Sustainability",
+ "scenario": "Early e-participation platforms in Latvia failed because they lacked sustainable financing models and relied on short-term grants. In contrast, MyVoice built stable operations by combining donations, expert volunteering, and partnerships with civil society.",
+ "question": "How will you finance and sustain your petition platform?",
+ "learnMore": "Sustainability depends not only on technology but also on long-term funding and organizational commitment. Many platforms collapse when resources dry up.",
+ "options": [
+   {
+     "text": "Rely on temporary project-based grants",
+     "effects": { "quality": 0, "engagement": 1, "uptake": 0 },
+     "summary": "You can launch quickly, but risk platform collapse once funding ends."
+   },
+   {
+     "text": "Fund the platform through regular government budget allocations",
+     "effects": { "quality": 2, "engagement": 0, "uptake": 2 },
+     "summary": "You ensure stability, but risk political interference or shifting priorities."
+   },
+   {
+     "text": "Combine state funding with NGO partnerships and donations",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+     "summary": "You diversify resources and legitimacy, but require coordination across actors."
+   },
+   {
+     "text": "Charge citizens a small fee to submit initiatives",
+     "effects": { "quality": 1, "engagement": -1, "uptake": 0 },
+     "summary": "You generate revenue, but risk excluding less affluent participants and lowering inclusivity."
+   }
+ ]
+},
+
+{
+ "id": "q6_2",
+ "type": "phase",
+ "phase": 6,
+ "title": "Long-Term Sustainability",
+ "scenario": "Many e-participation systems fail because they do not adapt to changing technologies and user expectations. Estonia’s Osale.ee stagnated and became irrelevant, while MyVoice regularly updated its moderation practices and communication tools.",
+ "question": "How will you adapt the platform over time?",
+ "learnMore": "Flexibility and innovation are crucial to sustainability. Platforms must evolve with social media use, digital security standards, and civic expectations.",
+ "options": [
+   {
+     "text": "Update the platform only when technical issues arise",
+     "effects": { "quality": 0, "engagement": 0, "uptake": 0 },
+     "summary": "You minimize costs, but risk the platform becoming obsolete and unappealing."
+   },
+   {
+     "text": "Conduct regular user surveys and redesign features every few years",
+     "effects": { "quality": 2, "engagement": 1, "uptake": 2 },
+     "summary": "You stay responsive to citizens’ needs, ensuring relevance and trust."
+   },
+   {
+     "text": "Continuously integrate with emerging technologies (apps, AI moderation, social media tools)",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 1 },
+     "summary": "You innovate quickly and attract engagement, but risk over-promising or technical instability."
+   },
+   {
+     "text": "Rely on political institutions to dictate changes",
+     "effects": { "quality": 1, "engagement": 0, "uptake": 1 },
+     "summary": "You align with institutional priorities, but risk neglecting user experience and civic expectations."
+   }
+ ]
 }
 ]

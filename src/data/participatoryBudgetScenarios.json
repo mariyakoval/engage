@@ -880,6 +880,389 @@
      "summary": "You chose to compromise through partial funding"
    }
  ]
+},
+
+{
+ "id": "pb_q1_1",
+ "type": "phase",
+ "phase": 1,
+ "title": "Process Launch",
+ "scenario": "In Paris, the mayor allocated 5% of the city’s budget to participatory budgeting, making it one of the largest PB experiments worldwide. In other cities, PB covers only small discretionary funds, which often undermines citizen motivation.",
+ "question": "What share of the budget will you allocate to PB?",
+ "learnMore": "Comparative studies show that when PB involves significant funds (e.g. Porto Alegre, Paris), citizens are more motivated to participate and trust the process. When PB covers only symbolic amounts, legitimacy suffers.",
+ "options": [
+   {
+     "text": "Dedicate a symbolic share (less than 1% of budget)",
+     "effects": { "quality": 0, "engagement": 0, "uptake": 0 },
+     "summary": "You minimize disruption to government finances but risk PB being dismissed as tokenistic."
+   },
+   {
+     "text": "Dedicate a moderate share (1–3% of budget)",
+     "effects": { "quality": 1, "engagement": 1, "uptake": 1 },
+     "summary": "You give PB some credibility without threatening existing programs."
+   },
+   {
+     "text": "Dedicate a substantial share (5–10% of budget)",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+     "summary": "You build strong legitimacy and citizen buy-in, though political resistance may grow."
+   },
+   {
+     "text": "Let departments choose how much of their budgets to open",
+     "effects": { "quality": 1, "engagement": 0, "uptake": 1 },
+     "summary": "You spread PB across government, but create inconsistency and uneven legitimacy."
+   }
+ ]
+},
+
+{
+ "id": "pb_q1_2",
+ "type": "phase",
+ "phase": 1,
+ "title": "Process Launch",
+ "scenario": "In Portugal, the national PB was launched by the government, while in Poland, many PB processes began as grassroots initiatives at the municipal level. Your city is deciding how to frame ownership of the PB process.",
+ "question": "Who should lead the launch of PB?",
+ "learnMore": "Government-led PB may ensure resources and stability, but risks being top-down. Grassroots-led PB can enhance legitimacy and innovation but may struggle for funding and official buy-in.",
+ "options": [
+   {
+     "text": "City hall launches PB as an official program",
+     "effects": { "quality": 2, "engagement": 0, "uptake": 2 },
+     "summary": "You guarantee resources and authority, but may face skepticism about government control."
+   },
+   {
+     "text": "Civil society organizations launch PB independently",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 1 },
+     "summary": "You build bottom-up legitimacy, but may lack resources and political support."
+   },
+   {
+     "text": "Launch PB jointly with a coalition of NGOs and city officials",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+     "summary": "You balance resources and legitimacy, but coordination challenges may arise."
+   },
+   {
+     "text": "Pilot PB quietly in one neighborhood before citywide rollout",
+     "effects": { "quality": 1, "engagement": 1, "uptake": 1 },
+     "summary": "You reduce risk and learn lessons, but initial legitimacy and visibility are limited."
+   }
+ ]
+},
+
+{
+ "id": "pb_q2_1",
+ "type": "phase",
+ "phase": 2,
+ "title": "Outreach & Inclusion",
+ "scenario": "In many PB processes, participation is skewed toward middle-class, educated citizens. Paris addressed this by creating youth-specific PB, while Brazil pioneered neighborhood assemblies to include poorer residents.",
+ "question": "How will you ensure broad inclusion in PB?",
+ "learnMore": "Research shows PB risks reproducing inequalities unless proactive measures are taken. Special outreach to youth, marginalized groups, and low-income neighborhoods improves representativeness and legitimacy.",
+ "options": [
+   {
+     "text": "Open PB to anyone online without targeted outreach",
+     "effects": { "quality": 0, "engagement": 0, "uptake": 0 },
+     "summary": "Participation may be easy but skewed toward already-empowered groups."
+   },
+   {
+     "text": "Organize neighborhood assemblies in low-income areas",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 1 },
+     "summary": "You empower marginalized communities, though meetings demand resources."
+   },
+   {
+     "text": "Launch separate PB tracks for youth and schools",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 2 },
+     "summary": "You strengthen youth engagement, but risk fragmenting the overall process."
+   },
+   {
+     "text": "Provide outreach grants to NGOs working with underrepresented groups",
+     "effects": { "quality": 2, "engagement": 1, "uptake": 2 },
+     "summary": "You leverage civil society expertise, but outcomes depend on NGO capacity."
+   }
+ ]
+},
+
+{
+ "id": "pb_q2_2",
+ "type": "phase",
+ "phase": 2,
+ "title": "Outreach & Inclusion",
+ "scenario": "Digital PB platforms expand reach but risk excluding those without strong digital skills. In Portugal, hybrid models allowed both online and offline participation.",
+ "question": "Which participation format will you adopt?",
+ "learnMore": "Hybrid PB models (online + offline) are considered best practice for balancing accessibility with inclusivity. Relying solely on online tools risks excluding older, poorer, or less digitally skilled citizens.",
+ "options": [
+   {
+     "text": "Conduct PB entirely online for efficiency",
+     "effects": { "quality": 1, "engagement": 0, "uptake": 1 },
+     "summary": "You reach digital natives, but exclude those without internet access or skills."
+   },
+   {
+     "text": "Conduct PB entirely through in-person meetings",
+     "effects": { "quality": 1, "engagement": 1, "uptake": 0 },
+     "summary": "You foster deliberation, but exclude busy or remote citizens."
+   },
+   {
+     "text": "Use a hybrid model with both online voting and in-person assemblies",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+     "summary": "You maximize inclusivity, though implementation is costlier."
+   },
+   {
+     "text": "Rotate participation modes each year (online one year, offline the next)",
+     "effects": { "quality": 1, "engagement": 1, "uptake": 1 },
+     "summary": "You provide variety, but risk inconsistency and confusion."
+   }
+ ]
+},
+
+{
+ "id": "pb_q3_1",
+ "type": "phase",
+ "phase": 3,
+ "title": "Proposal Collection",
+ "scenario": "In Warsaw, most PB proposals came from a small group of highly active citizens, while in Porto Alegre, community assemblies generated a wider variety of grassroots ideas. Your city must decide how to collect proposals.",
+ "question": "What method will you use for gathering project proposals?",
+ "learnMore": "Open submission maximizes participation but risks domination by elites. Assemblies and workshops improve inclusivity and deliberation but require more resources.",
+ "options": [
+   {
+     "text": "Allow open online submissions with no restrictions",
+     "effects": { "quality": 0, "engagement": 2, "uptake": 1 },
+     "summary": "You maximize openness, but risk low-quality or repetitive proposals."
+   },
+   {
+     "text": "Organize neighborhood assemblies to co-create proposals",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+     "summary": "You foster inclusivity and collaboration, though assemblies demand significant effort."
+   },
+   {
+     "text": "Require NGO or community group sponsorship for proposals",
+     "effects": { "quality": 2, "engagement": 0, "uptake": 1 },
+     "summary": "You improve feasibility and organization, but risk excluding individuals without networks."
+   },
+   {
+     "text": "Set quotas for youth, minority, and women’s proposals",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 1 },
+     "summary": "You broaden participation, but quotas may face political resistance."
+   }
+ ]
+},
+
+{
+ "id": "pb_q3_2",
+ "type": "phase",
+ "phase": 3,
+ "title": "Proposal Collection",
+ "scenario": "Some PB platforms allow very general ideas, while others require detailed project descriptions with cost estimates. In Paris, professional support is provided to help citizens refine proposals.",
+ "question": "How detailed should citizen proposals be at submission?",
+ "learnMore": "Overly vague ideas make evaluation hard, while demanding full technical detail at the start discourages ordinary citizens. Balanced approaches combine openness with support.",
+ "options": [
+   {
+     "text": "Accept all ideas in raw form, no matter how vague",
+     "effects": { "quality": 0, "engagement": 2, "uptake": 0 },
+     "summary": "You maximize inclusivity but overwhelm evaluators with unworkable ideas."
+   },
+   {
+     "text": "Require detailed descriptions including costs and feasibility",
+     "effects": { "quality": 2, "engagement": 0, "uptake": 1 },
+     "summary": "You ensure rigor, but risk excluding citizens lacking technical knowledge."
+   },
+   {
+     "text": "Allow simple submissions but provide expert support to refine them",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+     "summary": "You combine openness with quality control, fostering both engagement and feasibility."
+   },
+   {
+     "text": "Ask for a short narrative plus one supporting community endorsement",
+     "effects": { "quality": 1, "engagement": 1, "uptake": 1 },
+     "summary": "You balance citizen input with minimal accountability, but proposals may remain uneven."
+   }
+ ]
+},
+
+{
+ "id": "pb_q4_1",
+ "type": "phase",
+ "phase": 4,
+ "title": "Project Design & Review",
+ "scenario": "In Porto Alegre, municipal staff worked with citizens to adapt proposals into feasible projects. In other PB cases, rigid vetting by officials led to many proposals being rejected, discouraging participation.",
+ "question": "How should proposals be reviewed before voting?",
+ "learnMore": "Balancing technical feasibility with citizen ownership is a recurring challenge. Too much bureaucratic control undermines legitimacy, while weak review risks unworkable projects.",
+ "options": [
+   {
+     "text": "Let citizens vote on all proposals without vetting",
+     "effects": { "quality": 0, "engagement": 2, "uptake": 0 },
+     "summary": "You maximize openness, but risk selecting projects that cannot be implemented."
+   },
+   {
+     "text": "Have government experts strictly screen proposals for feasibility",
+     "effects": { "quality": 2, "engagement": 0, "uptake": 1 },
+     "summary": "You ensure feasibility, but risk alienating citizens if many ideas are excluded."
+   },
+   {
+     "text": "Use a co-design process where officials and citizens refine projects together",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+     "summary": "You combine expertise and participation, though it requires significant coordination."
+   },
+   {
+     "text": "Outsource review to independent NGOs or universities",
+     "effects": { "quality": 1, "engagement": 1, "uptake": 1 },
+     "summary": "You add neutrality, but may lack capacity or political authority for decisions."
+   }
+ ]
+},
+
+{
+ "id": "pb_q4_2",
+ "type": "phase",
+ "phase": 4,
+ "title": "Project Design & Review",
+ "scenario": "Some cities only allow infrastructure projects in PB (parks, roads, schools), while others also include social programs (youth activities, cultural events). Restricting categories can make implementation easier but reduce citizen creativity.",
+ "question": "What kinds of projects will be eligible for PB?",
+ "learnMore": "Limiting PB to capital investments simplifies evaluation and avoids recurring costs, but broader categories make PB more responsive to community needs.",
+ "options": [
+   {
+     "text": "Limit PB to physical infrastructure projects only",
+     "effects": { "quality": 2, "engagement": 0, "uptake": 1 },
+     "summary": "You simplify implementation but restrict citizen imagination."
+   },
+   {
+     "text": "Allow both infrastructure and social program proposals",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 2 },
+     "summary": "You broaden participation and responsiveness, though evaluation becomes more complex."
+   },
+   {
+     "text": "Divide PB into separate tracks (infrastructure vs. social projects)",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+     "summary": "You ensure variety and fairness, but increase administrative demands."
+   },
+   {
+     "text": "Let citizens themselves decide categories without restrictions",
+     "effects": { "quality": 0, "engagement": 2, "uptake": 1 },
+     "summary": "You maximize creativity, but risk unmanageable or unrealistic proposals."
+   }
+ ]
+},
+
+{
+ "id": "pb_q5_1",
+ "type": "phase",
+ "phase": 5,
+ "title": "Voting",
+ "scenario": "In Portugal’s national PB, voting was possible both online and via SMS, reaching citizens across the country. In some Polish cities, however, only in-person ballots were allowed, limiting turnout but ensuring more deliberation.",
+ "question": "Which voting method will you adopt?",
+ "learnMore": "Digital voting maximizes convenience but risks digital exclusion. In-person voting encourages deliberation but lowers accessibility. Hybrid systems are increasingly popular.",
+ "options": [
+   {
+     "text": "Online-only voting through a secure platform",
+     "effects": { "quality": 1, "engagement": 1, "uptake": 2 },
+     "summary": "You maximize convenience but risk excluding citizens without internet access."
+   },
+   {
+     "text": "In-person voting at assemblies or city offices",
+     "effects": { "quality": 2, "engagement": 1, "uptake": 0 },
+     "summary": "You ensure deliberation and security, but participation may be lower."
+   },
+   {
+     "text": "Hybrid voting with both online and offline options",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+     "summary": "You maximize inclusivity, though at higher administrative cost."
+   },
+   {
+     "text": "SMS-based voting with national ID verification",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 1 },
+     "summary": "You expand access, but SMS systems may face security concerns."
+   }
+ ]
+},
+
+{
+ "id": "pb_q5_2",
+ "type": "phase",
+ "phase": 5,
+ "title": "Voting",
+ "scenario": "Some PB processes allow each voter to select just one project, while others use multiple votes or ranking systems to reflect broader preferences. In Paris, citizens can vote for several projects, encouraging diversity of outcomes.",
+ "question": "What voting rule will you use?",
+ "learnMore": "Voting design shapes outcomes: single-choice systems often benefit large, visible projects, while multi-choice or ranking systems allow more diverse results.",
+ "options": [
+   {
+     "text": "Each citizen selects one project only",
+     "effects": { "quality": 1, "engagement": 0, "uptake": 1 },
+     "summary": "You keep voting simple, but risk concentrating resources on high-profile projects."
+   },
+   {
+     "text": "Allow each citizen to vote for multiple projects",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+     "summary": "You broaden representation and diversity of outcomes, but counting is more complex."
+   },
+   {
+     "text": "Use ranked-choice voting (1st, 2nd, 3rd preference)",
+     "effects": { "quality": 2, "engagement": 1, "uptake": 2 },
+     "summary": "You better capture citizen preferences, though it requires more voter education."
+   },
+   {
+     "text": "Allocate votes proportionally by neighborhood population",
+     "effects": { "quality": 1, "engagement": 1, "uptake": 1 },
+     "summary": "You ensure balance across districts, but complicate the process."
+   }
+ ]
+},
+{
+ "id": "pb_q6_1",
+ "type": "phase",
+ "phase": 6,
+ "title": "Implementation & Monitoring",
+ "scenario": "A frequent criticism of PB is that winning projects are never fully implemented, which discourages future participation. In Porto Alegre, citizens monitored progress through councils, while in Paris, the city hall published regular online updates.",
+ "question": "How will you monitor implementation of winning projects?",
+ "learnMore": "Monitoring mechanisms sustain trust. Without transparency, citizens may see PB as symbolic. Councils, dashboards, and audits are common solutions.",
+ "options": [
+   {
+     "text": "Publish annual government reports on PB project status",
+     "effects": { "quality": 1, "engagement": 1, "uptake": 1 },
+     "summary": "You provide transparency, but updates may be too slow to maintain engagement."
+   },
+   {
+     "text": "Create citizen monitoring councils to oversee projects",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+     "summary": "You maximize accountability and participation, though councils demand resources and commitment."
+   },
+   {
+     "text": "Use online dashboards to track real-time project progress",
+     "effects": { "quality": 2, "engagement": 1, "uptake": 2 },
+     "summary": "You strengthen transparency and accessibility, but rely on good data management."
+   },
+   {
+     "text": "Leave monitoring entirely to city departments",
+     "effects": { "quality": 0, "engagement": 0, "uptake": 0 },
+     "summary": "You minimize costs, but citizens may lose trust if projects stall or disappear."
+   }
+ ]
+},
+
+{
+ "id": "pb_q6_2",
+ "type": "phase",
+ "phase": 6,
+ "title": "Implementation & Monitoring",
+ "scenario": "Some PB processes end with project selection, leaving citizens out of the implementation stage. Others invite citizens to co-manage projects, such as in schools or neighborhood associations.",
+ "question": "What role should citizens play after voting ends?",
+ "learnMore": "Including citizens in implementation can sustain engagement and build ownership, but requires capacity and coordination with government agencies.",
+ "options": [
+   {
+     "text": "No citizen role after projects are selected",
+     "effects": { "quality": 0, "engagement": 0, "uptake": 0 },
+     "summary": "You simplify governance, but risk PB being seen as symbolic."
+   },
+   {
+     "text": "Invite citizens to co-manage certain projects with city staff",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+     "summary": "You deepen participation and trust, but demand long-term collaboration capacity."
+   },
+   {
+     "text": "Organize public site visits and inspections during implementation",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 1 },
+     "summary": "You maintain visibility and accountability, though mostly in a symbolic way."
+   },
+   {
+     "text": "Delegate follow-up to civil society organizations",
+     "effects": { "quality": 1, "engagement": 1, "uptake": 1 },
+     "summary": "You leverage NGO expertise, but outcomes depend on external resources."
+   }
+ ]
 }
 ]
 
