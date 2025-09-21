@@ -49,6 +49,7 @@ export default function SummaryScreen() {
       <h1 className="text-2xl sm:text-4xl font-bold mb-4 text-center mt-2">{getHeadline()}</h1>
       <p className="text-sm text-gray-700 mb-8 text-center">
         Note: Maximum scores in all categories may not be achievable due to random question selection.
+        Refer to the "Review answers" section to see how your answers impacted your scores.
       </p>
 
     {/* Question, scenario, and answer summary */}
