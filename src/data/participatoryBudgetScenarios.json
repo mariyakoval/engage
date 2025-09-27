@@ -1352,35 +1352,55 @@
 },
 
 {
- "id": "pb_q3_1n",
- "type": "phase",
- "phase": 3,
- "title": "Proposal Collection",
- "scenario": "Decidim’s 'Proposals' component lets citizens post and debate ideas online. Some PB processes allow unmoderated submissions, while others require early technical vetting.",
- "question": "How will proposals be collected?",
- "learnMore": "Open submissions enhance creativity but risk low-quality or duplicate proposals. Moderated systems filter ideas early but may exclude innovation.",
- "options": [
-   {
-     "text": "Allow open submissions with minimal moderation",
-     "effects": { "quality": 0, "engagement": 2, "uptake": 1 },
-     "summary": "You encourage creativity, but quality and feasibility may suffer."
-   },
-   {
-     "text": "Require early technical screening of proposals",
-     "effects": { "quality": 2, "engagement": 0, "uptake": 1 },
-     "summary": "You ensure feasibility, but may discourage citizen initiative."
-   },
-   {
-     "text": "Enable co-creation workshops before submission",
-     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
-     "summary": "You raise both quality and inclusion, though coordination is demanding."
-   },
+  "id": "pb_q3_1n",
+  "type": "phase",
+  "phase": 3,
+  "title": "Proposal Collection",
+  "scenario": "Decidim’s 'Proposals' component lets citizens post and debate ideas online. Some PB processes allow unmoderated submissions, while others require early technical vetting.",
+  "question": "How will proposals be collected?",
+  "learnMore": "Open submissions enhance creativity but risk low-quality or duplicate proposals. Moderated systems filter ideas early but may exclude innovation.",
+  "options": [
+    {
+      "text": "Allow open submissions with minimal moderation",
+      "effects": { "quality": 0, "engagement": 2, "uptake": 1 },
+      "summary": "You encourage creativity, but quality and feasibility may suffer.",
+      "news": {
+        "headline": "Open Submissions Flood Platform With Ideas, But Quality Varies",
+        "content": "The Civic Times reported a surge of creativity as citizens freely posted hundreds of proposals, ranging from new bike lanes to a 'city-wide rooftop garden initiative.' While residents celebrated the open platform, staff struggled to sort duplicates and unrealistic ideas. One participant joked online: 'We’ve got more proposals than trees in the park.' Officials promised to introduce better categorization tools next cycle.",
+        "image": "news7"
+      }
+    },
+    {
+      "text": "Require early technical screening of proposals",
+      "effects": { "quality": 2, "engagement": 0, "uptake": 1 },
+      "summary": "You ensure feasibility, but may discourage citizen initiative.",
+      "news": {
+        "headline": "Technical Screening Ensures Feasibility, Dampens Enthusiasm",
+        "content": "According to Public Square Radio, early vetting by municipal engineers reduced unrealistic submissions and saved time later in the process. Still, some citizens complained their ideas were rejected too quickly, with social media posts accusing officials of 'killing creativity.' A city spokesperson defended the approach: 'Better fewer strong projects than hundreds we can’t build.'",
+        "image": "news12"
+      }
+    },
+    {
+      "text": "Enable co-creation workshops before submission",
+      "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+      "summary": "You raise both quality and inclusion, though coordination is demanding.",
+      "news": {
+        "headline": "Workshops Empower Residents To Build Better Proposals",
+        "content": "The Civic Herald praised the co-creation workshops for bringing neighbors together in schools and community centers. Facilitators helped residents refine their ideas, and many first-time participants said they felt more confident contributing. The workshops required significant coordination, but the final pool of proposals was widely seen as higher quality and more inclusive. One attendee wrote: 'This is democracy I can touch.'",
+        "image": "news13"
+      }
+    },
     {
       "text": "Limit submissions to registered community groups",
       "effects": { "quality": 1, "engagement": 1, "uptake": 1 },
-      "summary": "You ensure organized input but may exclude individuals."
+      "summary": "You ensure organized input but may exclude individuals.",
+      "news": {
+        "headline": "Group-Only Submissions Bring Structure, But Exclude Individuals",
+        "content": "Voice of the People reported that limiting submissions to registered organizations streamlined the process, producing well-documented proposals. However, individual residents felt sidelined, sparking online debates about whether PB should belong to groups or everyone. Local NGOs welcomed the rule as 'professionalizing the process,' while critics argued it entrenched existing power dynamics.",
+        "image": "news14"
+      }
     }
- ]
+  ]
 },
 {
  "id": "pb_q3_2n",
@@ -1447,36 +1467,55 @@
 },
 
 {
- "id": "pb_q4_2n",
- "type": "phase",
- "phase": 4,
- "title": "Project Design & Review",
- "scenario": "Some PB platforms provide detailed cost estimates online, while others keep budgets vague until later stages.",
- "question": "How transparent should cost estimates be?",
- "learnMore": "Transparent budgeting builds trust but requires administrative resources. Vague estimates risk frustration if projects later fail.",
- "options": [
-   {
-     "text": "Publish detailed cost estimates for each project",
-     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
-     "summary": "You ensure informed choices, but staff workload rises."
-   },
-
-   {
-     "text": "Provide rough cost ranges only",
-     "effects": { "quality": 1, "engagement": 1, "uptake": 1 },
-     "summary": "You balance information and feasibility, but transparency suffers."
-   },
-   {
-     "text": "Withhold costs until projects are selected",
-     "effects": { "quality": 0, "engagement": 0, "uptake": 0 },
-     "summary": "You avoid delays, but risk disillusionment when costs block implementation."
-   },
+  "id": "pb_q4_2n",
+  "type": "phase",
+  "phase": 4,
+  "title": "Project Design & Review",
+  "scenario": "Some PB platforms provide detailed cost estimates online, while others keep budgets vague until later stages.",
+  "question": "How transparent should cost estimates be?",
+  "learnMore": "Transparent budgeting builds trust but requires administrative resources. Vague estimates risk frustration if projects later fail.",
+  "options": [
+    {
+      "text": "Publish detailed cost estimates for each project",
+      "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+      "summary": "You ensure informed choices, but staff workload rises.",
+      "news": {
+        "headline": "Detailed Budgets Build Public Trust, But Strain Staff",
+        "content": "The Civic Times reported that publishing full cost estimates for every project gave residents a sense of ownership and confidence in the PB process. Community groups praised the transparency, and local newspapers ran side-by-side comparisons of competing projects. Yet, municipal staff admitted the workload was 'overwhelming,' with overtime hours piling up to prepare spreadsheets and justifications.",
+        "image": "news0"
+      }
+    },
+    {
+      "text": "Provide rough cost ranges only",
+      "effects": { "quality": 1, "engagement": 1, "uptake": 1 },
+      "summary": "You balance information and feasibility, but transparency suffers.",
+      "news": {
+        "headline": "Rough Cost Ranges Keep Process Moving, Leave Questions",
+        "content": "According to The Civic Herald, releasing broad cost brackets (low, medium, high) sped up the design phase and avoided administrative overload. Still, residents questioned whether projects in the same category were truly comparable. Social media reactions were mixed, with one user writing: 'Better than nothing, but feels like guesswork.'",
+        "image": "news1"
+      }
+    },
+    {
+      "text": "Withhold costs until projects are selected",
+      "effects": { "quality": 0, "engagement": 0, "uptake": 0 },
+      "summary": "You avoid delays, but risk disillusionment when costs block implementation.",
+      "news": {
+        "headline": "Hidden Costs Lead to Public Backlash After Voting",
+        "content": "Voice of the People reported anger when several winning projects were later deemed unaffordable. Critics accused officials of 'bait and switch,' and some participants vowed not to return next cycle. Hashtags like #ShowUsTheNumbers trended for days, while editorial pages demanded accountability. Officials promised reforms, but trust suffered a serious setback.",
+        "image": "news2"
+      }
+    },
     {
       "text": "Defer detailed cost analysis until after voting",
       "effects": { "quality": 1, "engagement": 1, "uptake": 1 },
-      "summary": "You chose to defer detailed cost analysis until after voting."
+      "summary": "You chose to defer detailed cost analysis until after voting.",
+      "news": {
+        "headline": "Delayed Costing Keeps Momentum, Raises Later Frustrations",
+        "content": "Public Square Radio noted that postponing detailed cost analysis allowed faster voting, with residents focusing on project ideas rather than spreadsheets. However, once budgets were released, some popular projects faced delays or downsizing. One community leader commented: 'People loved the speed, hated the surprises.' Attendance at follow-up meetings dropped by 20%.",
+        "image": "news6"
+      }
     }
- ]
+  ]
 },
 
 {
@@ -1507,30 +1546,45 @@
 },
 
 {
- "id": "pb_q5_2n",
- "type": "phase",
- "phase": 5,
- "title": "Voting",
- "scenario": "Some PB platforms limit votes to one project per person, while others allow multiple votes or budget allocations across projects.",
- "question": "How will you structure voting power?",
- "learnMore": "Single votes simplify results but restrict citizen choice. Budget allocation models allow nuanced preferences but increase complexity.",
- "options": [
-   {
-     "text": "Each voter selects one project only",
-     "effects": { "quality": 1, "engagement": 0, "uptake": 1 },
-     "summary": "You simplify outcomes, but limit expression of diverse preferences."
-   },
-   {
-     "text": "Allow voters to support multiple projects",
-     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
-     "summary": "You capture broader support but complicate tallying."
-   },
-   {
-     "text": "Let voters allocate a budget across projects",
-     "effects": { "quality": 2, "engagement": 1, "uptake": 2 },
-     "summary": "You allow nuanced input, but some citizens may find it confusing."
-   }
- ]
+  "id": "pb_q5_2n",
+  "type": "phase",
+  "phase": 5,
+  "title": "Voting",
+  "scenario": "Some PB platforms limit votes to one project per person, while others allow multiple votes or budget allocations across projects.",
+  "question": "How will you structure voting power?",
+  "learnMore": "Single votes simplify results but restrict citizen choice. Budget allocation models allow nuanced preferences but increase complexity.",
+  "options": [
+    {
+      "text": "Each voter selects one project only",
+      "effects": { "quality": 1, "engagement": 0, "uptake": 1 },
+      "summary": "You simplify outcomes, but limit expression of diverse preferences.",
+      "news": {
+        "headline": "Single-Choice Voting Creates Clear Winners, But Sparks Debate",
+        "content": "The Civic Times reported that the one-vote-per-person rule led to decisive results and quick tallying. Officials praised the simplicity, but community groups argued it silenced minority preferences and reduced the visibility of smaller initiatives. Social media carried the hashtag #OneVoteOneVoice, with some users applauding the clarity while others called it 'too restrictive for complex communities.'",
+        "image": "news3"
+      }
+    },
+    {
+      "text": "Allow voters to support multiple projects",
+      "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+      "summary": "You capture broader support but complicate tallying.",
+      "news": {
+        "headline": "Multi-Choice Voting Boosts Inclusion, Slows Counting",
+        "content": "According to The Civic Herald, allowing citizens to back several projects expanded participation and gave smaller proposals a fighting chance. Turnout surged among neighborhood associations who coordinated to support multiple initiatives. However, the tallying process stretched late into the night, prompting some complaints about delays. Analysts called it 'a win for diversity, a test for efficiency.'",
+        "image": "news4"
+      }
+    },
+    {
+      "text": "Let voters allocate a budget across projects",
+      "effects": { "quality": 2, "engagement": 1, "uptake": 2 },
+      "summary": "You allow nuanced input, but some citizens may find it confusing.",
+      "news": {
+        "headline": "Budget Allocation Model Rewards Strategy, Challenges Usability",
+        "content": "Voice of the People highlighted the innovative system that let voters distribute a virtual budget across projects. Tech-savvy participants enjoyed the flexibility, and some citizen groups organized workshops on 'participatory budgeting 101.' But others struggled, with elderly voters calling the process confusing. Debate flared online about whether complexity empowers or excludes. Officials promised improvements to the platform next year.",
+        "image": "news5"
+      }
+    }
+  ]
 },
 
 {
@@ -1560,37 +1614,56 @@
  ]
 },
 {
- "id": "pb_q6_2n",
- "type": "phase",
- "phase": 6,
- "title": "Implementation & Monitoring",
- "scenario": "Some PB processes include citizen committees to oversee implementation, while others leave it fully to municipal staff.",
- "question": "Who should oversee PB project implementation?",
- "learnMore": "Shared oversight increases legitimacy but requires sustained citizen engagement. Administrative oversight alone risks distrust.",
- "options": [
-   {
-     "text": "Establish citizen monitoring committees",
-     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
-     "summary": "You increase legitimacy, but risk volunteer fatigue."
-   },
-   {
-     "text": "Leave oversight to municipal staff only",
-     "effects": { "quality": 1, "engagement": 0, "uptake": 1 },
-     "summary": "You ensure professionalism, but reduce transparency."
-   },
-   {
-     "text": "Combine staff oversight with citizen observers",
-     "effects": { "quality": 2, "engagement": 1, "uptake": 2 },
-     "summary": "You balance expertise and legitimacy, but coordination is needed."
-   },
+  "id": "pb_q6_2n",
+  "type": "phase",
+  "phase": 6,
+  "title": "Implementation & Monitoring",
+  "scenario": "Some PB processes include citizen committees to oversee implementation, while others leave it fully to municipal staff.",
+  "question": "Who should oversee PB project implementation?",
+  "learnMore": "Shared oversight increases legitimacy but requires sustained citizen engagement. Administrative oversight alone risks distrust.",
+  "options": [
+    {
+      "text": "Establish citizen monitoring committees",
+      "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+      "summary": "You increase legitimacy, but risk volunteer fatigue.",
+      "news": {
+        "headline": "Citizen Committees Build Trust but Face Burnout Risks",
+        "content": "The Civic Times reports that newly formed citizen monitoring committees greatly boosted trust in how PB projects were carried out. Residents praised the transparent process, and several committee members said they felt more empowered than ever. However, participation dwindled over time as volunteers struggled to balance oversight duties with their personal lives. Some critics questioned whether long-term monitoring can be sustained without stronger institutional support.",
+        "image": "news12"
+      }
+    },
+    {
+      "text": "Leave oversight to municipal staff only",
+      "effects": { "quality": 1, "engagement": 0, "uptake": 1 },
+      "summary": "You ensure professionalism, but reduce transparency.",
+      "news": {
+        "headline": "Municipal Oversight Ensures Efficiency, But Public Trust Falters",
+        "content": "According to Public Square Radio, relying solely on municipal staff sped up project delivery, with officials praising the streamlined process. Yet residents complained of feeling excluded, and watchdog groups noted that public reports on progress were vague. An editorial warned: “Professionalism without transparency is a recipe for suspicion.” Participation in follow-up meetings declined noticeably compared to previous cycles.",
+        "image": "news13"
+      }
+    },
+    {
+      "text": "Combine staff oversight with citizen observers",
+      "effects": { "quality": 2, "engagement": 1, "uptake": 2 },
+      "summary": "You balance expertise and legitimacy, but coordination is needed.",
+      "news": {
+        "headline": "Joint Oversight Model Seen as ‘Best of Both Worlds’",
+        "content": "The Civic Herald highlighted the mixed oversight model as a promising compromise. Municipal staff handled technical work while citizen observers provided transparency, leading to more balanced debates in community forums. Still, coordination challenges occasionally slowed timelines, with one observer noting: “It works, but only when everyone communicates clearly.” Public opinion polls showed strong approval for the model, especially among middle-aged residents.",
+        "image": "news14"
+      }
+    },
     {
       "text": "Delegate oversight to independent NGOs",
       "effects": { "quality": 1, "engagement": 1, "uptake": 1 },
-      "summary": "You leverage NGO capacity, but outcomes depend on their resources."
+      "summary": "You leverage NGO capacity, but outcomes depend on their resources.",
+      "news": {
+        "headline": "NGOs Take Lead on Oversight, With Mixed Results",
+        "content": "Voice of the People reported that NGOs stepped in as neutral overseers, which improved perceptions of fairness among marginalized communities. Several advocacy groups praised the move, saying it gave civil society ‘a real seat at the table.’ However, limited funding meant that smaller projects received less attention, and some deadlines slipped. A civic tech NGO called for more stable support: “Oversight can’t depend on goodwill alone.”",
+        "image": "news15"
+      }
     }
- ]
+  ]
 }
-
 
 ]
 
