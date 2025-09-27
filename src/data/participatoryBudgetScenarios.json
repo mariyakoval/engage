@@ -1263,7 +1263,335 @@
      "summary": "You leverage NGO expertise, but outcomes depend on external resources."
    }
  ]
+},
+
+{
+ "id": "pb_q1_2n",
+ "type": "phase",
+ "phase": 1,
+ "title": "Process Launch",
+ "scenario": "Research shows PB adoption depends heavily on political support and administrative leadership. In some cities, committed mayors pushed PB despite resistance; in others, reluctant managers limited its impact.",
+ "question": "Who should champion PB at launch?",
+ "learnMore": "Leadership matters: strong mayors or trained public managers can drive PB success. Without internal champions, PB risks tokenism.",
+ "options": [
+   {
+     "text": "Strong mayoral leadership to mobilize resources",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 1 },
+     "summary": "You create visibility, but risks of politicization remain."
+   },
+   {
+     "text": "Empowered civil servants coordinating the process",
+     "effects": { "quality": 2, "engagement": 1, "uptake": 2 },
+     "summary": "You ensure professionalism and stability, but may lack grassroots legitimacy."
+   },
+   {
+     "text": "Leave PB leadership diffuse across institutions",
+     "effects": { "quality": 0, "engagement": 0, "uptake": 0 },
+     "summary": "You avoid conflicts, but PB loses focus and authority."
+   }
+ ]
+},
+
+{
+ "id": "pb_q2_1n",
+ "type": "phase",
+ "phase": 2,
+ "title": "Outreach & Inclusion",
+ "scenario": "In Chicago, affluent residents were overrepresented in PB voting. In Brazil, PB assemblies historically mobilized low-income and marginalized groups through targeted outreach.",
+ "question": "How will you reach underrepresented citizens?",
+ "learnMore": "PB risks elitism without deliberate outreach. Gender, race, and class disparities are common unless mitigated.",
+ "options": [
+   {
+     "text": "Invest in community-based outreach and translation",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+     "summary": "You enhance inclusivity, though outreach requires extra resources."
+   },
+   {
+     "text": "Rely on open digital access without targeted measures",
+     "effects": { "quality": 0, "engagement": 0, "uptake": 0 },
+     "summary": "You assume equal access, but risk reproducing inequalities."
+   },
+   {
+     "text": "Engage NGOs as intermediaries for vulnerable groups",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 1 },
+     "summary": "You expand reach but risk outsourcing legitimacy to NGOs."
+   }
+ ]
+}, 
+
+{
+ "id": "pb_q2_2n",
+ "type": "phase",
+ "phase": 2,
+ "title": "Outreach & Inclusion",
+ "scenario": "Digital PB platforms like Decidim can remove geographic barriers but may deepen the digital divide if skills and access vary.",
+ "question": "How will you balance digital and offline outreach?",
+ "learnMore": "Hybrid models mix assemblies, workshops, and online tools to broaden participation. Purely digital processes risk excluding less connected citizens.",
+ "options": [
+   {
+     "text": "Move fully digital for efficiency",
+     "effects": { "quality": 0, "engagement": 1, "uptake": 0 },
+     "summary": "You cut costs but risk excluding digitally marginalized groups."
+   },
+   {
+     "text": "Rely mainly on physical assemblies",
+     "effects": { "quality": 1, "engagement": 1, "uptake": 1 },
+     "summary": "You build trust in person, but exclude those unable to attend."
+   },
+      {
+     "text": "Run hybrid assemblies and digital platforms",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+     "summary": "You maximize access but increase organizational complexity."
+   } ,
+   {
+     "text": "Alternate digital and physical methods each year",
+     "effects": { "quality": 1, "engagement": 1, "uptake": 1 },
+     "summary": "You provide variety but risk inconsistency and confusion."
+   }
+ ]
+},
+
+{
+ "id": "pb_q3_1n",
+ "type": "phase",
+ "phase": 3,
+ "title": "Proposal Collection",
+ "scenario": "Decidim’s 'Proposals' component lets citizens post and debate ideas online. Some PB processes allow unmoderated submissions, while others require early technical vetting.",
+ "question": "How will proposals be collected?",
+ "learnMore": "Open submissions enhance creativity but risk low-quality or duplicate proposals. Moderated systems filter ideas early but may exclude innovation.",
+ "options": [
+   {
+     "text": "Allow open submissions with minimal moderation",
+     "effects": { "quality": 0, "engagement": 2, "uptake": 1 },
+     "summary": "You encourage creativity, but quality and feasibility may suffer."
+   },
+   {
+     "text": "Require early technical screening of proposals",
+     "effects": { "quality": 2, "engagement": 0, "uptake": 1 },
+     "summary": "You ensure feasibility, but may discourage citizen initiative."
+   },
+   {
+     "text": "Enable co-creation workshops before submission",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+     "summary": "You raise both quality and inclusion, though coordination is demanding."
+   },
+    {
+      "text": "Limit submissions to registered community groups",
+      "effects": { "quality": 1, "engagement": 1, "uptake": 1 },
+      "summary": "You ensure organized input but may exclude individuals."
+    }
+ ]
+},
+{
+ "id": "pb_q3_2n",
+ "type": "phase",
+ "phase": 3,
+ "title": "Proposal Collection",
+ "scenario": "Some cities allow proposals on only capital projects (infrastructure, parks), while others extend PB to social policies or even revenues.",
+ "question": "What budget topics will be open to proposals?",
+ "learnMore": "Restricting PB to small capital projects risks tokenism. Expanding scope enhances relevance but complicates technical review.",
+ "options": [
+   {
+     "text": "Limit PB to capital projects",
+     "effects": { "quality": 1, "engagement": 0, "uptake": 1 },
+     "summary": "You simplify review but risk perceptions of tokenism."
+   },
+   {
+     "text": "Allow proposals in social policy areas",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+     "summary": "You broaden scope and impact, but reviews become more complex."
+   },
+   {
+     "text": "Include revenue and taxation ideas",
+     "effects": { "quality": 1, "engagement": 1, "uptake": 0 },
+     "summary": "You invite bold ideas, but feasibility and authority may be limited."
+   },
+    {
+      "text": "Let citizens define eligible topics each cycle",
+      "effects": { "quality": 1, "engagement": 2, "uptake": 1 },
+      "summary": "You maximize responsiveness, but risk inconsistency and confusion."
+    }
+ ]
+},
+
+{
+ "id": "pb_q4_1n",
+ "type": "phase",
+ "phase": 4,
+ "title": "Project Design & Review",
+ "scenario": "In Europe, proposals often undergo technical validation by municipal staff. In some Decidim cases, community workshops co-develop projects before voting.",
+ "question": "How should project review be organized?",
+ "learnMore": "Technical validation ensures feasibility, but co-design increases legitimacy and learning.",
+ "options": [
+   {
+     "text": "Rely only on expert technical validation",
+     "effects": { "quality": 2, "engagement": 1, "uptake": 1 },
+     "summary": "You guarantee feasibility, but limit citizen ownership."
+   },
+   {
+     "text": "Organize co-design workshops with citizens and staff",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+     "summary": "You strengthen both quality and legitimacy, but require extra time."
+   },
+    {
+      "text": "Use citizen juries to review and refine proposals",
+      "effects": { "quality": 1, "engagement": 1, "uptake": 1 },
+      "summary": "You empower citizens, but juries may lack technical expertise."
+    },
+   {
+     "text": "Skip detailed review and go straight to voting",
+     "effects": { "quality": 0, "engagement": 1, "uptake": 0 },
+     "summary": "You save time but risk funding unfeasible projects."
+   }
+ ]
+},
+
+{
+ "id": "pb_q4_2n",
+ "type": "phase",
+ "phase": 4,
+ "title": "Project Design & Review",
+ "scenario": "Some PB platforms provide detailed cost estimates online, while others keep budgets vague until later stages.",
+ "question": "How transparent should cost estimates be?",
+ "learnMore": "Transparent budgeting builds trust but requires administrative resources. Vague estimates risk frustration if projects later fail.",
+ "options": [
+   {
+     "text": "Publish detailed cost estimates for each project",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+     "summary": "You ensure informed choices, but staff workload rises."
+   },
+
+   {
+     "text": "Provide rough cost ranges only",
+     "effects": { "quality": 1, "engagement": 1, "uptake": 1 },
+     "summary": "You balance information and feasibility, but transparency suffers."
+   },
+   {
+     "text": "Withhold costs until projects are selected",
+     "effects": { "quality": 0, "engagement": 0, "uptake": 0 },
+     "summary": "You avoid delays, but risk disillusionment when costs block implementation."
+   },
+    {
+      "text": "Defer detailed cost analysis until after voting",
+      "effects": { "quality": 1, "engagement": 1, "uptake": 1 },
+      "summary": "You chose to defer detailed cost analysis until after voting."
+    }
+ ]
+},
+
+{
+ "id": "pb_q5_1n",
+ "type": "phase",
+ "phase": 5,
+ "title": "Voting",
+ "scenario": "In Helsinki’s digital PB, citizens could vote online with ranked preferences. Other cities used simple majority voting at assemblies.",
+ "question": "What voting method will you use?",
+ "learnMore": "Ranked-choice and online voting increase inclusivity but may be complex. In-person voting is simpler but less accessible.",
+ "options": [
+   {
+     "text": "Adopt ranked-choice online voting",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+     "summary": "You capture nuanced preferences, but digital skills are required."
+   },
+   {
+     "text": "Use simple in-person majority voting",
+     "effects": { "quality": 1, "engagement": 0, "uptake": 1 },
+     "summary": "You ensure simplicity but exclude those unable to attend."
+   },
+   {
+     "text": "Allow mixed voting: digital and in-person",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 1 },
+     "summary": "You expand participation but risk coordination issues."
+   }
+ ]
+},
+
+{
+ "id": "pb_q5_2n",
+ "type": "phase",
+ "phase": 5,
+ "title": "Voting",
+ "scenario": "Some PB platforms limit votes to one project per person, while others allow multiple votes or budget allocations across projects.",
+ "question": "How will you structure voting power?",
+ "learnMore": "Single votes simplify results but restrict citizen choice. Budget allocation models allow nuanced preferences but increase complexity.",
+ "options": [
+   {
+     "text": "Each voter selects one project only",
+     "effects": { "quality": 1, "engagement": 0, "uptake": 1 },
+     "summary": "You simplify outcomes, but limit expression of diverse preferences."
+   },
+   {
+     "text": "Allow voters to support multiple projects",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+     "summary": "You capture broader support but complicate tallying."
+   },
+   {
+     "text": "Let voters allocate a budget across projects",
+     "effects": { "quality": 2, "engagement": 1, "uptake": 2 },
+     "summary": "You allow nuanced input, but some citizens may find it confusing."
+   }
+ ]
+},
+
+{
+ "id": "pb_q6_1n",
+ "type": "phase",
+ "phase": 6,
+ "title": "Implementation & Monitoring",
+ "scenario": "The Decidim platform includes an 'Accountability' component where projects show progress (0–100%) with documents and updates. In other cases, winners are announced but little follow-up occurs.",
+ "question": "How will you monitor implementation?",
+ "learnMore": "Monitoring builds trust and keeps citizens engaged. Without updates, PB risks being dismissed as symbolic.",
+ "options": [
+   {
+     "text": "Provide detailed online progress dashboards",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+     "summary": "You build transparency but require administrative effort."
+   },
+   {
+     "text": "Issue occasional summary reports only",
+     "effects": { "quality": 1, "engagement": 1, "uptake": 1 },
+     "summary": "You maintain basic accountability but lack detailed tracking."
+   },
+   {
+     "text": "Give no updates after project selection",
+     "effects": { "quality": 0, "engagement": 0, "uptake": 0 },
+     "summary": "You save effort but lose citizen trust."
+   }
+ ]
+},
+{
+ "id": "pb_q6_2n",
+ "type": "phase",
+ "phase": 6,
+ "title": "Implementation & Monitoring",
+ "scenario": "Some PB processes include citizen committees to oversee implementation, while others leave it fully to municipal staff.",
+ "question": "Who should oversee PB project implementation?",
+ "learnMore": "Shared oversight increases legitimacy but requires sustained citizen engagement. Administrative oversight alone risks distrust.",
+ "options": [
+   {
+     "text": "Establish citizen monitoring committees",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+     "summary": "You increase legitimacy, but risk volunteer fatigue."
+   },
+   {
+     "text": "Leave oversight to municipal staff only",
+     "effects": { "quality": 1, "engagement": 0, "uptake": 1 },
+     "summary": "You ensure professionalism, but reduce transparency."
+   },
+   {
+     "text": "Combine staff oversight with citizen observers",
+     "effects": { "quality": 2, "engagement": 1, "uptake": 2 },
+     "summary": "You balance expertise and legitimacy, but coordination is needed."
+   },
+    {
+      "text": "Delegate oversight to independent NGOs",
+      "effects": { "quality": 1, "engagement": 1, "uptake": 1 },
+      "summary": "You leverage NGO capacity, but outcomes depend on their resources."
+    }
+ ]
 }
+
+
 ]
 
 

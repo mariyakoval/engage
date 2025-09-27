@@ -692,29 +692,29 @@
  "type": "phase",
  "phase": 4,
  "title": "Political Response and Institutionalization",
- "scenario": "In the UK, petitions with 100,000+ signatures are considered for parliamentary debate, while in Germany, petitions with 50,000 signatures within four weeks are automatically scheduled for a public hearing. Your parliament must decide how to respond to successful petitions.",
- "question": "What kind of institutional response should petitions trigger?",
- "learnMore": "Strong institutional commitments increase trust and visibility, but high thresholds can exclude many petitions. A clear response mechanism is critical for legitimacy and sustainability.",
+ "scenario": "Your e-petition platform has reached the stage where popular petitions must be forwarded to political institutions. In the UK, the platform automatically refers petitions with 100,000+ signatures for parliamentary debate. In Germany, the Bundestag’s platform forwards petitions with 50,000 signatures in four weeks to a public hearing. As the platform designer, you must set the rules for what happens after petitions meet the threshold.",
+ "question": "What procedure should the platform trigger when petitions pass the signature threshold?",
+ "learnMore": "Clear response mechanisms improve trust in the platform and help integrate citizen voices into institutions. Some systems promise committee hearings or debates, while others only require a written government reply. The platform’s design shapes how credible petitions appear to citizens.",
  "options": [
    {
-     "text": "Require a ministerial written response once a petition passes the threshold",
+     "text": "Automatically request a ministerial written response",
      "effects": { "quality": 1, "engagement": 1, "uptake": 1 },
-     "summary": "You guarantee acknowledgment but risk being seen as symbolic if responses lack substance."
+     "summary": "You guarantee acknowledgment, but risk being seen as symbolic if replies lack depth."
    },
    {
-     "text": "Automatically schedule committee hearings with citizen input",
+     "text": "Forward petitions to a parliamentary committee hearing with citizen input",
      "effects": { "quality": 2, "engagement": 1, "uptake": 2 },
-     "summary": "You strengthen deliberation and accountability, but it demands parliamentary time and resources."
+     "summary": "You strengthen accountability, but demand time and resources from legislators."
    },
    {
-     "text": "Hold a plenary debate in parliament for high-signature petitions",
+     "text": "Refer high-signature petitions to a full parliamentary debate",
      "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
-     "summary": "You maximize visibility and responsiveness, but risk over-politicizing petitions or crowding legislative agendas."
+     "summary": "You maximize visibility and responsiveness, but risk overwhelming the legislative agenda."
    },
    {
-     "text": "Leave responses at parliament’s discretion, without binding rules",
+     "text": "Forward petitions with no guaranteed follow-up, leaving it to parliament",
      "effects": { "quality": 0, "engagement": 0, "uptake": 0 },
-     "summary": "You preserve flexibility but risk public distrust if many petitions are ignored."
+     "summary": "You preserve institutional flexibility, but risk losing citizen trust if petitions are ignored."
    }
  ]
 },
@@ -877,5 +877,166 @@
      "summary": "You align with institutional priorities, but risk neglecting user experience and civic expectations."
    }
  ]
+},
+
+{
+ "id": "ep_q1",
+ "type": "phase",
+ "phase": 1,
+ "title": "Initiation and Legitimacy",
+ "scenario": "Governments can frame petitions as a key avenue for democratic voice, or treat them as minor, symbolic tools. In the Netherlands, the Parliament highlights petitions as a core citizen right, while in Scotland they are described as a 'relatively passive form of participation.'",
+ "question": "How will you frame the role of petitions in your democracy?",
+ "learnMore": "Petitions gain legitimacy when governments signal that citizen voice matters and embed them in broader participation strategies. Downplaying them risks low trust and low engagement.",
+ "options": [
+   {
+     "text": "Promote petitions as a central democratic right",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+     "summary": "You strengthen legitimacy and trust, but create high expectations for responsiveness."
+   },
+   {
+     "text": "Treat petitions as an optional, secondary participation tool",
+     "effects": { "quality": 1, "engagement": 0, "uptake": 0 },
+     "summary": "You keep flexibility but risk petitions being dismissed as symbolic."
+   },
+   {
+     "text": "Avoid public framing, leaving citizens to define their role",
+     "effects": { "quality": 0, "engagement": 1, "uptake": 0 },
+     "summary": "You reduce expectations, but miss chances to build trust and legitimacy."
+   }
+ ]
+},
+{
+ "id": "ep_q2",
+ "type": "phase",
+ "phase": 2,
+ "title": "Platform Design and Accessibility",
+ "scenario": "In Luxembourg and New Zealand, petition sites are easy to use, multilingual, and accessible with tools like screen readers. In contrast, Queensland requires downloading and emailing forms before petitions are even visible.",
+ "question": "How will you design the petition platform?",
+ "learnMore": "User-friendly, inclusive platforms boost engagement. Clunky systems create barriers and reinforce elitism.",
+ "options": [
+   {
+     "text": "Offer multilingual, accessible, mobile-friendly design",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+     "summary": "You maximize accessibility and inclusivity, but require investment in design."
+   },
+   {
+     "text": "Provide a basic, text-heavy website with limited support",
+     "effects": { "quality": 0, "engagement": 0, "uptake": 0 },
+     "summary": "You minimize costs but alienate many potential users."
+   },
+   {
+     "text": "Add accessibility features gradually over time",
+     "effects": { "quality": 1, "engagement": 1, "uptake": 1 },
+     "summary": "You improve inclusivity, but slow progress may frustrate citizens."
+   }
+ ]
+},
+{
+ "id": "ep_q3",
+ "type": "phase",
+ "phase": 3,
+ "title": "Mobilizing Signatures",
+ "scenario": "In Germany and Luxembourg, platforms allow real-time progress tracking and social media sharing. Others provide no signature counts or sharing tools, limiting viral momentum.",
+ "question": "How will you support signature mobilization?",
+ "learnMore": "Transparency and shareability increase visibility and encourage viral growth. Lack of tools risks low momentum and disengagement.",
+ "options": [
+   {
+     "text": "Display real-time signature counts and days remaining",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+     "summary": "You build urgency and credibility, though small petitions may look weak."
+   },
+   {
+     "text": "Allow social media and email sharing from the platform",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 1 },
+     "summary": "You boost visibility, but discussions may spread misinformation."
+   },
+   {
+     "text": "Keep petitions closed, with no public signature data",
+     "effects": { "quality": 0, "engagement": 0, "uptake": 0 },
+     "summary": "You avoid biases, but suppress momentum and transparency."
+   }
+ ]
+},
+
+{
+ "id": "ep_q4",
+ "type": "phase",
+ "phase": 4,
+ "title": "Political Response and Institutionalization",
+ "scenario": "The UK promises a ministerial response at 10,000 signatures and a debate at 100,000. Luxembourg requires 4,500 signatures for a public debate where petitioners speak. Other platforms leave responses entirely discretionary.",
+ "question": "What should the platform trigger when petitions cross thresholds?",
+ "learnMore": "Clear, meaningful response mechanisms build trust and institutionalize petitions. Symbolic or inconsistent responses damage credibility.",
+ "options": [
+   {
+     "text": "Guarantee a ministerial response at a modest threshold",
+     "effects": { "quality": 1, "engagement": 1, "uptake": 1 },
+     "summary": "You provide acknowledgment, but risk superficial replies."
+   },
+   {
+     "text": "Trigger public hearings or committee debates",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+     "summary": "You ensure visibility and deliberation, but increase parliamentary workload."
+   },
+   {
+     "text": "Leave responses entirely to parliament’s discretion",
+     "effects": { "quality": 0, "engagement": 0, "uptake": 0 },
+     "summary": "You preserve flexibility, but risk alienating citizens when petitions are ignored."
+   }
+ ]
+},
+
+{
+ "id": "ep_q5",
+ "type": "phase",
+ "phase": 5,
+ "title": "Monitoring Government Action",
+ "scenario": "Many petitioners say they never hear what happens after a government response. New Zealand and Germany provide clear updates, while others give no feedback beyond closure.",
+ "question": "How will you monitor and communicate government follow-up?",
+ "learnMore": "Without feedback loops, citizens feel ignored. Updates and timelines maintain trust and show petitions matter.",
+ "options": [
+   {
+     "text": "Publish regular progress updates on government action",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+     "summary": "You strengthen trust and accountability, but governments must commit resources."
+   },
+   {
+     "text": "Provide a one-off official reply with no follow-up",
+     "effects": { "quality": 1, "engagement": 0, "uptake": 0 },
+     "summary": "You meet minimal transparency but risk frustrating petitioners."
+   },
+   {
+     "text": "Offer no feedback after petitions close",
+     "effects": { "quality": 0, "engagement": 0, "uptake": 0 },
+     "summary": "You save resources but undermine legitimacy."
+   }
+ ]
+},
+
+{
+ "id": "ep_q6",
+ "type": "phase",
+ "phase": 6,
+ "title": "Long-Term Sustainability",
+ "scenario": "Platforms in New Zealand and Luxembourg continuously adapt with new accessibility features and public guides. Others stagnate, becoming outdated and irrelevant compared to NGO platforms like Change.org.",
+ "question": "How will you sustain the platform’s relevance over time?",
+ "learnMore": "Petition platforms require ongoing updates, integration with civic education, and partnerships to remain trusted and widely used.",
+ "options": [
+   {
+     "text": "Regularly update features and accessibility tools",
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+     "summary": "You keep the platform modern and inclusive, but need continuous funding."
+   },
+   {
+     "text": "Rely on static design with rare updates",
+     "effects": { "quality": 0, "engagement": 0, "uptake": 0 },
+     "summary": "You minimize costs, but risk obsolescence and citizen disengagement."
+   },
+   {
+     "text": "Partner with NGOs and civic tech groups for innovation",
+     "effects": { "quality": 1, "engagement": 2, "uptake": 1 },
+     "summary": "You share innovation burdens, but risk losing control over government framing."
+   }
+ ]
 }
+
 ]
