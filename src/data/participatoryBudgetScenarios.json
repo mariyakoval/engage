@@ -109,7 +109,7 @@
  "options": [
    {
      "text": "Set up citizen–expert review panels with clear evaluation criteria.",
-     "effects": { "quality": 2, "engagement": 2, "uptake": 1 },
+     "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
      "summary": "You chose to form mixed review panels of citizens and experts using clear criteria."
    },
    {
@@ -119,7 +119,7 @@
    },
    {
      "text": "Publish all proposals online and let citizens comment and flag issues.",
-     "effects": { "quality": 1, "engagement": 2, "uptake": 0 },
+     "effects": { "quality": 1, "engagement": 2, "uptake": 1 },
      "summary": "You chose to open proposals to public comment and citizen feedback online."
    },
    {
@@ -473,7 +473,7 @@
   "options": [
     {
       "text": "Require departments to co-sign implementation plans with project proposers.",
-      "effects": { "quality": 2, "engagement": 2, "uptake": 0 },
+      "effects": { "quality": 2, "engagement": 2, "uptake": 1 },
       "summary": "You chose to require departments and proposers to co-sign implementation plans to align expectations.",
       "news": {
         "headline": "New Co-Signature Requirement Aligns Project Implementation",
