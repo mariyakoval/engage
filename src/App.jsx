@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar/Navbar";
 import React, { useState, useRef, useEffect } from "react";
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/react';
+import Footer from "./components/Footer/Footer";
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
     <Router>
          <div className={`app-root ${theme}`} style={{ minHeight: "100vh", height: "100vh", display: "flex", flexDirection: "column"}}>
         <Navbar theme={theme} setTheme={setTheme}/>
+        <Footer theme={theme} setTheme={setTheme}/>
         
       <AppRoutes />
       <Analytics />
