@@ -1,0 +1,631 @@
+[
+  {
+    "id": "p1-q1",
+    "type": "phase",
+    "phase": 1,
+    "title": "Choosing the Tool & Legitimacy",
+    "scenario": "Following a political crisis, civic activists are demanding a real institutional channel for public input — not just protest. You're asked to help design that channel from scratch.",
+    "question": "Who should build and run the platform?",
+    "learnMore": "Latvia's Manabalss.lv, launched after the 2010 anti-oligarchic crisis, was notably not run by the government — it was a civil society organisation, which helped it earn public trust and go on to report the highest national petition success rate in the world.",
+    "options": [
+      {
+        "text": "Partner with a civil society organisation to run the platform, with government committing to respond to what comes through it",
+        "effects": { "quality": 2, "engagement": 2, "uptake": 1 },
+        "summary": "Chose a civil-society-run platform with a government response commitment."
+      },
+      {
+        "text": "Have the government build and run the platform entirely in-house",
+        "effects": { "quality": 1, "engagement": -1, "uptake": 1 },
+        "summary": "Built a government-run platform in-house."
+      },
+      {
+        "text": "Outsource the entire platform to a private for-profit contractor with no civic or government oversight",
+        "effects": { "quality": -1, "engagement": -1, "uptake": 0 },
+        "summary": "Outsourced the platform to a private contractor with no oversight."
+      },
+      {
+        "text": "Delay building any platform until the political crisis fully subsides",
+        "effects": { "quality": -1, "engagement": -2, "uptake": -1 },
+        "summary": "Delayed building the platform until the crisis subsided."
+      }
+    ]
+  },
+  {
+    "id": "p1-q2",
+    "type": "phase",
+    "phase": 1,
+    "title": "Choosing the Tool & Legitimacy",
+    "scenario": "A city government wants more citizen input, but hasn't decided what kind of tool fits their actual problem: a shortage of concrete, fundable local improvement ideas.",
+    "question": "Which tool do you recommend?",
+    "learnMore": "Participatory budgeting is specifically about allocating real money to concrete local projects that citizens propose and vote on — distinct from e-petitions (raising an issue) or citizens' assemblies (deliberating on a specific policy question).",
+    "options": [
+      {
+        "text": "Participatory budgeting, since it directly channels citizen proposals into funded local projects",
+        "effects": { "quality": 2, "engagement": 1, "uptake": 2 },
+        "summary": "Recommended participatory budgeting for concrete local projects."
+      },
+      {
+        "text": "A citizens' assembly to deliberate abstractly on 'city improvement' as a topic",
+        "effects": { "quality": 0, "engagement": 1, "uptake": -1 },
+        "summary": "Recommended a citizens' assembly for an abstract topic."
+      },
+      {
+        "text": "An e-petition platform so citizens can request whatever they want with no budget process attached",
+        "effects": { "quality": -1, "engagement": 0, "uptake": -1 },
+        "summary": "Recommended an e-petition platform with no budget process."
+      },
+      {
+        "text": "A one-time online survey with no ongoing participation mechanism",
+        "effects": { "quality": -1, "engagement": -1, "uptake": -1 },
+        "summary": "Recommended a one-time survey with no ongoing mechanism."
+      }
+    ]
+  },
+  {
+    "id": "p2-q1",
+    "type": "phase",
+    "phase": 2,
+    "title": "Platform & Access Design",
+    "scenario": "Your e-petition platform is in development. Engineers ask how much functionality beyond a basic signature list to build — discussion forums, co-writing tools, and social sharing all take extra time and budget.",
+    "question": "How do you scope the platform's technological features?",
+    "learnMore": "E-petition platforms vary widely in technological scope — from a bare published list of petitions to discussion forums, co-writing tools, and social media integration that help authors refine petitions and find supporters before submission.",
+    "options": [
+      {
+        "text": "Include discussion and co-writing tools so citizens can refine petitions together before submission, not just sign a finished one",
+        "effects": { "quality": 2, "engagement": 2, "uptake": 1 },
+        "summary": "Built discussion and co-writing tools into the petition platform."
+      },
+      {
+        "text": "Launch with only a bare published list of petitions and signature counts",
+        "effects": { "quality": 0, "engagement": -1, "uptake": 0 },
+        "summary": "Launched with only a bare petition list."
+      },
+      {
+        "text": "Build every possible feature at once before launching anything",
+        "effects": { "quality": 1, "engagement": 0, "uptake": -2 },
+        "summary": "Delayed launch to build every possible feature at once."
+      },
+      {
+        "text": "Skip discussion tools entirely and focus resources purely on signature volume",
+        "effects": { "quality": -1, "engagement": -1, "uptake": 0 },
+        "summary": "Focused purely on signature volume, skipping discussion tools."
+      }
+    ]
+  },
+  {
+    "id": "p2-q2",
+    "type": "phase",
+    "phase": 2,
+    "title": "Platform & Access Design",
+    "scenario": "You must decide how strict authentication should be for citizens signing petitions or voting online. Stricter authentication improves security and reliability, but raises the bar for participation.",
+    "question": "How do you set the authentication requirements?",
+    "learnMore": "This is a real trade-off in petition and e-voting design: looser authentication is more accessible but raises cybersecurity risk, while strict authentication increases reliability but raises the bar to entering the process at all.",
+    "options": [
+      {
+        "text": "Use a moderate, government-backed digital ID for verification — accessible to nearly everyone, but still secure and hard to spoof",
+        "effects": { "quality": 2, "engagement": 1, "uptake": 1 },
+        "summary": "Used a moderate, secure digital ID for authentication."
+      },
+      {
+        "text": "Require minimal authentication (just an email) to maximise participation",
+        "effects": { "quality": -1, "engagement": 1, "uptake": -1 },
+        "summary": "Required minimal authentication for maximum participation."
+      },
+      {
+        "text": "Require in-person notarised verification for every signature or vote",
+        "effects": { "quality": 0, "engagement": -2, "uptake": 0 },
+        "summary": "Required in-person notarised verification."
+      },
+      {
+        "text": "Leave authentication design entirely to the lowest-cost vendor",
+        "effects": { "quality": -1, "engagement": -1, "uptake": -1 },
+        "summary": "Left authentication design to the lowest-cost vendor."
+      }
+    ]
+  },
+  {
+    "id": "p3-q1",
+    "type": "phase",
+    "phase": 3,
+    "title": "Mobilization & Participation",
+    "scenario": "You're setting the minimum signature threshold a petition needs before officials must formally consider it. Too low, and thousands of petitions dilute attention; too high, and few petitions ever qualify.",
+    "question": "How do you set the threshold?",
+    "learnMore": "Petition thresholds involve a genuine trade-off: minimalistic thresholds reduce barriers to participation but dilute the signal of what the public actually prioritises, while high thresholds make successful petitions far more credible to officials — Manabalss.lv's high bar was part of what made its 68% success rate so persuasive.",
+    "options": [
+      {
+        "text": "Set a meaningful threshold with built-in support to help petition authors reach it, so successful petitions carry real weight",
+        "effects": { "quality": 2, "engagement": 1, "uptake": 2 },
+        "summary": "Set a meaningful threshold with support for reaching it."
+      },
+      {
+        "text": "Set the threshold extremely low to maximise the number of petitions that technically qualify",
+        "effects": { "quality": -1, "engagement": 1, "uptake": -1 },
+        "summary": "Set an extremely low petition threshold."
+      },
+      {
+        "text": "Set the threshold extremely high with no support for authors trying to reach it",
+        "effects": { "quality": 0, "engagement": -2, "uptake": 0 },
+        "summary": "Set an extremely high threshold with no author support."
+      },
+      {
+        "text": "Leave the threshold undefined and decide case by case",
+        "effects": { "quality": -2, "engagement": -1, "uptake": -1 },
+        "summary": "Left the petition threshold undefined."
+      }
+    ]
+  },
+  {
+    "id": "p3-q2",
+    "type": "phase",
+    "phase": 3,
+    "title": "Mobilization & Participation",
+    "scenario": "You're organising a citizens' assembly and must decide how participants are chosen. Self-selection (anyone who wants to join) is easier to organise, but random selection is more representative.",
+    "question": "How do you select participants?",
+    "learnMore": "Citizens' assemblies use random or sortition-based selection specifically to avoid the bias of self-selection — where only the most already-engaged people show up — so the assembly genuinely represents the community in miniature, similar to how jury selection works.",
+    "options": [
+      {
+        "text": "Use random selection stratified to reflect the community's demographics, with support for those who join to overcome barriers to participating",
+        "effects": { "quality": 2, "engagement": 2, "uptake": 1 },
+        "summary": "Used stratified random selection with participation support."
+      },
+      {
+        "text": "Let anyone who wants to join sign up freely with no selection process",
+        "effects": { "quality": -1, "engagement": 1, "uptake": -1 },
+        "summary": "Used open self-selection with no random selection process."
+      },
+      {
+        "text": "Hand-pick participants believed to represent 'reasonable' views",
+        "effects": { "quality": -2, "engagement": -1, "uptake": 0 },
+        "summary": "Hand-picked assembly participants directly."
+      },
+      {
+        "text": "Randomly select participants with no support for those facing barriers to attending",
+        "effects": { "quality": 1, "engagement": -1, "uptake": 0 },
+        "summary": "Used random selection with no participation support."
+      }
+    ]
+  },
+  {
+    "id": "p4-q1",
+    "type": "phase",
+    "phase": 4,
+    "title": "Deliberation, Trust & Verification",
+    "scenario": "You're designing an internet voting system. Advisors raise a real concern: a voter could be coerced by someone standing over their shoulder at home, since the voting environment isn't a controlled polling booth.",
+    "question": "How do you guard against this?",
+    "learnMore": "Estonia's internet voting system allows voters to vote multiple times, with only the last vote counting — a procedural safeguard letting a coerced voter quietly revote later, at a different time or location, without anyone else knowing they did so.",
+    "options": [
+      {
+        "text": "Allow re-voting any number of times during the voting period, with only the final vote counted",
+        "effects": { "quality": 2, "engagement": 1, "uptake": 1 },
+        "summary": "Implemented a re-voting safeguard against coercion."
+      },
+      {
+        "text": "Require voting to happen only once, with no ability to revise it",
+        "effects": { "quality": -2, "engagement": -1, "uptake": 0 },
+        "summary": "Allowed only a single, final vote with no revoting."
+      },
+      {
+        "text": "Require a witness to confirm no coercion occurred before the vote is accepted",
+        "effects": { "quality": -1, "engagement": -1, "uptake": -1 },
+        "summary": "Required a witness confirmation before accepting votes."
+      },
+      {
+        "text": "Ban internet voting from the home entirely, requiring a public location",
+        "effects": { "quality": 0, "engagement": -2, "uptake": -1 },
+        "summary": "Banned internet voting from home entirely."
+      }
+    ]
+  },
+  {
+    "id": "p4-q2",
+    "type": "phase",
+    "phase": 4,
+    "title": "Deliberation, Trust & Verification",
+    "scenario": "Your internet voting system needs a way for voters to verify their vote reached the server correctly, without creating a 'receipt' that could be used to prove how they voted — which would undermine ballot secrecy and enable coercion.",
+    "question": "How do you design vote verification?",
+    "learnMore": "Estonia's verification app confirms a vote was recorded as cast using an independent device — but deliberately doesn't confirm which candidate was recorded, and only for a limited time, specifically to avoid creating a receipt that could enable coercion or vote-selling.",
+    "options": [
+      {
+        "text": "Build a verification app on a separate device that confirms the vote was received, without ever revealing which candidate was recorded",
+        "effects": { "quality": 2, "engagement": 2, "uptake": 1 },
+        "summary": "Built vote verification without revealing candidate choice."
+      },
+      {
+        "text": "Give voters a full printable receipt showing exactly who they voted for",
+        "effects": { "quality": -2, "engagement": 1, "uptake": 0 },
+        "summary": "Gave voters a full receipt showing their candidate choice."
+      },
+      {
+        "text": "Provide no verification mechanism at all",
+        "effects": { "quality": -2, "engagement": -2, "uptake": 0 },
+        "summary": "Provided no vote verification mechanism."
+      },
+      {
+        "text": "Allow verification only via the same device used to vote, with no independent check",
+        "effects": { "quality": -1, "engagement": 0, "uptake": 0 },
+        "summary": "Allowed verification only via the same voting device."
+      }
+    ]
+  },
+  {
+    "id": "p5-q1",
+    "type": "phase",
+    "phase": 5,
+    "title": "Institutional Uptake",
+    "scenario": "Petitions are reaching your platform's threshold regularly, but politicians have no formal obligation to respond meaningfully — some are simply ignored.",
+    "question": "What responsiveness rule do you put in place?",
+    "learnMore": "Responsiveness is one of the key design dimensions of e-petition systems: at minimum, officials should be obligated to give a well-argued, reasoned response — agreeing or disagreeing is fine, but silence undermines the entire premise of the tool.",
+    "options": [
+      {
+        "text": "Require a mandatory, well-argued public response within a set timeframe for any petition that reaches threshold",
+        "effects": { "quality": 2, "engagement": 1, "uptake": 2 },
+        "summary": "Mandated timely, reasoned responses to threshold-reaching petitions."
+      },
+      {
+        "text": "Leave responses entirely optional, at each politician's discretion",
+        "effects": { "quality": -1, "engagement": -1, "uptake": -2 },
+        "summary": "Left petition responses entirely optional."
+      },
+      {
+        "text": "Require only a generic acknowledgment with no substantive reasoning",
+        "effects": { "quality": -1, "engagement": 0, "uptake": -1 },
+        "summary": "Required only generic acknowledgment, no substantive response."
+      },
+      {
+        "text": "Require a binding vote on every threshold petition regardless of its content or feasibility",
+        "effects": { "quality": 0, "engagement": 1, "uptake": -1 },
+        "summary": "Required a binding vote on every threshold petition."
+      }
+    ]
+  },
+  {
+    "id": "p5-q2",
+    "type": "phase",
+    "phase": 5,
+    "title": "Institutional Uptake",
+    "scenario": "Your city's participatory budgeting process just concluded, and citizens voted on which local projects to fund. Some officials are quietly hoping to treat the results as advisory only.",
+    "question": "How binding should the outcome be?",
+    "learnMore": "A defining feature of participatory budgeting is that winning projects are mandatory for authorities to fund and implement, not merely advisory — that's what distinguishes it from a survey and makes it genuinely empowering.",
+    "options": [
+      {
+        "text": "Treat the winning projects as mandatory for implementation, as originally promised to participants",
+        "effects": { "quality": 2, "engagement": 2, "uptake": 2 },
+        "summary": "Treated participatory budgeting results as mandatory."
+      },
+      {
+        "text": "Treat the results as advisory only, to be reconsidered by officials later",
+        "effects": { "quality": -2, "engagement": -2, "uptake": 0 },
+        "summary": "Downgraded participatory budgeting results to advisory."
+      },
+      {
+        "text": "Implement only the single highest-voted project and quietly drop the rest",
+        "effects": { "quality": -1, "engagement": -1, "uptake": -1 },
+        "summary": "Implemented only the top project, dropping the rest."
+      },
+      {
+        "text": "Delay implementation indefinitely pending further budget review",
+        "effects": { "quality": -1, "engagement": -1, "uptake": -1 },
+        "summary": "Delayed implementation of the budgeting results indefinitely."
+      }
+    ]
+  },
+  {
+    "id": "p6-q1",
+    "type": "phase",
+    "phase": 6,
+    "title": "Sustainability & Sovereignty",
+    "scenario": "You need to choose infrastructure for your digital democracy platform — a domestic host you control fully, or a cheaper, more feature-rich foreign big-tech cloud provider.",
+    "question": "Which do you choose?",
+    "learnMore": "Sovereignty as strategic autonomy suggests full self-reliance (autarky) is rarely realistic, but relying entirely on infrastructure beyond state control creates real risk. A middle path — risk management or strategic partnership with clear safeguards — is usually more sustainable than either extreme.",
+    "options": [
+      {
+        "text": "Use a foreign cloud provider under contract with strict data-sovereignty clauses and a viable exit/migration plan",
+        "effects": { "quality": 2, "engagement": 0, "uptake": 1 },
+        "summary": "Used foreign infrastructure with sovereignty safeguards in place."
+      },
+      {
+        "text": "Use a foreign cloud provider with no sovereignty clauses or exit plan, purely for cost savings",
+        "effects": { "quality": -2, "engagement": 0, "uptake": 1 },
+        "summary": "Used foreign infrastructure with no sovereignty safeguards."
+      },
+      {
+        "text": "Insist on fully domestic infrastructure regardless of cost or feature limitations",
+        "effects": { "quality": 1, "engagement": -1, "uptake": -1 },
+        "summary": "Insisted on fully domestic infrastructure regardless of cost."
+      },
+      {
+        "text": "Leave the infrastructure decision entirely to the lowest bidder with no sovereignty review",
+        "effects": { "quality": -1, "engagement": -1, "uptake": 0 },
+        "summary": "Left the infrastructure decision to the lowest bidder."
+      }
+    ]
+  },
+  {
+    "id": "p6-q2",
+    "type": "phase",
+    "phase": 6,
+    "title": "Sustainability & Sovereignty",
+    "scenario": "Your petition platform launched during a political crisis with huge initial energy. Two years later, the crisis has passed and submissions and engagement are declining sharply.",
+    "question": "How do you sustain the platform long-term?",
+    "learnMore": "Manabalss.lv's own experience showed exactly this pattern: the platform empowered people during the crisis that birthed it, but its impact later declined — a reminder that basic digital democracy tools need continued investment and evolution, not just a strong launch.",
+    "options": [
+      {
+        "text": "Invest in more advanced features (deliberation tools, better follow-through tracking) to keep the platform relevant beyond the initial crisis energy",
+        "effects": { "quality": 2, "engagement": 2, "uptake": 1 },
+        "summary": "Reinvested in the platform to sustain long-term relevance."
+      },
+      {
+        "text": "Let engagement decline naturally and treat the platform as a one-time success",
+        "effects": { "quality": -1, "engagement": -2, "uptake": -1 },
+        "summary": "Let the platform's engagement decline without reinvestment."
+      },
+      {
+        "text": "Shut the platform down once the original crisis has clearly passed",
+        "effects": { "quality": -2, "engagement": -1, "uptake": -1 },
+        "summary": "Shut down the platform once the crisis had passed."
+      },
+      {
+        "text": "Keep the platform running unchanged with no new investment or evolution",
+        "effects": { "quality": -1, "engagement": -1, "uptake": 0 },
+        "summary": "Kept the platform unchanged with no further investment."
+      }
+    ]
+  },
+  {
+    "id": "crisis-1",
+    "type": "crisis",
+    "phase": null,
+    "title": "Coordinated Fake Signature Attack",
+    "scenario": "Your e-petition platform is suddenly flooded with thousands of signatures from suspicious, likely automated accounts, all pushing one petition toward its threshold within hours.",
+    "question": "How do you respond?",
+    "learnMore": "Authentication design directly determines a petition platform's resilience to this kind of attack — looser authentication is more accessible but more vulnerable to exactly this scenario, which is why the accessibility-versus-security trade-off matters in practice, not just in theory.",
+    "options": [
+      {
+        "text": "Suspend the petition's progress toward threshold, run a signature audit, and publicly explain the investigation process",
+        "effects": { "quality": 2, "engagement": 1, "uptake": 1 },
+        "summary": "Suspended the petition pending a transparent signature audit.",
+        "news": {
+          "headline": "Platform Halts Petition Amid Signature Fraud Investigation",
+          "content": "Officials confirmed the pause was precautionary while an audit determines how many signatures were genuine. Civic tech observers praised the transparency of the process, though the petition's original supporters expressed frustration at the delay.",
+          "image": "news2"
+        }
+      },
+      {
+        "text": "Let the petition reach threshold and proceed as normal despite the suspicious activity",
+        "effects": { "quality": -2, "engagement": -1, "uptake": 0 },
+        "summary": "Allowed the petition to proceed despite suspicious signatures.",
+        "news": {
+          "headline": "Petition Advances Despite Fraud Concerns",
+          "content": "Critics accused the platform of ignoring obvious signs of automated manipulation. The episode fuelled broader public skepticism about the reliability of the platform's signature counts going forward.",
+          "image": "news4"
+        }
+      },
+      {
+        "text": "Shut the entire platform down indefinitely as a precaution",
+        "effects": { "quality": -1, "engagement": -2, "uptake": -2 },
+        "summary": "Shut down the entire platform indefinitely."
+      },
+      {
+        "text": "Quietly delete the suspicious signatures with no public explanation",
+        "effects": { "quality": 0, "engagement": -2, "uptake": 0 },
+        "summary": "Quietly removed suspicious signatures without explanation."
+      }
+    ]
+  },
+  {
+    "id": "crisis-2",
+    "type": "crisis",
+    "phase": null,
+    "title": "Coercion Allegation Surfaces",
+    "scenario": "Investigative journalists report a case where a voter says they were pressured by a family member to vote a certain way during internet voting, and worry the system offered them no real way out.",
+    "question": "How do you respond?",
+    "learnMore": "Estonia's re-voting mechanism exists specifically for this scenario — the last vote cast always counts, letting a coerced voter quietly revote later without anyone else knowing. Whether this was properly communicated to voters is a fair question to investigate here.",
+    "options": [
+      {
+        "text": "Investigate the case, and launch a public awareness campaign clearly explaining the re-voting safeguard so voters know they have this option",
+        "effects": { "quality": 2, "engagement": 2, "uptake": 1 },
+        "summary": "Launched a public awareness campaign on the re-voting safeguard.",
+        "news": {
+          "headline": "Officials Highlight Re-Voting Safeguard After Coercion Report",
+          "content": "In response to the report, election officials launched a public information push clarifying that the last vote cast always counts, specifically for cases of pressure or coercion. Voter advocacy groups welcomed the clarification, though some questioned why it hadn't been prominent before.",
+          "image": "news6"
+        }
+      },
+      {
+        "text": "Dismiss the report publicly as an isolated, unverifiable incident with no follow-up",
+        "effects": { "quality": -2, "engagement": -2, "uptake": 0 },
+        "summary": "Dismissed the coercion report without follow-up.",
+        "news": {
+          "headline": "Coercion Report Dismissed, Critics Say Concern Ignored",
+          "content": "Officials' brief dismissal of the report drew criticism from election-integrity advocates, who argued the incident deserved a substantive response regardless of how isolated it was. The story continued to circulate in follow-up coverage for weeks.",
+          "image": "news7"
+        }
+      },
+      {
+        "text": "Suspend internet voting entirely pending a full review",
+        "effects": { "quality": 0, "engagement": -1, "uptake": -2 },
+        "summary": "Suspended internet voting entirely pending review."
+      },
+      {
+        "text": "Quietly investigate without any public communication about the safeguard or the case",
+        "effects": { "quality": -1, "engagement": -2, "uptake": 0 },
+        "summary": "Investigated quietly with no public communication."
+      }
+    ]
+  },
+  {
+    "id": "crisis-3",
+    "type": "crisis",
+    "phase": null,
+    "title": "Assembly Recommendations Ignored",
+    "scenario": "A citizens' assembly you organised produced widely praised, well-argued recommendations after months of work and heavy media coverage — but parliament has quietly declined to act on any of them.",
+    "question": "How do you respond to this outcome?",
+    "learnMore": "Citizens' assemblies work best as part of a chain — deliberation feeding into a decision-making process, whether parliamentary vote or referendum. When that final link breaks, as it sometimes does, the credibility of the whole method is at stake.",
+    "options": [
+      {
+        "text": "Publicly request a formal, reasoned explanation from parliament for declining each recommendation, and publish it alongside the assembly's original report",
+        "effects": { "quality": 2, "engagement": 2, "uptake": 1 },
+        "summary": "Requested and published a formal explanation for parliament's inaction.",
+        "news": {
+          "headline": "Pressure Mounts on Parliament to Explain Inaction on Assembly's Report",
+          "content": "Following public calls for accountability, several lawmakers agreed to formally respond to the assembly's recommendations point by point. Civic groups called it a partial win, though frustration remained that action hadn't followed the original deliberation.",
+          "image": "news9"
+        }
+      },
+      {
+        "text": "Accept the outcome quietly and don't organise a citizens' assembly again",
+        "effects": { "quality": -2, "engagement": -2, "uptake": -1 },
+        "summary": "Accepted the outcome quietly and abandoned future assemblies.",
+        "news": {
+          "headline": "Organisers Quietly Shelve Citizens' Assembly Model After Setback",
+          "content": "With no public pushback following parliament's inaction, the promising deliberative model appears to have lost momentum for future use. Commentators noted the missed opportunity to press for accountability while public attention was still high.",
+          "image": "news10"
+        }
+      },
+      {
+        "text": "Publicly attack individual lawmakers by name without addressing the institutional gap that allowed this",
+        "effects": { "quality": -1, "engagement": 0, "uptake": -1 },
+        "summary": "Attacked individual lawmakers without addressing the systemic gap."
+      },
+      {
+        "text": "Organise the exact same assembly again immediately without changing the institutional follow-through process",
+        "effects": { "quality": -1, "engagement": 0, "uptake": -1 },
+        "summary": "Repeated the assembly process without fixing follow-through."
+      }
+    ]
+  },
+  {
+    "id": "crisis-4",
+    "type": "crisis",
+    "phase": null,
+    "title": "Foreign Hosting Dispute",
+    "scenario": "Your digital democracy platform relies on a foreign cloud provider. A geopolitical dispute between your country and the provider's home country suddenly puts continued service, and the citizen data stored there, at risk.",
+    "question": "How do you handle this exposure?",
+    "learnMore": "This is exactly the 'sovereignty gap' described in the digital sovereignty literature — digital infrastructure often sits beyond a state's direct control, and data can become entangled in disputes that have nothing to do with the platform itself.",
+    "options": [
+      {
+        "text": "Activate a pre-planned migration to domestic or allied infrastructure, and communicate the situation transparently to users",
+        "effects": { "quality": 2, "engagement": 1, "uptake": 1 },
+        "summary": "Activated a pre-planned migration and communicated transparently.",
+        "news": {
+          "headline": "Platform Executes Smooth Migration Amid Hosting Dispute",
+          "content": "Thanks to contingency planning built in from the start, the platform's migration to alternative infrastructure caused minimal disruption. Officials credited the earlier decision to require an exit plan as part of the original hosting contract.",
+          "image": "news11"
+        }
+      },
+      {
+        "text": "Have no migration plan in place and scramble reactively once service is disrupted",
+        "effects": { "quality": -2, "engagement": -1, "uptake": -1 },
+        "summary": "Scrambled reactively with no pre-existing migration plan.",
+        "news": {
+          "headline": "Platform Goes Dark Amid Hosting Dispute, No Backup Plan in Place",
+          "content": "With no contingency plan ready, the platform went offline for several days during the dispute, losing citizen trust and reigniting questions about why sovereignty risk hadn't been addressed when the hosting contract was first signed.",
+          "image": "news12"
+        }
+      },
+      {
+        "text": "Downplay the risk publicly and hope the geopolitical dispute resolves quickly on its own",
+        "effects": { "quality": -1, "engagement": -2, "uptake": -1 },
+        "summary": "Downplayed the risk and hoped the dispute would resolve itself."
+      },
+      {
+        "text": "Shut the platform down permanently rather than deal with the exposure",
+        "effects": { "quality": -1, "engagement": -1, "uptake": -2 },
+        "summary": "Shut the platform down permanently."
+      }
+    ]
+  },
+  {
+    "id": "advantage-1",
+    "type": "advantage",
+    "phase": null,
+    "title": "Petition Success Rate Draws International Attention",
+    "scenario": "Your e-petition platform reports that a large majority of threshold-reaching petitions are being adopted as law or government decree — an unusually high success rate that's now drawing interest from other countries.",
+    "question": "How do you build on this success?",
+    "learnMore": "Latvia's Manabalss.lv reported that 68% of petitions passing threshold were adopted as laws or decrees — described as the highest national petition success rate in the world, largely credited to selective pre-moderation and hands-on support for petition authors.",
+    "options": [
+      {
+        "text": "Document what specifically drove the high success rate (pre-moderation, author support) and share it as a model with interested countries",
+        "effects": { "quality": 2, "engagement": 1, "uptake": 1 },
+        "summary": "Documented and shared what drove the platform's success internationally.",
+        "news": {
+          "headline": "Petition Platform's Success Rate Becomes International Case Study",
+          "content": "Delegations from several countries have requested details on how the platform achieves such a high adoption rate. Officials point to selective pre-moderation and direct author support as the key ingredients, now being adapted elsewhere.",
+          "image": "news1"
+        }
+      },
+      {
+        "text": "Assume the current design is finished and stop investing in further improvements",
+        "effects": { "quality": -1, "engagement": -1, "uptake": 0 },
+        "summary": "Stopped investing further after achieving early success."
+      },
+      {
+        "text": "Loosen pre-moderation standards to increase the raw number of petitions, risking the success rate",
+        "effects": { "quality": -1, "engagement": 0, "uptake": -1 },
+        "summary": "Loosened pre-moderation standards, risking the success rate."
+      }
+    ]
+  },
+  {
+    "id": "advantage-2",
+    "type": "advantage",
+    "phase": null,
+    "title": "Assembly Recommendations Reach Referendum",
+    "scenario": "A citizens' assembly's carefully deliberated recommendations are put to a national referendum, which passes with strong turnout — a genuine legislative outcome traced directly back to the assembly's work.",
+    "question": "How do you use this outcome?",
+    "learnMore": "Ireland's citizens' assembly process fed directly into referendums on marriage equality and abortion rights — both passing with turnout above 60%, in what researchers described as the assembly acting as a catalyst that let public opinion, already inclined toward change, be expressed openly.",
+    "options": [
+      {
+        "text": "Publicise the full chain from deliberation to referendum as proof the model works, and propose using it for the next major policy question",
+        "effects": { "quality": 2, "engagement": 2, "uptake": 1 },
+        "summary": "Publicised the assembly-to-referendum model as a template for future use.",
+        "news": {
+          "headline": "Assembly-to-Referendum Model Hailed as Democratic Success",
+          "content": "With strong turnout and a clear result, officials and researchers alike pointed to the process as proof that deliberative democracy can catalyse real legislative change. Plans are already being discussed to use the model for the next major policy debate.",
+          "image": "news13"
+        }
+      },
+      {
+        "text": "Treat the referendum result as a one-off and make no changes to how future policy questions are handled",
+        "effects": { "quality": -1, "engagement": -1, "uptake": 0 },
+        "summary": "Treated the referendum success as a one-off with no follow-up."
+      },
+      {
+        "text": "Credit the outcome entirely to the referendum campaign, downplaying the assembly's role",
+        "effects": { "quality": -1, "engagement": 0, "uptake": 0 },
+        "summary": "Downplayed the assembly's role in the referendum's success."
+      }
+    ]
+  },
+  {
+    "id": "advantage-3",
+    "type": "advantage",
+    "phase": null,
+    "title": "Trust in Internet Voting Holds Steady",
+    "scenario": "Years after launch, trust in your internet voting system remains high and stable, and usage has crossed the halfway mark of all votes cast — all without a major security incident.",
+    "question": "How do you respond to this milestone?",
+    "learnMore": "In Estonia, trust in internet voting has stayed remarkably stable around 70%, and usage crossed the 50% threshold in national elections — though even there, roughly 10% of the population remains firmly distrustful, showing that overall trust and full consensus are not the same thing.",
+    "options": [
+      {
+        "text": "Celebrate the milestone publicly, but keep investing specifically in reaching the persistently distrustful minority rather than assuming universal trust",
+        "effects": { "quality": 2, "engagement": 2, "uptake": 1 },
+        "summary": "Celebrated the milestone while continuing outreach to distrustful voters.",
+        "news": {
+          "headline": "Internet Voting Crosses Adoption Milestone, Officials Eye Remaining Skeptics",
+          "content": "With usage now over half of all votes cast and trust holding steady, officials confirmed a new outreach effort aimed specifically at the persistent minority who remain distrustful — a group survey data shows hasn't shifted much despite years of stability elsewhere.",
+          "image": "news5"
+        }
+      },
+      {
+        "text": "Assume the system has now earned universal trust and stop monitoring public sentiment",
+        "effects": { "quality": -1, "engagement": -1, "uptake": 0 },
+        "summary": "Stopped monitoring trust after assuming universal confidence."
+      },
+      {
+        "text": "Make voting mandatory online-only, eliminating the paper option entirely",
+        "effects": { "quality": -2, "engagement": -2, "uptake": 1 },
+        "summary": "Eliminated the paper voting option entirely."
+      }
+    ]
+  }
+]

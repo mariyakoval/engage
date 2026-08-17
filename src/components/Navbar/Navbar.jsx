@@ -1,5 +1,5 @@
 import React from 'react'
-import './Navbar.css' 
+import './Navbar.css'
 import { Link } from 'react-router-dom'
 import logo_light from '../../assets/logo_light.svg'
 import { Menu, X } from 'lucide-react'
@@ -18,9 +18,9 @@ const Navbar = ({ theme, setTheme }) => {
       {/* Desktop Nav */}
       <ul className="nav-links">
         <li><Link to="/">Home</Link></li>
-        <li><Link to="/citizen-assembly/rules">Citizens' Assembly</Link></li>
-        <li><Link to="/participatory-budget/rules">Participatory Budget</Link></li>
-        <li><Link to="/e-petitions/rules">E-Petition</Link></li>
+        <li><Link to="/ai-governance/rules">AI & Digital Governance</Link></li>
+        <li><Link to="/cybersecurity/rules">Cybersecurity & Hybrid Warfare</Link></li>
+        <li><Link to="/digital-democracy/rules">Digital Democracy</Link></li>
         <li><Link to="/about">About</Link></li>
       </ul>
 
@@ -36,9 +36,9 @@ const Navbar = ({ theme, setTheme }) => {
       <X size={28} />
     </button>
           <li onClick={toggleNavbar}><Link to="/">Home</Link></li>
-          <li onClick={toggleNavbar}><Link to="/citizen-assembly/rules">Citizens' Assembly</Link></li>
-          <li onClick={toggleNavbar}><Link to="/participatory-budget/rules">Participatory Budget</Link></li>
-          <li onClick={toggleNavbar}><Link to="/e-petitions/rules">E-Petition</Link></li>
+          <li onClick={toggleNavbar}><Link to="/ai-governance/rules">AI & Digital Governance</Link></li>
+          <li onClick={toggleNavbar}><Link to="/cybersecurity/rules">Cybersecurity & Hybrid Warfare</Link></li>
+          <li onClick={toggleNavbar}><Link to="/digital-democracy/rules">Digital Democracy</Link></li>
           <li onClick={toggleNavbar}><Link to="/about">About</Link></li>
         </div>
       )}

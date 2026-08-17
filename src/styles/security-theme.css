@@ -1,0 +1,167 @@
+.theme-security {
+  --ops-black: #1B222C;
+  --ops-panel: #242C38;
+  --ops-green: #3DDC84;
+  --ops-amber: #E8A93B;
+  --ops-red: #E5484D;
+  --ops-grey: #8E99A8;
+  --ops-line: #37414F;
+  --ops-text: #C9D1D9;
+
+  background-color: var(--ops-black);
+  color: var(--ops-green);
+  font-family: 'JetBrains Mono', 'IBM Plex Mono', monospace;
+}
+
+.theme-security .prose-security {
+  font-family: 'Urbanist', sans-serif;
+  color: var(--ops-text);
+}
+
+.theme-security .console-tag {
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ops-grey);
+  border-bottom: 1px solid var(--ops-line);
+  padding-bottom: 4px;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+.theme-security .console-tag::before {
+  content: "> ";
+  color: var(--ops-green);
+}
+
+.theme-security .sidebar-security {
+  background-color: var(--ops-panel);
+  border-right: 1px solid var(--ops-line);
+}
+
+.theme-security .sidebar-security h2,
+.theme-security .sidebar-security h3 {
+  color: var(--ops-green);
+  font-family: 'JetBrains Mono', 'IBM Plex Mono', monospace;
+}
+
+/* Threat-level indicator: recolors by step type */
+.theme-security .threat-level {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border: 1px solid var(--ops-line);
+  border-radius: 2px;
+}
+
+.theme-security .threat-level.level-routine {
+  color: var(--ops-green);
+  border-color: var(--ops-green);
+}
+.theme-security .threat-level.level-advisory {
+  color: var(--ops-amber);
+  border-color: var(--ops-amber);
+}
+.theme-security .threat-level.level-crisis {
+  color: var(--ops-red);
+  border-color: var(--ops-red);
+}
+
+.theme-security .threat-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+
+.theme-security .threat-level.level-crisis .threat-dot {
+  animation: blink-alert 1.1s ease-in-out infinite;
+}
+
+@keyframes blink-alert {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.25; }
+}
+
+/* Button variant: terminal bracket hover */
+.theme-security .custom-button-security {
+  cursor: pointer;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+
+  padding: 14px 18px;
+  background-color: var(--ops-panel);
+  border: 1px solid var(--ops-line);
+  border-left: 3px solid transparent;
+  border-radius: 2px;
+
+  font-family: 'JetBrains Mono', 'IBM Plex Mono', monospace;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--ops-text);
+
+  transition: border-left-color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+.theme-security .custom-button-security:hover,
+.theme-security .custom-button-security:focus-visible {
+  border-left-color: var(--ops-green);
+  background-color: #2C3644;
+}
+
+.theme-security .custom-button-security:active {
+  background-color: #1F2731;
+}
+
+.theme-security .custom-button-security .text {
+  color: var(--ops-text);
+}
+
+/* Progress: status-light ticks */
+.theme-security .status-light {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: 1px solid var(--ops-grey);
+  background-color: transparent;
+}
+
+.theme-security .status-light.completed {
+  background-color: var(--ops-green);
+  border-color: var(--ops-green);
+  box-shadow: 0 0 4px var(--ops-green);
+}
+
+.theme-security .status-light.current {
+  background-color: var(--ops-amber);
+  border-color: var(--ops-amber);
+  box-shadow: 0 0 4px var(--ops-amber);
+}
+
+.theme-security .status-light.event {
+  background-color: var(--ops-red);
+  border-color: var(--ops-red);
+  box-shadow: 0 0 4px var(--ops-red);
+}
+
+/* SITREP alert banner replacing tabloid marquee */
+.theme-security .banner-sitrep {
+  background-color: #3A1518;
+  color: var(--ops-red);
+  border-bottom: 2px solid var(--ops-red);
+  font-family: 'JetBrains Mono', 'IBM Plex Mono', monospace;
+}
+
+.theme-security .banner-advisory {
+  background-color: #2E2410;
+  color: var(--ops-amber);
+  border-bottom: 2px solid var(--ops-amber);
+  font-family: 'JetBrains Mono', 'IBM Plex Mono', monospace;
+}

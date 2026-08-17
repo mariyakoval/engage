@@ -1,10 +1,7 @@
 import { BrowserRouter as Router } from "react-router-dom";
 import { AppRoutes } from "./routes";
 import Navbar from "./components/Navbar/Navbar";
-import React, { useState, useRef, useEffect } from "react";
-import { Analytics } from '@vercel/analytics/react';
-import { SpeedInsights } from '@vercel/speed-insights/react';
-import Footer from "./components/Footer/Footer";
+import React, { useState } from "react";
 
 function App() {
 
@@ -14,15 +11,9 @@ function App() {
   return (
     <Router>
          <div className={`app-root ${theme}`} style={{ minHeight: "100vh", height: "100vh", display: "flex", flexDirection: "column"}}>
-       <Navbar theme={theme} setTheme={setTheme} />
-
-  <main className="app-content">
-    <AppRoutes />
-  </main>
-
-  <Footer />
-      <Analytics />
-       <SpeedInsights />
+        <Navbar theme={theme} setTheme={setTheme}/>
+        
+      <AppRoutes />
        </div>
     </Router>
   );

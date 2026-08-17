@@ -1,16 +1,9 @@
 import { createContext, useState, useMemo } from "react";
-import scenariosRaw from "../data/participatoryBudgetScenarios.json";
+import scenariosRaw from "../data/digitalDemocracyScenarios.json";
 
-export const GameContextBudget = createContext();
+export const GameContextDemocracy = createContext();
 
-export const GameProviderBudget = ({ children }) => {
-
-  const resetGame = () => {
-  setScores({ quality: 0, engagement: 0, uptake: 0 });
-  setScoreHistory([]);
-  setIndex(0);
-  setSequence(generateSequence(phases));
-};
+export const GameProviderDemocracy = ({ children }) => {
 
 const phases = useMemo(() => {
     const byPhase = Array.from({ length: 6 }, () => []);
@@ -28,9 +21,7 @@ const phases = useMemo(() => {
     return { byPhase, crisis, benefit };
   }, []);
 
-  const [sequence, setSequence] = useState(() => generateSequence(phases));
-
-function generateSequence(phases) {
+  const sequence = useMemo(() => {
     const rand = arr => arr[Math.floor(Math.random() * arr.length)];
 
     const six = phases.byPhase.map(rand);
@@ -48,7 +39,7 @@ function generateSequence(phases) {
       six[4],
       six[5]
     ];
-  }
+  }, [phases]);
 
   const [index, setIndex] = useState(0);
   const [scores, setScores] = useState({ quality: 0, engagement: 0, uptake: 0 });
@@ -82,21 +73,21 @@ function generateSequence(phases) {
         return newScores;
       });
     setIndex(i => i + 1);
+
   };
 
   return (
-    <GameContextBudget.Provider
+    <GameContextDemocracy.Provider
       value={{
         scenarios: sequence, 
         index,
         next,
         scores,
         previousSummaries,
-        scoreHistory,
-        resetGame
+        scoreHistory
       }}
     >
       {children}
-    </GameContextBudget.Provider>
+    </GameContextDemocracy.Provider>
   );
 };

@@ -1,0 +1,923 @@
+[
+  {
+    "id": "p1-q1",
+    "type": "phase",
+    "phase": 1,
+    "title": "Problem Framing & Mandate",
+    "scenario": "You've been appointed to draft your country's first dedicated approach to regulating AI. Right now there is no AI-specific law — only scattered rules like data protection and consumer safety that touch AI indirectly.",
+    "question": "What kind of legal instrument do you propose?",
+    "learnMore": "The EU AI Act is a product safety law, not a fundamental rights law — it regulates how AI systems are built and deployed, while GDPR and copyright law fill in rights-based gaps indirectly. This split shapes what an AI law can and can't do on its own.",
+    "options": [
+      {
+        "text": "A comprehensive, risk-based product-safety law that scales obligations to how dangerous a system is",
+        "effects": {
+          "quality": 2,
+          "engagement": 1,
+          "uptake": 1
+        },
+        "summary": "Proposed a comprehensive risk-based AI law."
+      },
+      {
+        "text": "A narrow law that only covers facial recognition and biometric surveillance",
+        "effects": {
+          "quality": 0,
+          "engagement": 0,
+          "uptake": 1
+        },
+        "summary": "Proposed a narrow biometric-only AI law."
+      },
+      {
+        "text": "Rely entirely on existing data protection and consumer law — no new AI-specific legislation",
+        "effects": {
+          "quality": -1,
+          "engagement": 0,
+          "uptake": 0
+        },
+        "summary": "Chose not to legislate specifically for AI."
+      },
+      {
+        "text": "Draft a strict rights-based law giving individuals directly enforceable AI rights, bypassing product-safety framing",
+        "effects": {
+          "quality": 1,
+          "engagement": 2,
+          "uptake": -1
+        },
+        "summary": "Proposed a rights-based AI law."
+      }
+    ]
+  },
+  {
+    "id": "p1-q2",
+    "type": "phase",
+    "phase": 1,
+    "title": "Problem Framing & Mandate",
+    "scenario": "Your drafting committee is debating which AI systems should be banned outright as posing an unacceptable risk, versus merely regulated as high-risk.",
+    "question": "Which systems do you classify as unacceptable risk and prohibit entirely?",
+    "learnMore": "The AI Act defines four risk tiers. Unacceptable-risk systems — like manipulative AI that distorts behaviour beyond a person's awareness, and social scoring systems — are banned outright, not just regulated.",
+    "options": [
+      {
+        "text": "Social scoring systems that rank citizens for eligibility to public services, and manipulative AI that exploits vulnerabilities",
+        "effects": {
+          "quality": 2,
+          "engagement": 2,
+          "uptake": 1
+        },
+        "summary": "Banned social scoring and manipulative AI outright."
+      },
+      {
+        "text": "All AI used anywhere in hiring decisions, regardless of how it's used",
+        "effects": {
+          "quality": -1,
+          "engagement": 1,
+          "uptake": -1
+        },
+        "summary": "Banned all hiring AI outright."
+      },
+      {
+        "text": "AI chatbots used for public-sector customer service",
+        "effects": {
+          "quality": -2,
+          "engagement": -1,
+          "uptake": -1
+        },
+        "summary": "Banned public-sector chatbots."
+      },
+      {
+        "text": "Nothing — treat all AI systems as high-risk and regulate rather than ban",
+        "effects": {
+          "quality": -1,
+          "engagement": 0,
+          "uptake": 0
+        },
+        "summary": "Declined to ban any AI systems outright."
+      }
+    ]
+  },
+  {
+    "id": "p2-q1",
+    "type": "phase",
+    "phase": 2,
+    "title": "Risk Classification & Legal Basis",
+    "scenario": "A large employer uses an AI tool to pre-sort job applications. Some applications are auto-rejected with no human review before a person ever sees them.",
+    "question": "Does this practice fall under automated-decision-making rules, and how do you rule?",
+    "learnMore": "Article 22 GDPR applies when a decision is solely automated and produces legal or similarly significant effects. Rejection has no legal effect, but not getting a job affects a person just as significantly — so all criteria are met, and consent or another legal basis is required.",
+    "options": [
+      {
+        "text": "Rule that Article 22 applies — rejection significantly affects applicants, so consent or another legal basis is required",
+        "effects": {
+          "quality": 2,
+          "engagement": 1,
+          "uptake": 1
+        },
+        "summary": "Ruled that automated pre-sorting requires a legal basis."
+      },
+      {
+        "text": "Rule that Article 22 doesn't apply since rejection has no formal legal effect",
+        "effects": {
+          "quality": -2,
+          "engagement": -1,
+          "uptake": 1
+        },
+        "summary": "Ruled automated pre-sorting is exempt from Article 22."
+      },
+      {
+        "text": "Require the employer to add a human reviewer who can meaningfully overrule the system",
+        "effects": {
+          "quality": 1,
+          "engagement": 1,
+          "uptake": 0
+        },
+        "summary": "Required human review of automated pre-sorting."
+      },
+      {
+        "text": "Leave the decision entirely to the employer's discretion",
+        "effects": {
+          "quality": -1,
+          "engagement": -1,
+          "uptake": 0
+        },
+        "summary": "Left automated pre-sorting unregulated."
+      }
+    ]
+  },
+  {
+    "id": "p2-q2",
+    "type": "phase",
+    "phase": 2,
+    "title": "Risk Classification & Legal Basis",
+    "scenario": "A credit-scoring company argues it doesn't make lending decisions — it only generates a score, which banks then use to decide. It claims Article 22 shouldn't apply to it at all.",
+    "question": "How do you respond to this argument?",
+    "learnMore": "This mirrors the CJEU's SCHUFA ruling: even though the credit-scoring agency wasn't the one issuing loans, the Court held that the score itself constitutes an automated decision, since bank decisions depend so strongly on it.",
+    "options": [
+      {
+        "text": "Reject the argument — the score itself counts as an automated decision because bank outcomes depend heavily on it",
+        "effects": {
+          "quality": 2,
+          "engagement": 1,
+          "uptake": 1
+        },
+        "summary": "Ruled that credit scores count as automated decisions."
+      },
+      {
+        "text": "Accept the argument — only the bank's final lending decision is regulated, not the score",
+        "effects": {
+          "quality": -2,
+          "engagement": 0,
+          "uptake": 1
+        },
+        "summary": "Exempted credit-scoring companies from automated-decision rules."
+      },
+      {
+        "text": "Require the credit-scoring company to publish its methodology publicly, without addressing Article 22 directly",
+        "effects": {
+          "quality": 0,
+          "engagement": 1,
+          "uptake": -1
+        },
+        "summary": "Required transparency but avoided the automated-decision question."
+      },
+      {
+        "text": "Refer the question to the courts and take no regulatory position",
+        "effects": {
+          "quality": -1,
+          "engagement": -1,
+          "uptake": 0
+        },
+        "summary": "Deferred the automated-decision question to the courts."
+      }
+    ]
+  },
+  {
+    "id": "p3-q1",
+    "type": "phase",
+    "phase": 3,
+    "title": "Public–Private Foundations",
+    "scenario": "Your country needs a data exchange layer connecting government registries so digital services can be built on top of them. Engineers propose two architectures.",
+    "question": "Which architecture do you approve?",
+    "learnMore": "Estonia's X-Road is a decentralised data exchange layer: if one server fails or is attacked, the rest of the ecosystem keeps functioning. This resilience was a deliberate design choice, not an accident.",
+    "options": [
+      {
+        "text": "A decentralised exchange layer where registries interact directly, so no single point of failure exists",
+        "effects": {
+          "quality": 2,
+          "engagement": 1,
+          "uptake": 1
+        },
+        "summary": "Approved a decentralised data exchange architecture."
+      },
+      {
+        "text": "A single centralised government database holding all citizen data in one place",
+        "effects": {
+          "quality": -1,
+          "engagement": -1,
+          "uptake": 1
+        },
+        "summary": "Approved a centralised government database."
+      },
+      {
+        "text": "No shared infrastructure — each ministry keeps building its own siloed systems",
+        "effects": {
+          "quality": -2,
+          "engagement": 0,
+          "uptake": 0
+        },
+        "summary": "Declined to build shared data infrastructure."
+      },
+      {
+        "text": "Outsource the entire data layer to a single foreign cloud vendor",
+        "effects": {
+          "quality": 0,
+          "engagement": -1,
+          "uptake": 1
+        },
+        "summary": "Outsourced the data exchange layer to a foreign vendor."
+      }
+    ]
+  },
+  {
+    "id": "p3-q2",
+    "type": "phase",
+    "phase": 3,
+    "title": "Public–Private Foundations",
+    "scenario": "Banks and telecoms approach your office wanting to co-found a jointly owned certification body to issue and hold the cryptographic certificates behind a national digital ID.",
+    "question": "Do you approve this public-private partnership?",
+    "learnMore": "Estonia's ID card relied on exactly this kind of arrangement: a certification centre jointly owned by government and private industry, holding what the lecturer called 'the most valuable secret' the entire digital ID ecosystem depends on.",
+    "options": [
+      {
+        "text": "Approve it, with clear public oversight over how certificates are issued and secured",
+        "effects": {
+          "quality": 2,
+          "engagement": 1,
+          "uptake": 1
+        },
+        "summary": "Approved a public-private digital ID certification body."
+      },
+      {
+        "text": "Reject it — certificates for national identity should never leave direct government control",
+        "effects": {
+          "quality": 1,
+          "engagement": -1,
+          "uptake": -1
+        },
+        "summary": "Rejected private involvement in digital ID certification."
+      },
+      {
+        "text": "Approve it but with no oversight requirements, to move faster",
+        "effects": {
+          "quality": -1,
+          "engagement": 0,
+          "uptake": 1
+        },
+        "summary": "Approved the partnership without oversight requirements."
+      },
+      {
+        "text": "Delay indefinitely pending further study",
+        "effects": {
+          "quality": 0,
+          "engagement": -1,
+          "uptake": -1
+        },
+        "summary": "Delayed the digital ID partnership decision."
+      }
+    ]
+  },
+  {
+    "id": "p4-q1",
+    "type": "phase",
+    "phase": 4,
+    "title": "System Design & Data Governance",
+    "scenario": "A national government chatbot is in development to help citizens with tasks like passport renewal. Developers ask whether the chatbot must explain the reasoning behind every answer it gives.",
+    "question": "Do you mandate explainability as a hard requirement?",
+    "learnMore": "Research on Estonia's Bürokratt chatbot found that explainability didn't significantly affect people's willingness to use it — perceived usefulness and trust in the technology mattered far more, which cuts against what AI ethics literature usually predicts.",
+    "options": [
+      {
+        "text": "Require a baseline explanation for high-stakes answers, but don't over-engineer it since usefulness and trust drive adoption more",
+        "effects": {
+          "quality": 2,
+          "engagement": 1,
+          "uptake": 2
+        },
+        "summary": "Set a proportionate explainability requirement for the chatbot."
+      },
+      {
+        "text": "Mandate a full explanation for every single answer, regardless of stakes",
+        "effects": {
+          "quality": 1,
+          "engagement": 0,
+          "uptake": -1
+        },
+        "summary": "Mandated full explainability for every chatbot answer."
+      },
+      {
+        "text": "Skip explainability requirements entirely and focus only on response speed",
+        "effects": {
+          "quality": -1,
+          "engagement": -1,
+          "uptake": 1
+        },
+        "summary": "Dropped explainability requirements for the chatbot."
+      },
+      {
+        "text": "Let the developers decide with no regulatory input",
+        "effects": {
+          "quality": -2,
+          "engagement": -1,
+          "uptake": 0
+        },
+        "summary": "Left chatbot explainability entirely to developers."
+      }
+    ]
+  },
+  {
+    "id": "p4-q2",
+    "type": "phase",
+    "phase": 4,
+    "title": "System Design & Data Governance",
+    "scenario": "The same chatbot needs to collect some personal data to answer questions accurately — but citizens have varying privacy concerns depending on the task.",
+    "question": "How do you set the data collection rules?",
+    "learnMore": "The Bürokratt study found privacy concerns didn't significantly affect willingness to use the chatbot for informational tasks like passport renewal, but did matter for more personal tasks like booking a doctor's appointment.",
+    "options": [
+      {
+        "text": "Set minimal data requirements for informational tasks, but stricter limits and clearer consent for sensitive tasks like health appointments",
+        "effects": {
+          "quality": 2,
+          "engagement": 2,
+          "uptake": 1
+        },
+        "summary": "Set task-sensitive data collection rules for the chatbot."
+      },
+      {
+        "text": "Apply the same strict data minimisation rules uniformly to every task",
+        "effects": {
+          "quality": 1,
+          "engagement": 0,
+          "uptake": -1
+        },
+        "summary": "Applied uniform strict data minimisation."
+      },
+      {
+        "text": "Allow the chatbot to collect as much data as needed for any task, prioritising accuracy",
+        "effects": {
+          "quality": -2,
+          "engagement": -1,
+          "uptake": 1
+        },
+        "summary": "Allowed unrestricted data collection for the chatbot."
+      },
+      {
+        "text": "Ban the chatbot from handling any sensitive-task categories at all",
+        "effects": {
+          "quality": 0,
+          "engagement": -1,
+          "uptake": -1
+        },
+        "summary": "Banned the chatbot from sensitive-task categories."
+      }
+    ]
+  },
+  {
+    "id": "p5-q1",
+    "type": "phase",
+    "phase": 5,
+    "title": "Compliance, Oversight & Enforcement",
+    "scenario": "An artist used an AI image generator to illustrate a comic book from her own written script and detailed prompts. She now applies for copyright protection over the whole work.",
+    "question": "How do you rule on the copyright application?",
+    "learnMore": "This mirrors the real Zarya of the Dawn case: the AI-generated images themselves didn't receive protection, since only human-created works qualify — but the human-authored text and the arrangement of images and story were protected.",
+    "options": [
+      {
+        "text": "Protect the text and overall arrangement as human-authored, but deny protection to the AI-generated images themselves",
+        "effects": {
+          "quality": 2,
+          "engagement": 1,
+          "uptake": 1
+        },
+        "summary": "Split copyright protection between human and AI-generated elements."
+      },
+      {
+        "text": "Grant full copyright over the entire work, images included, since she directed the AI with detailed prompts",
+        "effects": {
+          "quality": -2,
+          "engagement": 1,
+          "uptake": 0
+        },
+        "summary": "Granted full copyright including AI-generated images."
+      },
+      {
+        "text": "Deny copyright over the entire work, including the human-written text and story",
+        "effects": {
+          "quality": -1,
+          "engagement": -2,
+          "uptake": 0
+        },
+        "summary": "Denied copyright over the entire work."
+      },
+      {
+        "text": "Refuse to rule and leave the matter entirely to future case law",
+        "effects": {
+          "quality": -1,
+          "engagement": -1,
+          "uptake": -1
+        },
+        "summary": "Declined to rule on the AI-assisted copyright case."
+      }
+    ]
+  },
+  {
+    "id": "p5-q2",
+    "type": "phase",
+    "phase": 5,
+    "title": "Compliance, Oversight & Enforcement",
+    "scenario": "A major AI company has trained its image generator on vast amounts of scraped internet content, including copyrighted illustrations, without licensing them. Illustrators are demanding enforcement action.",
+    "question": "How do you approach enforcement, given your jurisdiction has no US-style fair use doctrine?",
+    "learnMore": "The EU has no fair use doctrine. Instead it relies on an explicit list of exceptions, including Article 4 of the DSM directive's text-and-data-mining exception — which, per a European Parliament-commissioned study, wasn't designed with generative AI training in mind.",
+    "options": [
+      {
+        "text": "Open an investigation into whether the text-and-data-mining exception was ever meant to cover generative AI training at this scale, and signal that targeted reform may follow",
+        "effects": {
+          "quality": 2,
+          "engagement": 2,
+          "uptake": 1
+        },
+        "summary": "Opened an investigation into AI training under the TDM exception."
+      },
+      {
+        "text": "Declare that all AI training on scraped data is automatically legal under the existing text-and-data-mining exception",
+        "effects": {
+          "quality": -2,
+          "engagement": -1,
+          "uptake": 1
+        },
+        "summary": "Declared all AI training legal under existing exceptions."
+      },
+      {
+        "text": "Ban all AI training on copyrighted material immediately, with no transition period",
+        "effects": {
+          "quality": -1,
+          "engagement": 1,
+          "uptake": -2
+        },
+        "summary": "Banned AI training on copyrighted material immediately."
+      },
+      {
+        "text": "Take no position and let the illustrators pursue civil litigation on their own",
+        "effects": {
+          "quality": -1,
+          "engagement": -2,
+          "uptake": 0
+        },
+        "summary": "Left the copyright dispute to private litigation."
+      }
+    ]
+  },
+  {
+    "id": "p6-q1",
+    "type": "phase",
+    "phase": 6,
+    "title": "Public Trust & Adoption",
+    "scenario": "Your regulatory framework has been in force for two years. Adoption of compliant AI systems is steady but not rapid, and industry says the compliance paperwork is a burden.",
+    "question": "How do you respond to improve real-world adoption?",
+    "learnMore": "Digital-era governance research shows that new digital models don't replace old bureaucratic ones outright — they layer on top of them ('sedimentation'), which is exactly why frameworks need practical, not just legally elegant, compliance pathways.",
+    "options": [
+      {
+        "text": "Simplify compliance documentation for lower-risk categories while keeping high-risk obligations intact",
+        "effects": {
+          "quality": 1,
+          "engagement": 1,
+          "uptake": 2
+        },
+        "summary": "Simplified compliance for lower-risk AI categories."
+      },
+      {
+        "text": "Keep all requirements exactly as they are and let industry adapt on its own timeline",
+        "effects": {
+          "quality": 1,
+          "engagement": -1,
+          "uptake": -1
+        },
+        "summary": "Left compliance requirements unchanged."
+      },
+      {
+        "text": "Drop most documentation requirements across all risk tiers to boost adoption",
+        "effects": {
+          "quality": -2,
+          "engagement": 0,
+          "uptake": 2
+        },
+        "summary": "Dropped most documentation requirements to boost adoption."
+      },
+      {
+        "text": "Add more documentation requirements to close perceived compliance gaps",
+        "effects": {
+          "quality": 1,
+          "engagement": -1,
+          "uptake": -2
+        },
+        "summary": "Added further documentation requirements."
+      }
+    ]
+  },
+  {
+    "id": "p6-q2",
+    "type": "phase",
+    "phase": 6,
+    "title": "Public Trust & Adoption",
+    "scenario": "Your government's digital services are praised internationally, but small and medium businesses in your own country report they haven't seen much economic benefit from the public sector's AI and digitalisation push.",
+    "question": "How do you close this gap between public-sector success and private-sector benefit?",
+    "learnMore": "This mirrors a real finding from Estonia: it ranks near the top on public digital-services indices, yet its small and medium enterprises lag the EU average on digital intensity, and productivity growth hasn't matched the public sector's digital success.",
+    "options": [
+      {
+        "text": "Launch a targeted programme helping SMEs adopt digital tools built on the public data infrastructure, not just citizens",
+        "effects": {
+          "quality": 2,
+          "engagement": 1,
+          "uptake": 1
+        },
+        "summary": "Launched an SME digitalisation programme."
+      },
+      {
+        "text": "Assume the private sector will catch up on its own and take no new action",
+        "effects": {
+          "quality": -1,
+          "engagement": -1,
+          "uptake": 0
+        },
+        "summary": "Took no action on the SME digital divide."
+      },
+      {
+        "text": "Redirect public digital infrastructure funding away from government services toward private industry instead",
+        "effects": {
+          "quality": -1,
+          "engagement": 0,
+          "uptake": -1
+        },
+        "summary": "Redirected infrastructure funding toward industry."
+      },
+      {
+        "text": "Commission further research before deciding on any intervention",
+        "effects": {
+          "quality": 0,
+          "engagement": -1,
+          "uptake": -1
+        },
+        "summary": "Commissioned further research before acting."
+      }
+    ]
+  },
+  {
+    "id": "crisis-1",
+    "type": "crisis",
+    "phase": null,
+    "title": "Deepfake Disinformation Surge",
+    "scenario": "Weeks before a national election, AI-generated deepfake videos of candidates making inflammatory statements they never made begin circulating widely on social media.",
+    "question": "How does your office respond?",
+    "learnMore": "The AI Act's limited-risk tier requires AI-generated or manipulated content to be clearly labelled as such — this obligation exists specifically for cases like synthetic media used to mislead the public.",
+    "options": [
+      {
+        "text": "Issue an emergency public notice on AI content labelling requirements and coordinate with platforms on rapid takedown/labelling of unlabelled synthetic content",
+        "effects": {
+          "quality": 2,
+          "engagement": 2,
+          "uptake": 1
+        },
+        "summary": "Coordinated an emergency response on unlabelled deepfakes.",
+        "news": {
+          "headline": "Regulator Moves Fast on Deepfake Surge",
+          "content": "Following coordinated action with platforms, several major deepfake videos were labelled or removed within 48 hours. Civil society groups praised the swift response, though some called for permanent fast-track procedures ahead of future elections.",
+          "image": "news1"
+        }
+      },
+      {
+        "text": "Wait for the platforms to self-regulate without government intervention",
+        "effects": {
+          "quality": -2,
+          "engagement": -1,
+          "uptake": 0
+        },
+        "summary": "Waited for platforms to self-regulate the deepfake surge.",
+        "news": {
+          "headline": "Silence From Regulators As Deepfakes Spread",
+          "content": "With no government response, the fabricated videos remained online through election week. Opposition parties accused the regulator's office of negligence, and trust in the AI framework's real-world enforcement dropped sharply in early polling.",
+          "image": "news2"
+        }
+      },
+      {
+        "text": "Order an immediate blanket ban on all AI-generated political content, effective instantly",
+        "effects": {
+          "quality": -1,
+          "engagement": 0,
+          "uptake": -1
+        },
+        "summary": "Ordered a blanket ban on AI political content."
+      },
+      {
+        "text": "Refer the matter quietly to law enforcement without public comment",
+        "effects": {
+          "quality": 0,
+          "engagement": -2,
+          "uptake": 0
+        },
+        "summary": "Referred the deepfake matter to law enforcement quietly."
+      }
+    ]
+  },
+  {
+    "id": "crisis-2",
+    "type": "crisis",
+    "phase": null,
+    "title": "Discriminatory Hiring Tool Exposed",
+    "scenario": "Investigative journalists reveal that a widely used AI hiring tool systematically down-ranks applicants from certain neighbourhoods, correlating strongly with ethnicity, despite passing its initial compliance review.",
+    "question": "What's your immediate move?",
+    "learnMore": "High-risk AI systems — hiring tools among them — carry ongoing obligations on risk management and monitoring, not just a one-time compliance check at launch. Providers must catch and correct emergent bias.",
+    "options": [
+      {
+        "text": "Suspend the tool's compliance certification pending an independent bias audit, and require the vendor to publish remediation steps",
+        "effects": {
+          "quality": 2,
+          "engagement": 2,
+          "uptake": 0
+        },
+        "summary": "Suspended certification pending an independent bias audit.",
+        "news": {
+          "headline": "Hiring AI Certification Pulled Amid Bias Findings",
+          "content": "The regulator's swift suspension drew praise from labour rights groups, though the affected vendor warned the audit could take months and disrupt hiring for dozens of client companies in the meantime.",
+          "image": "news3"
+        }
+      },
+      {
+        "text": "Let the compliance certification stand since the tool passed its initial review",
+        "effects": {
+          "quality": -2,
+          "engagement": -2,
+          "uptake": 1
+        },
+        "summary": "Let the discriminatory hiring tool's certification stand.",
+        "news": {
+          "headline": "Regulator Under Fire for Inaction on Biased Hiring AI",
+          "content": "Advocacy groups filed formal complaints after the office declined to act, arguing the initial compliance review was clearly insufficient. Several major employers have since paused use of the tool on their own initiative.",
+          "image": "news4"
+        }
+      },
+      {
+        "text": "Fine the vendor immediately without offering a path to remediation",
+        "effects": {
+          "quality": 0,
+          "engagement": 1,
+          "uptake": -1
+        },
+        "summary": "Fined the vendor without a remediation path."
+      },
+      {
+        "text": "Quietly request an internal review from the vendor with no public disclosure",
+        "effects": {
+          "quality": -1,
+          "engagement": -2,
+          "uptake": 0
+        },
+        "summary": "Requested a quiet internal review with no public disclosure."
+      }
+    ]
+  },
+  {
+    "id": "crisis-3",
+    "type": "crisis",
+    "phase": null,
+    "title": "National Chatbot Data Leak",
+    "scenario": "The national government chatbot, used by millions of citizens for everyday services, is found to have exposed personal data — including health appointment details — due to a misconfigured backend.",
+    "question": "How do you handle the immediate fallout?",
+    "learnMore": "Estonia's 2007 DDoS attacks and 2017 eID vulnerability both taught the same lesson: clear public acknowledgment of the incident, transparent communication, and visible investment in fixing it were what preserved public trust afterward.",
+    "options": [
+      {
+        "text": "Publicly acknowledge the breach immediately, explain the scope clearly, and commit to a transparent post-incident report",
+        "effects": {
+          "quality": 2,
+          "engagement": 2,
+          "uptake": 1
+        },
+        "summary": "Publicly acknowledged the chatbot data breach with a transparent plan.",
+        "news": {
+          "headline": "Government Chatbot Breach: Officials Move to Reassure Public",
+          "content": "In a widely covered press briefing, officials laid out exactly what data was exposed and outlined concrete fixes. Early public reaction was cautiously positive, with commentators noting the contrast to past breaches handled with silence.",
+          "image": "news5"
+        }
+      },
+      {
+        "text": "Quietly patch the issue without public disclosure to avoid panic",
+        "effects": {
+          "quality": -2,
+          "engagement": -2,
+          "uptake": 0
+        },
+        "summary": "Quietly patched the breach without public disclosure.",
+        "news": {
+          "headline": "Chatbot Breach Cover-Up Alleged After Leak to Press",
+          "content": "When journalists discovered the undisclosed breach weeks later, the story became less about the technical failure and more about the lack of transparency. Public trust in the chatbot dropped sharply in follow-up surveys.",
+          "image": "news6"
+        }
+      },
+      {
+        "text": "Shut the chatbot down entirely and indefinitely while a full investigation proceeds",
+        "effects": {
+          "quality": 1,
+          "engagement": -1,
+          "uptake": -2
+        },
+        "summary": "Shut down the chatbot indefinitely."
+      },
+      {
+        "text": "Blame the vendor publicly without acknowledging any regulatory oversight gap",
+        "effects": {
+          "quality": -1,
+          "engagement": -1,
+          "uptake": 0
+        },
+        "summary": "Blamed the vendor without acknowledging oversight gaps."
+      }
+    ]
+  },
+  {
+    "id": "crisis-4",
+    "type": "crisis",
+    "phase": null,
+    "title": "Class-Action Suit Against a Major AI Company",
+    "scenario": "Visual artists file a landmark class-action lawsuit against a major generative AI company operating in your jurisdiction, alleging their copyrighted work was used as training data without consent. Public pressure mounts on your office to intervene.",
+    "question": "What's your regulatory response while litigation is ongoing?",
+    "learnMore": "This mirrors the real Andersen v. Stability AI case in the US. In the EU, without a fair-use doctrine, the outcome hinges on whether the text-and-data-mining exception was ever meant to cover generative AI training — a question your office can weigh in on even before courts rule.",
+    "options": [
+      {
+        "text": "Open a formal consultation on whether the text-and-data-mining exception applies to generative AI training, without pre-judging the litigation",
+        "effects": {
+          "quality": 2,
+          "engagement": 1,
+          "uptake": 0
+        },
+        "summary": "Opened a consultation on AI training and copyright exceptions.",
+        "news": {
+          "headline": "Regulator Opens Consultation as Landmark AI Copyright Suit Proceeds",
+          "content": "The move was welcomed by artists' groups as a sign the office isn't waiting for courts alone to resolve the question, while some AI developers warned that regulatory uncertainty could push investment elsewhere.",
+          "image": "news7"
+        }
+      },
+      {
+        "text": "Publicly declare the company's practices legal before the litigation concludes",
+        "effects": {
+          "quality": -2,
+          "engagement": -1,
+          "uptake": 0
+        },
+        "summary": "Declared the company's AI training practices legal preemptively."
+      },
+      {
+        "text": "Stay entirely silent and let the courts decide with no regulatory comment",
+        "effects": {
+          "quality": -1,
+          "engagement": -2,
+          "uptake": 0
+        },
+        "summary": "Stayed silent during the copyright litigation.",
+        "news": {
+          "headline": "Regulator's Silence Draws Criticism From Artists' Groups",
+          "content": "With no public statement from the regulator's office, artists' advocacy groups accused the government of ceding the entire policy question to the courts. Legal experts noted the silence leaves smaller creators without guidance on their rights.",
+          "image": "news8"
+        }
+      },
+      {
+        "text": "Immediately impose an emergency moratorium on all generative AI operating in the jurisdiction",
+        "effects": {
+          "quality": -1,
+          "engagement": 1,
+          "uptake": -2
+        },
+        "summary": "Imposed an emergency moratorium on generative AI."
+      }
+    ]
+  },
+  {
+    "id": "advantage-1",
+    "type": "advantage",
+    "phase": null,
+    "title": "Landmark Court Ruling Strengthens Your Framework",
+    "scenario": "The country's highest court issues a ruling — echoing the CJEU's SCHUFA decision — confirming that automated scoring systems fall within your regulatory framework's scope, even when a human technically makes the final call.",
+    "question": "How do you use this legal win?",
+    "learnMore": "The SCHUFA ruling established that automated scores can constitute automated decisions in their own right when downstream human decisions depend heavily on them — closing a loophole scoring companies had tried to exploit.",
+    "options": [
+      {
+        "text": "Publicise the ruling widely and issue updated guidance so companies understand the clarified scope",
+        "effects": {
+          "quality": 2,
+          "engagement": 1,
+          "uptake": 1
+        },
+        "summary": "Publicised the ruling and issued updated compliance guidance.",
+        "news": {
+          "headline": "Court Ruling Closes Automated-Scoring Loophole",
+          "content": "Legal analysts say the ruling — and the regulator's swift follow-up guidance — gives companies much-needed clarity on where automated scoring falls under existing rules, likely heading off future disputes before they start.",
+          "image": "news9"
+        }
+      },
+      {
+        "text": "Let the ruling stand without any follow-up communication to industry",
+        "effects": {
+          "quality": 0,
+          "engagement": -1,
+          "uptake": -1
+        },
+        "summary": "Took no follow-up action after the favourable ruling."
+      },
+      {
+        "text": "Use the ruling as grounds to expand enforcement aggressively beyond what the court actually decided",
+        "effects": {
+          "quality": -1,
+          "engagement": 0,
+          "uptake": -1
+        },
+        "summary": "Expanded enforcement beyond the court's actual ruling."
+      }
+    ]
+  },
+  {
+    "id": "advantage-2",
+    "type": "advantage",
+    "phase": null,
+    "title": "Framework Praised as International Model",
+    "scenario": "Your risk-based AI framework, one of the first comprehensive approaches in the world, is being studied and partially copied by regulators in several other countries.",
+    "question": "How do you respond to this international attention?",
+    "learnMore": "The EU AI Act is described as the first comprehensive legal framework on AI worldwide — its risk-tier structure has become a reference point precisely because it balances innovation with fundamental-rights protection.",
+    "options": [
+      {
+        "text": "Establish a formal knowledge-sharing channel with peer regulators to refine the approach based on real-world lessons from multiple countries",
+        "effects": {
+          "quality": 2,
+          "engagement": 1,
+          "uptake": 0
+        },
+        "summary": "Established knowledge-sharing with peer AI regulators.",
+        "news": {
+          "headline": "Framework Becomes Reference Point for Global AI Regulation",
+          "content": "Several countries have sent delegations to study the risk-tier model up close. Officials say the new knowledge-sharing channel is already surfacing implementation lessons that will feed back into domestic guidance.",
+          "image": "news10"
+        }
+      },
+      {
+        "text": "Treat the framework as finished and stop iterating on it",
+        "effects": {
+          "quality": -1,
+          "engagement": -1,
+          "uptake": 0
+        },
+        "summary": "Stopped iterating on the framework after international praise."
+      },
+      {
+        "text": "Use the attention mainly for domestic political messaging with no substantive follow-up",
+        "effects": {
+          "quality": -1,
+          "engagement": 0,
+          "uptake": 0
+        },
+        "summary": "Used international praise for political messaging only."
+      }
+    ]
+  },
+  {
+    "id": "advantage-3",
+    "type": "advantage",
+    "phase": null,
+    "title": "Chatbot Adoption Exceeds Expectations",
+    "scenario": "Two years after launch, the national government chatbot has far exceeded its adoption targets, with citizens reporting high trust and satisfaction in independent surveys.",
+    "question": "How do you build on this success?",
+    "learnMore": "Research on Bürokratt found perceived usefulness and trust in technology were the strongest predictors of adoption — stronger than privacy concerns or explainability in most contexts — suggesting where future investment should go.",
+    "options": [
+      {
+        "text": "Invest further in the trust and usefulness factors driving adoption, and extend the chatbot to additional public services",
+        "effects": {
+          "quality": 2,
+          "engagement": 2,
+          "uptake": 1
+        },
+        "summary": "Expanded the chatbot based on the drivers of its success.",
+        "news": {
+          "headline": "Government Chatbot's Popularity Fuels Expansion Plans",
+          "content": "With satisfaction ratings well above initial projections, officials confirmed plans to extend the chatbot to several more service areas, citing citizen trust as the key ingredient behind its unexpectedly strong uptake.",
+          "image": "news11"
+        }
+      },
+      {
+        "text": "Keep the chatbot exactly as-is with no further investment, since it already exceeded targets",
+        "effects": {
+          "quality": -1,
+          "engagement": -1,
+          "uptake": 0
+        },
+        "summary": "Made no further investment despite chatbot's success."
+      },
+      {
+        "text": "Rapidly expand the chatbot to many new services at once without additional testing or trust-building",
+        "effects": {
+          "quality": -1,
+          "engagement": 0,
+          "uptake": 1
+        },
+        "summary": "Rapidly expanded the chatbot without additional testing."
+      }
+    ]
+  }
+]

@@ -1,18 +1,11 @@
 import { createContext, useState, useMemo } from "react";
-import scenariosRaw from "../data/petitions.json";
+import scenariosRaw from "../data/aiGovernanceScenarios.json";
 
-export const GameContextPetitions = createContext();
+export const GameContext = createContext();
 
-export const GameProviderPetitions = ({ children }) => {
+export const GameProviderAI = ({ children }) => {
 
-  const resetGame = () => {
-  setScores({ quality: 0, engagement: 0, uptake: 0 });
-  setScoreHistory([]);
-  setIndex(0);
-  setSequence(generateSequence(phases));
-};
-
-const phases = useMemo(() => {
+  const phases = useMemo(() => {
     const byPhase = Array.from({ length: 6 }, () => []);
     const crisis   = [];
     const benefit  = [];
@@ -28,9 +21,7 @@ const phases = useMemo(() => {
     return { byPhase, crisis, benefit };
   }, []);
 
-  const [sequence, setSequence] = useState(() => generateSequence(phases));
-
-function generateSequence(phases) {
+  const sequence = useMemo(() => {
     const rand = arr => arr[Math.floor(Math.random() * arr.length)];
 
     const six = phases.byPhase.map(rand);
@@ -48,56 +39,52 @@ function generateSequence(phases) {
       six[4],
       six[5]
     ];
-  }
+  }, [phases]);
 
   const [index, setIndex] = useState(0);
   const [scores, setScores] = useState({ quality: 0, engagement: 0, uptake: 0 });
-  const [scoreHistory, setScoreHistory] = useState([ ]);
-
+  const [scoreHistory, setScoreHistory] = useState([]);
   const [previousSummaries, setPreviousSummaries] = useState([]);
-
 
   const next = (effects, summary, questionText, answerText) => {
 
-     if (summary) {
-    setPreviousSummaries(prev => [summary, ...prev].slice(0, 2));
-  }
+    if (summary) {
+      setPreviousSummaries(prev => [summary, ...prev].slice(0, 2));
+    }
 
     setScores(prev => {
       const newScores = {
-      quality:    prev.quality    + (effects.quality    ?? 0),
-      engagement: prev.engagement + (effects.engagement ?? 0),
-      uptake:     prev.uptake     + (effects.uptake     ?? 0)
-    };
+        quality:    prev.quality    + (effects.quality    ?? 0),
+        engagement: prev.engagement + (effects.engagement ?? 0),
+        uptake:     prev.uptake     + (effects.uptake     ?? 0)
+      };
       setScoreHistory(prevHistory => {
-  const newEntry = {
-    step: prevHistory.length, 
-    ...newScores,
-    question: questionText,
-    answer: answerText
-  };
-  return [...prevHistory, newEntry];
-});
-
-        return newScores;
+        const newEntry = {
+          step: prevHistory.length,
+          ...newScores,
+          question: questionText,
+          answer: answerText
+        };
+        return [...prevHistory, newEntry];
       });
-    setIndex(i => i + 1);
 
+      return newScores;
+    });
+    setIndex(i => i + 1);
   };
 
   return (
-    <GameContextPetitions.Provider
+    <GameContext.Provider
       value={{
-        scenarios: sequence, 
+        scenarios: sequence,
         index,
         next,
         scores,
         previousSummaries,
-        scoreHistory,
-        resetGame
+        scoreHistory
       }}
     >
       {children}
-    </GameContextPetitions.Provider>
+    </GameContext.Provider>
   );
 };

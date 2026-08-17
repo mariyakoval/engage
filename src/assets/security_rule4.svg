@@ -1,0 +1,19 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect x="90" y="60" width="220" height="150" rx="10" fill="none" stroke="#8E99A8" stroke-width="4"/>
+  <line x1="150" y1="230" x2="250" y2="230" stroke="#8E99A8" stroke-width="4" stroke-linecap="round"/>
+  <line x1="200" y1="210" x2="200" y2="230" stroke="#8E99A8" stroke-width="4"/>
+
+  <circle cx="110" cy="90" r="5" fill="#E8A93B"/>
+  <circle cx="290" cy="90" r="5" fill="#E8A93B"/>
+  <circle cx="110" cy="180" r="5" fill="#E8A93B"/>
+  <circle cx="290" cy="180" r="5" fill="#E8A93B"/>
+  <line x1="110" y1="90" x2="172" y2="115" stroke="#37414F" stroke-width="2"/>
+  <line x1="290" y1="90" x2="228" y2="115" stroke="#37414F" stroke-width="2"/>
+  <line x1="110" y1="180" x2="172" y2="155" stroke="#37414F" stroke-width="2"/>
+  <line x1="290" y1="180" x2="228" y2="155" stroke="#37414F" stroke-width="2"/>
+
+  <g transform="translate(200,135)">
+    <path d="M0 -35 L28 -22 V8 Q28 32 0 42 Q-28 32 -28 8 V-22 Z" fill="none" stroke="#3DDC84" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M-10 5 L-2 15 L15 -10" fill="none" stroke="#3DDC84" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

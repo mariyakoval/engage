@@ -1,0 +1,13 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <path d="M40 90 L160 90 L180 70 L360 70 Q370 70 370 80 L370 260 Q370 270 360 270 L50 270 Q40 270 40 260 Z" fill="#1D3B6D" stroke="#12233F" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M40 110 L370 110 L370 260 Q370 270 360 270 L50 270 Q40 270 40 260 Z" fill="#F6F4EE" stroke="#12233F" stroke-width="4" stroke-linejoin="round"/>
+  <line x1="70" y1="150" x2="260" y2="150" stroke="#5B6B82" stroke-width="5" stroke-linecap="round"/>
+  <line x1="70" y1="178" x2="300" y2="178" stroke="#5B6B82" stroke-width="5" stroke-linecap="round"/>
+  <line x1="70" y1="206" x2="230" y2="206" stroke="#5B6B82" stroke-width="5" stroke-linecap="round"/>
+  <g transform="translate(295,205) rotate(-14)">
+    <circle r="52" fill="none" stroke="#C9820A" stroke-width="5"/>
+    <circle r="42" fill="none" stroke="#C9820A" stroke-width="2"/>
+    <text x="0" y="-6" text-anchor="middle" font-family="monospace" font-size="14" fill="#C9820A" font-weight="700" letter-spacing="1">AI-REG</text>
+    <path d="M-16 6 L-4 18 L20 -10" fill="none" stroke="#C9820A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
