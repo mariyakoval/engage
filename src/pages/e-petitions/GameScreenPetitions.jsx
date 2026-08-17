@@ -1,26 +1,25 @@
-import { useContext, useState } from "react";
-import { GameContext } from "../../context/GameProviderAI";
+import { useContext, useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { GameContextPetitions } from "../../context/GameProviderPetitions";
 import Button from "../../components/Button";
 import ProgressDots from "../../components/Dots";
-import SummaryScreen from "./SummaryScreenAI";
+import SummaryScreen from "./SummaryScreenPetitions";
 import NewsModal from "../../components/NewsModal";
-import "../../styles/ai-theme.css";
 
-import news1 from "../../assets/news/news1.jpg";
+import news1 from "../../assets/news/news1.png";
 import news2 from "../../assets/news/news2.jpg";
 import news3 from "../../assets/news/news3.jpg";
 import news4 from "../../assets/news/news4.jpg";
 import news5 from "../../assets/news/news5.jpg";
 import news6 from "../../assets/news/news6.jpg";
 import news7 from "../../assets/news/news7.jpg";
-import news8 from "../../assets/news/news8.jpg";
-import news9 from "../../assets/news/news9.jpg";
-import news10 from "../../assets/news/news10.jpg";
-import news11 from "../../assets/news/news11.jpg";
 import news12 from "../../assets/news/news12.jpg"; 
 import news13 from "../../assets/news/news13.jpg"; 
 import news14 from "../../assets/news/news14.jpg"; 
 
+
+
+{ /* Modal component to show additional information */}
 function Modal({ open, onClose, children }) {
   if (!open) return null;
   return (
@@ -30,11 +29,11 @@ function Modal({ open, onClose, children }) {
     >
       <div
         className="bg-white rounded-lg shadow-lg p-6 max-w-sm sm:max-w-lg mx-4 sm:mx-auto max-h-[80vh] overflow-auto"
-        onClick={e => e.stopPropagation()}
+        onClick={e => e.stopPropagation()} // Prevent closing modal when clicking inside content
       >
         {children}
         <div className="mt-4 text-right">
-          <Button variant="ai" onClick={onClose}><span className="text">Close</span></Button>
+          <Button onClick={onClose}><span className="text">Close</span></Button>
         </div>
       </div>
     </div>
@@ -43,51 +42,78 @@ function Modal({ open, onClose, children }) {
 
 export default function GameScreen() {
 
-  const { scenarios, index, next, previousSummaries } = useContext(GameContext);
-  if (index >= scenarios.length) {
-    return <SummaryScreen />;
-  }
+  const { scenarios, index, next, previousSummaries } = useContext(GameContextPetitions);
+    
+    const [showPrevious, setShowPrevious] = useState(false);
+    const [modalOpen, setModalOpen] = useState(false);
+    const [newsToShow, setNewsToShow] = useState(null);
+    const [selectedOption, setSelectedOption] = useState(null);
+    const navigate = useNavigate();
 
   const imageMap = {
-    news1, news2, news3, news4, news5, news6, news7,
-    news8, news9, news10, news11, news12, news13
-  };
+  news1,
+  news2,
+  news3,
+  news4,
+  news5,
+  news6,
+  news7,
+  news12,
+  news13,
+  news14
+};
+
+  useEffect(() => {
+    if (index >= scenarios.length) {
+      navigate("/e-petitions/summary");
+    }
+  }, [index, scenarios.length, navigate]);
+
+  if (!scenarios || index >= scenarios.length) {
+    return <div className="p-4">Redirecting to summary...</div>;
+  }
 
   const s = scenarios[index];
 
-  const [showPrevious, setShowPrevious] = useState(false);
-  const [modalOpen, setModalOpen] = useState(false);
-  const [newsToShow, setNewsToShow] = useState(null);
-  const [selectedOption, setSelectedOption] = useState(null);
+  ///Determine the dot index based on the current scenario index
+  // If the current scenario is an event, we don't show a dot index
+  // If the current scenario is a phase, we show the index of the last phase seen
+  let dotIndex = null;
+  const eventIndexes = [2, 5];
+  if (!eventIndexes.includes(index)) {
+    const phasesSeen = scenarios
+      .slice(0, index + 1)
+      .filter(q => q.type === "phase").length - 1;
+    dotIndex = phasesSeen;
+  }
 
   return (
-    <div className="theme-ai h-full flex">
+    <div className="h-full flex">
       {/* Left static panel */}
-     <aside className="sidebar-ai hidden md:block w-72 p-6 space-y-8">
+      <aside className="hidden md:block w-72 bg-[#2C5696] text-white p-6 space-y-8">
 
         { !showPrevious ? (
           <>
            <div className="mb-10">
-          <span className="docket-tag">Docket · Regulator's Office</span>
-          <h2 className="font-semibold text-2xl mb-2 mt-4">Your mission</h2>
+          <h2 className="font-semibold text-2xl mb-2 mt-16">Your mission</h2>
           <p className="text-base">
-            Serve as national AI &amp; digital governance regulator. Build rules
-            and systems that are legally sound, keep citizens and industry
-            engaged, and are actually adopted and complied with in practice.
+            Create an E-Petitions platform that results in high‑quality proposals
+            adopted by the Parliament, while keeping the process inclusive,
+            legitimate, and engaging.
           </p>
         </div>
-        <div className="sidebar-rule" />
         <div>
           <h3 className="font-semibold text-2xl mb-2">What to consider?</h3>
-          <p className="text-base"><strong>Regulatory Quality</strong><br/>Is the rule legally sound, proportionate, and technically workable?</p>
-          <p className="text-base mt-2"><strong>Stakeholder Engagement</strong><br/>Are citizens, civil society, and industry heard?</p>
-          <p className="text-base mt-2"><strong>Compliance &amp; Adoption</strong><br/>Will providers, deployers, and institutions actually comply and use it?</p>
+          <p className="text-base"><strong>Policy Quality</strong><br/>Are proposals evidence‑based?<br/>feasible, and well-informed? </p>
+          <p className="text-base mt-2"><strong>Engagement &amp; Inclusion</strong><br/>Are voices heard?</p>
+          <p className="text-base mt-2"><strong>Political Uptake</strong><br/>Will this survive the road to Parliament?</p>
         </div>
         </>
         ) : (
         <div>
-          <span className="docket-tag">Case Log</span>
-          <h3 className="font-semibold text-2xl mb-2 mt-4">Your answers to previous questions</h3>
+
+          { /* Show previous answers if available */ }
+          <h3 className="font-semibold text-2xl mb-2 mt-16">Your answers to previous questions</h3>
            {previousSummaries.length === 0 ? (
             <p className="text-base">No previous answers yet.</p>
           ) : (
@@ -103,7 +129,7 @@ export default function GameScreen() {
           </div>
         )}
 
-        <Button variant="ai" className="w-full justify-center text-center font-normal mt-4"
+        <Button className="w-full justify-center text-center font-normal mt-4"
         onClick={() => setShowPrevious(!showPrevious)}>
           <span className="text !text-white">{showPrevious ? "Hide Previous Answers" : "Show Previous Answers"}</span>
         </Button>
@@ -112,40 +138,44 @@ export default function GameScreen() {
 
       {/* Main question area */}
       <main className="flex-1 mt-8 md:mt-16 px-4 sm:px-10 lg:ml-10">
-        <ProgressDots total={8} current={index} currentType={s.type} theme="ai" />
+        {/* top bar with dots */}
+        <ProgressDots total={8} current={index} currentType={s.type} />
         <h1 className="text-2xl sm:text-4xl font-bold mb-2">{s.title}</h1>
-        <p className="text-base sm:text-lg mb-4 sm:mb-6 max-w-3xl text-[var(--slate)]">{s.scenario}</p>
-
+        <p className="text-base sm:text-lg mb-4 sm:mb-6 max-w-3xl">{s.scenario}</p>
+        
+        {/*Learn more button*/}
       <div className="flex flex-col lg:flex-row items-start sm:space-x-2 mb-6">
         <p className="text-lg sm:text-xl font-medium m-0">{s.question}</p>
           {s.learnMore && (
             <button
               onClick={() => setModalOpen(true)}
-              className="underline hover:text-[var(--amber-flag)] focus:outline-none focus:ring-1 focus:ring-[var(--seal-blue)]"
+              className="underline hover:text-blue-800 focus:outline-none focus:ring-1 focus:ring-blue-600"
               aria-label="Learn more about this question"
               type="button"
-              style={{ background: "none", border: "none", padding: 0, cursor: "pointer", color: '#1D3B6D' }}
-            >Learn More 🔍
+              style={{ background: "none", border: "none", padding: 0, cursor: "pointer", color: '#1A3A6D' }}
+            >Learn More 🔍 
             </button>
           )}
         </div>
 
+        {/* Options for the current scenario */}
         <div className="space-y-3 max-w-2xl text-base pb-10">
           {s.options.map((opt, i) => (
             <Button
             key={i}
-            variant="ai"
             className="w-full !justify-start !text-left !font-normal"
             onClick={() => {
+              // If the option has news, show the news modal
               if (opt.news) {
                 const selectedNews = {
                 ...opt.news,
-                image: imageMap[opt.news.image]
+                image: imageMap[opt.news.image] 
               };
 
               setNewsToShow(selectedNews);
               setSelectedOption(opt);
-              } else {
+              } else { 
+                // Otherwise, just proceed to the next scenario
                 next(opt.effects, opt.summary, s.question, opt.text);
               }
             }}
@@ -155,21 +185,17 @@ export default function GameScreen() {
          ))}
         </div>
 
+        {/* Modal for additional information */}       
       <Modal open={modalOpen} onClose={() => setModalOpen(false)}>
           <h2 className="text-2xl font-semibold mb-4">Learn More</h2>
           <p>{s.learnMore}</p>
         </Modal>
 
+        {/* News modal to show news related to the selected option */}
         {newsToShow && selectedOption && (
           <NewsModal
             news={newsToShow}
-            bannerLabel={s.type === "crisis" ? "REGULATORY ALERT" : "COMPLIANCE UPDATE"}
-            bannerClass={s.type === "crisis" ? "banner-alert" : "banner-update"}
-            breakingNews={
-              s.type === "crisis"
-                ? "Regulatory alert: enforcement action opened • agencies notified"
-                : "Compliance update: framework adopted • stakeholders briefed"
-            }
+            breakingNews={"E-Petitions platform launched • Citizens' voices amplified • Parliament to respond soon!"}
             onClose={() => {
               next(
                 selectedOption.effects,

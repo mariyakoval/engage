@@ -1,9 +1,16 @@
 import { createContext, useState, useMemo } from "react";
-import scenariosRaw from "../data/cybersecurityScenarios.json";
+import scenariosRaw from "../data/citizenAssemblyScenarios.json";
 
-export const GameContextSecurity = createContext();
+export const GameContext = createContext();
 
-export const GameProviderSecurity = ({ children }) => {
+export const GameProvider = ({ children }) => {
+
+  const resetGame = () => {
+  setScores({ quality: 0, engagement: 0, uptake: 0 });
+  setScoreHistory([]);
+  setIndex(0);
+  setSequence(generateSequence(phases));
+};
 
 const phases = useMemo(() => {
     const byPhase = Array.from({ length: 6 }, () => []);
@@ -21,7 +28,9 @@ const phases = useMemo(() => {
     return { byPhase, crisis, benefit };
   }, []);
 
-  const sequence = useMemo(() => {
+  const [sequence, setSequence] = useState(() => generateSequence(phases));
+
+function generateSequence(phases) {
     const rand = arr => arr[Math.floor(Math.random() * arr.length)];
 
     const six = phases.byPhase.map(rand);
@@ -39,12 +48,11 @@ const phases = useMemo(() => {
       six[4],
       six[5]
     ];
-  }, [phases]);
+  }
 
   const [index, setIndex] = useState(0);
   const [scores, setScores] = useState({ quality: 0, engagement: 0, uptake: 0 });
   const [scoreHistory, setScoreHistory] = useState([ ]);
-
   const [previousSummaries, setPreviousSummaries] = useState([]);
 
 
@@ -73,20 +81,22 @@ const phases = useMemo(() => {
         return newScores;
       });
     setIndex(i => i + 1);
+
   };
 
   return (
-    <GameContextSecurity.Provider
+    <GameContext.Provider
       value={{
         scenarios: sequence, 
         index,
         next,
         scores,
         previousSummaries,
-        scoreHistory
+        scoreHistory,
+        resetGame
       }}
     >
       {children}
-    </GameContextSecurity.Provider>
+    </GameContext.Provider>
   );
 };
